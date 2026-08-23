@@ -1,26 +1,88 @@
 [gd_scene format=3 uid="uid://fl6pnwlkhkx5"]
 
+[ext_resource type="Theme" uid="uid://rn6wx8hblfn0" path="res://Mainmenutheme.tres" id="1_0fbet"]
+[ext_resource type="Script" uid="uid://dlxswtutlyi1e" path="res://control.gd" id="2_62e2m"]
+
 [node name="Control" type="Control" unique_id=455978718]
 layout_mode = 3
 anchors_preset = 0
 offset_right = 40.0
 offset_bottom = 40.0
+size_flags_vertical = 8
+theme = ExtResource("1_0fbet")
+script = ExtResource("2_62e2m")
 
-[node name="VBoxContainer" type="VBoxContainer" parent="." unique_id=2095662949]
+[node name="ColorRect" type="ColorRect" parent="." unique_id=2109063587]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+scale = Vector2(29.247383, 16.876911)
+color = Color(0, 0.64923996, 0.5027111, 1)
+
+[node name="Panel" type="Panel" parent="." unique_id=235422508]
 layout_mode = 1
 anchors_preset = -1
-offset_top = 4.0
-offset_right = 87.0
-offset_bottom = 61.0
+anchor_left = 14.212001
+anchor_top = 15.900001
+anchor_right = 14.212001
+anchor_bottom = 15.900001
+offset_left = -160.48004
+offset_top = -341.0
+offset_right = 197.51996
+offset_bottom = -70.0
 
-[node name="Start" type="Button" parent="VBoxContainer" unique_id=494132409]
+[node name="VBoxContainer" type="VBoxContainer" parent="Panel" unique_id=935240953]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = -3.0
+offset_right = -3.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="Play" type="Button" parent="Panel/VBoxContainer" unique_id=1212102770]
+custom_minimum_size = Vector2(200, 50)
 layout_mode = 2
+size_flags_horizontal = 4
+size_flags_vertical = 10
 text = "START"
 
-[node name="Settings" type="Button" parent="VBoxContainer" unique_id=1305299593]
+[node name="Settings" type="Button" parent="Panel/VBoxContainer" unique_id=1900859795]
+custom_minimum_size = Vector2(200, 50)
 layout_mode = 2
+size_flags_horizontal = 4
+size_flags_vertical = 6
 text = "SETTINGS"
 
-[node name="quit" type="Button" parent="VBoxContainer" unique_id=226249146]
+[node name="Quit" type="Button" parent="Panel/VBoxContainer" unique_id=1694954543]
+custom_minimum_size = Vector2(200, 50)
 layout_mode = 2
+size_flags_horizontal = 4
+size_flags_vertical = 2
 text = "QUIT"
+
+[node name="Label" type="Label" parent="." unique_id=169914481]
+layout_mode = 1
+anchors_preset = 5
+anchor_left = 0.5
+anchor_right = 0.5
+offset_left = 236.0
+offset_top = 64.00001
+offset_right = 703.0
+offset_bottom = 160.0
+grow_horizontal = 2
+scale = Vector2(1.5326663, 1.9937713)
+theme_override_colors/font_color = Color(1, 1, 1, 1)
+theme_override_colors/font_shadow_color = Color(0, 0, 0, 1)
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_constants/outline_size = 12
+theme_override_font_sizes/font_size = 70
+text = "Trust Me"
+horizontal_alignment = 1
+
+[connection signal="pressed" from="Panel/VBoxContainer/Play" to="." method="_on_play_pressed"]
+[connection signal="pressed" from="Panel/VBoxContainer/Quit" to="." method="_on_quit_pressed"]
