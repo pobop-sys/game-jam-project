@@ -1,11 +1,9 @@
-extends Node
+extends de
+class_name dialoguefucntion
 
+@export var target_path: NodePath
+@export var function_name: String
+@export var function_arguments: Array
 
-# Called when the node enters the scene tree for the first time.
-func _ready() -> void:
-	pass # Replace with function body.
-
-
-# Called every frame. 'delta' is the elapsed time since the previous frame.
-func _process(delta: float) -> void:
-	pass
+@export var hide_dialouge: bool
+@export var wait_for_signle_to_continue: String = ""

@@ -7,4 +7,3 @@ script = ExtResource("1_jn2gs")
 
 [node name="Camera2D" type="Camera2D" parent="." unique_id=487353514]
 zoom = Vector2(4, 4)
-position_smoothing_enabled = true

@@ -112,7 +112,7 @@ texture_filter = 1
 sprite_frames = SubResource("SpriteFrames_uj6ph")
 animation = &"idle"
 autoplay = "idle"
-frame_progress = 0.41716117
+frame_progress = 0.25869623
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=285410417]
 position = Vector2(0, 4)
