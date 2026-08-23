@@ -1,6 +1,7 @@
 [gd_scene format=3 uid="uid://denoxi7rqq4rt"]
 
 [ext_resource type="FontFile" uid="uid://saxbfopteqk4" path="res://font/Thin Sans.ttf" id="1_gv1qy"]
+[ext_resource type="Script" uid="uid://b7ucppyu4px0q" path="res://code/dialoge_sytem.gd" id="1_nb85e"]
 
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_6mqeb"]
 bg_color = Color(0, 0, 0, 1)
@@ -12,6 +13,7 @@ border_color = Color(1, 1, 1, 1)
 
 [node name="dialoge_sytem" type="Node2D" unique_id=403944770]
 z_index = 4096
+script = ExtResource("1_nb85e")
 
 [node name="Panel" type="Panel" parent="." unique_id=1847512299]
 offset_left = -144.0
