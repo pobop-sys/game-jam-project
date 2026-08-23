@@ -50,4 +50,4 @@ position = Vector2(-783, -41)
 
 [node name="camra" parent="." unique_id=262621399 instance=ExtResource("4_cdchx")]
 position = Vector2(-795, -78)
-cam_controls = "up_down"
+cam_controls = "left_right"
