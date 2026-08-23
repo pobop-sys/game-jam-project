@@ -1,0 +1,8 @@
+[gd_scene format=3 uid="uid://b2uxgo1520nkk"]
+
+[ext_resource type="Script" uid="uid://hsc1slph3tcb" path="res://code/camra.gd" id="1_jn2gs"]
+
+[node name="Node2D" type="Node2D" unique_id=262621399]
+script = ExtResource("1_jn2gs")
+
+[node name="Camera2D" type="Camera2D" parent="." unique_id=487353514]

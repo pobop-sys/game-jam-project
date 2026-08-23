@@ -1,0 +1,31 @@
+[gd_scene format=3 uid="uid://dr6j8ljuo0735"]
+
+[ext_resource type="Texture2D" uid="uid://4q335xxs2p" path="res://icon.svg" id="1_7q2m7"]
+[ext_resource type="PackedScene" uid="uid://cfwvfvh166ql5" path="res://scenes/person_box.tscn" id="2_d7y7w"]
+[ext_resource type="PackedScene" uid="uid://bpflyu5t63yie" path="res://scenes/player.tscn" id="3_cdchx"]
+
+[sub_resource type="WorldBoundaryShape2D" id="WorldBoundaryShape2D_6mqeb"]
+
+[node name="test_lv" type="Node2D" unique_id=2017274416]
+
+[node name="StaticBody2D" type="StaticBody2D" parent="." unique_id=2086990215]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="StaticBody2D" unique_id=1380008371]
+shape = SubResource("WorldBoundaryShape2D_6mqeb")
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=1132013968]
+position = Vector2(10.5, 63)
+scale = Vector2(41.695313, 1)
+texture = ExtResource("1_7q2m7")
+
+[node name="person_blocks" type="Node2D" parent="." unique_id=1735376001]
+
+[node name="person_box" parent="person_blocks" unique_id=1183462229 instance=ExtResource("2_d7y7w")]
+position = Vector2(-1635, -50)
+
+[node name="person_box2" parent="person_blocks" unique_id=467222343 instance=ExtResource("2_d7y7w")]
+position = Vector2(-1853, -54)
+is_telling_truth = true
+
+[node name="player" parent="." unique_id=1794095932 instance=ExtResource("3_cdchx")]
+position = Vector2(-783, -41)
