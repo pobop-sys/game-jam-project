@@ -29,3 +29,5 @@ is_telling_truth = true
 
 [node name="player" parent="." unique_id=1794095932 instance=ExtResource("3_cdchx")]
 position = Vector2(-783, -41)
+
+[node name="Camera2D" type="Camera2D" parent="player" unique_id=861551782]
