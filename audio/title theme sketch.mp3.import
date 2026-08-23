@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://c2d2dv1myexq4"
+path="res://.godot/imported/title theme sketch.mp3-1f790dfa544b30dbaad7e8981cab39ba.mp3str"
+
+[deps]
+
+source_file="res://audio/title theme sketch.mp3"
+dest_files=["res://.godot/imported/title theme sketch.mp3-1f790dfa544b30dbaad7e8981cab39ba.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4
