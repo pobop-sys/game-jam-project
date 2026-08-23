@@ -21,10 +21,27 @@ texture = ExtResource("1_7q2m7")
 [node name="person_blocks" type="Node2D" parent="." unique_id=1735376001]
 
 [node name="person_box" parent="person_blocks" unique_id=1183462229 instance=ExtResource("2_d7y7w")]
-position = Vector2(-1635, -50)
+position = Vector2(-1042, -121)
 
 [node name="person_box2" parent="person_blocks" unique_id=467222343 instance=ExtResource("2_d7y7w")]
-position = Vector2(-1853, -54)
+position = Vector2(-1924, -43.999996)
+scale = Vector2(1, 0.5600011)
+is_telling_truth = true
+
+[node name="person_box3" parent="person_blocks" unique_id=598039193 instance=ExtResource("2_d7y7w")]
+position = Vector2(-1484, -87)
+is_telling_truth = true
+
+[node name="person_box4" parent="person_blocks" unique_id=1817722510 instance=ExtResource("2_d7y7w")]
+position = Vector2(-1266, -165)
+is_telling_truth = true
+
+[node name="person_box5" parent="person_blocks" unique_id=2008234345 instance=ExtResource("2_d7y7w")]
+position = Vector2(-1708, -97)
+is_telling_truth = true
+
+[node name="person_box6" parent="person_blocks" unique_id=699289749 instance=ExtResource("2_d7y7w")]
+position = Vector2(-839, -189)
 is_telling_truth = true
 
 [node name="player" parent="." unique_id=1794095932 instance=ExtResource("3_cdchx")]
