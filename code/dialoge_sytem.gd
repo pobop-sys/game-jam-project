@@ -88,7 +88,12 @@ func _choice_resorse(i: dialoguechoice) -> void:
 	$HBoxContainer/VBoxContainer/button_conter.visible = true
 	
 	for item in i.choice_text.size():
-		var dialoguebutton
+		var dialoguebuttonvar = dialoguebuttonprelead.instantiate()
+		dialoguebuttonvar.text = i.choice_text[item]
+		
+		#var function_resorce: dialoguefucntion = i.choise_function_call
+		
+		
 	
 
 func _text_resorce(i: dialoguetext) -> void:
