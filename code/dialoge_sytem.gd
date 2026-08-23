@@ -85,7 +85,10 @@ func _choice_resorse(i: dialoguechoice) -> void:
 		speakerspright.frame = min(i.speaker_img_select_frames)
 	else:
 		$"HBoxContainer/speaker parent".visible = false
-	$HBoxContainer/VBoxContainer/button_conter.visible
+	$HBoxContainer/VBoxContainer/button_conter.visible = true
+	
+	for item in i.choice_text.size():
+		var dialoguebutton
 	
 
 func _text_resorce(i: dialoguetext) -> void:
