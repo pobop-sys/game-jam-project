@@ -7,3 +7,6 @@ class_name dialoguetext
 
 #@export_multiline(var text: string) 
 @export_range(0.1, 30.0, 0.1) var text_speed: float
+
+@export var text_sound: AudioStream
+@export
