@@ -55,8 +55,7 @@ position = Vector2(-792, -62)
 cam_controls = "left_right"
 
 [node name="npc" parent="." unique_id=960395961 instance=ExtResource("5_0kemc")]
-position = Vector2(-441, -13)
+position = Vector2(-442, -2)
 
 [node name="mysrty guy" parent="." unique_id=458843416 instance=ExtResource("6_f7tsx")]
-position = Vector2(13, -32)
-text = "you can [tornado][rainbow]df"
+position = Vector2(16, -28)

@@ -2,7 +2,48 @@
 
 [ext_resource type="Script" uid="uid://sle407jit1gn" path="res://code/mystrey_guy.gd" id="1_c6ofv"]
 [ext_resource type="Texture2D" uid="uid://dwi545onvucxy" path="res://art/Mystery guy-Sheet.png" id="2_85dea"]
+[ext_resource type="Texture2D" uid="uid://cubumqt0caoq1" path="res://art/Mystery guy (idle)-Sheet.png" id="2_b0bg1"]
 [ext_resource type="FontFile" uid="uid://saxbfopteqk4" path="res://font/Thin Sans.ttf" id="3_b0bg1"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_l8wyt"]
+atlas = ExtResource("2_b0bg1")
+region = Rect2(0, 0, 64, 64)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_sq10q"]
+atlas = ExtResource("2_b0bg1")
+region = Rect2(64, 0, 64, 64)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_ersjc"]
+atlas = ExtResource("2_b0bg1")
+region = Rect2(128, 0, 64, 64)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_dit78"]
+atlas = ExtResource("2_b0bg1")
+region = Rect2(192, 0, 64, 64)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_0ljhr"]
+atlas = ExtResource("2_b0bg1")
+region = Rect2(256, 0, 64, 64)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_7kvig"]
+atlas = ExtResource("2_b0bg1")
+region = Rect2(320, 0, 64, 64)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_4kplw"]
+atlas = ExtResource("2_b0bg1")
+region = Rect2(384, 0, 64, 64)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_86geq"]
+atlas = ExtResource("2_b0bg1")
+region = Rect2(448, 0, 64, 64)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_bqetl"]
+atlas = ExtResource("2_b0bg1")
+region = Rect2(512, 0, 64, 64)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_imixc"]
+atlas = ExtResource("2_b0bg1")
+region = Rect2(576, 0, 64, 64)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_te1g4"]
 atlas = ExtResource("2_85dea")
@@ -44,6 +85,41 @@ region = Rect2(512, 0, 64, 64)
 animations = [{
 "frames": [{
 "duration": 1.0,
+"texture": SubResource("AtlasTexture_l8wyt")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_sq10q")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_ersjc")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_dit78")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_0ljhr")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_7kvig")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_4kplw")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_86geq")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_bqetl")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_imixc")
+}],
+"loop": 1,
+"name": &"idle",
+"speed": 10.0
+}, {
+"frames": [{
+"duration": 1.0,
 "texture": SubResource("AtlasTexture_te1g4")
 }, {
 "duration": 1.0,
@@ -71,7 +147,7 @@ animations = [{
 "texture": SubResource("AtlasTexture_2b770")
 }],
 "loop": 1,
-"name": &"default",
+"name": &"skooting",
 "speed": 10.0
 }]
 
@@ -90,8 +166,9 @@ text = "you can [wave][color=yellow]trust me[color=white]"
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="." unique_id=820094623]
 texture_filter = 1
 sprite_frames = SubResource("SpriteFrames_6mqeb")
-autoplay = "default"
-frame_progress = 0.77919424
+animation = &"idle"
+autoplay = "idle"
+frame_progress = 0.2234636
 flip_h = true
 
 [node name="Control" type="Control" parent="." unique_id=1098908085]
