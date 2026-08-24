@@ -202,7 +202,7 @@ texture_filter = 1
 sprite_frames = SubResource("SpriteFrames_6mqeb")
 animation = &"idle"
 autoplay = "idle"
-frame_progress = 0.45530954
+frame_progress = 0.6468596
 flip_h = true
 
 [node name="Control" type="Control" parent="." unique_id=1098908085]
@@ -223,10 +223,9 @@ theme_override_styles/panel = SubResource("StyleBoxFlat_l8wyt")
 texture_filter = 1
 layout_mode = 2
 theme_override_fonts/normal_font = ExtResource("3_b0bg1")
-theme_override_font_sizes/normal_font_size = 8
+theme_override_font_sizes/normal_font_size = 4
+theme_override_font_sizes/bold_font_size = 8
 bbcode_enabled = true
-text = "
-"
 scroll_active = false
 visible_characters = 0
 visible_ratio = 0.0

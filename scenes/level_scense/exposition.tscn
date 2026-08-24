@@ -4,6 +4,7 @@
 [ext_resource type="Texture2D" uid="uid://bqly30lu682ru" path="res://art/place_holder_tileset.png" id="2_6j3do"]
 [ext_resource type="PackedScene" uid="uid://lym884ydgfrq" path="res://scenes/mysrty_guy.tscn" id="3_e4top"]
 [ext_resource type="PackedScene" uid="uid://bpflyu5t63yie" path="res://scenes/player.tscn" id="4_j70h5"]
+[ext_resource type="PackedScene" uid="uid://bu573qbgf2du4" path="res://scenes/next_lv_triger.tscn" id="5_6j3do"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_4kugp"]
 texture = ExtResource("2_6j3do")
@@ -47,7 +48,12 @@ zoom = Vector2(2, 2)
 [node name="mysrty guy" parent="." unique_id=458843416 instance=ExtResource("3_e4top")]
 position = Vector2(61, 43)
 flip = true
-text = "hi there [color=yellow][wave] you can trust me [wave amp=50.0] ? [/ve amp=50.0][color=white][fade start=2 length =3]right"
+text = "at this [b]company[/b] are employes havent trusted each over for a long time so were going to be doing some [wave][color=yellow] trust exsersises"
+text_box_play_on_load = true
 
 [node name="player" parent="." unique_id=1794095932 instance=ExtResource("4_j70h5")]
 position = Vector2(-143, 54)
+
+[node name="next_lv_triger" parent="." unique_id=1818814094 instance=ExtResource("5_6j3do")]
+position = Vector2(174, 40)
+next_lv_location = "res://scenes/test_lv.tscn"

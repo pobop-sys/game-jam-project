@@ -18,8 +18,7 @@ func _ready() -> void:
 	$Control/PanelContainer/RichTextLabel.bbcode_enabled
 	
 	if text_box_play_on_load:
-		#play the animation now 
-		pass
+		$AnimationPlayer.play("play_text")
 
 func _process(delta: float) -> void:
 	if !text_box_play_on_load:

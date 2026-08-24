@@ -179,9 +179,9 @@ script = ExtResource("1_g2els")
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="." unique_id=408921295]
 texture_filter = 1
 sprite_frames = SubResource("SpriteFrames_uj6ph")
-animation = &"walk"
+animation = &"walk_belly_bounce"
 autoplay = "idle"
-frame_progress = 0.85611707
+frame_progress = 0.7113915
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=285410417]
 position = Vector2(0, 4)

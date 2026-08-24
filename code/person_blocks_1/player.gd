@@ -1,7 +1,7 @@
 extends CharacterBody2D
 
 
-const SPEED = 200.0
+const SPEED = 400.0
 const JUMP_VELOCITY = -200.0
 
 var can_move: bool = true
@@ -28,7 +28,12 @@ func _physics_process(delta: float) -> void:
 	else:
 		velocity.x = move_toward(velocity.x, 0, SPEED)
 		$AnimatedSprite2D.play("idle")
-		
+	
+	if direction == 1:
+		$AnimatedSprite2D.flip_h = false
+	elif direction == -1:
+		$AnimatedSprite2D.flip_h = true
+	
 	Globle.player_pos_y = position.y
 	Globle.player_pos_x = position.x
 	
