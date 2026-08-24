@@ -91,7 +91,14 @@ func _choice_resorse(i: dialoguechoice) -> void:
 		var dialoguebuttonvar = dialoguebuttonprelead.instantiate()
 		dialoguebuttonvar.text = i.choice_text[item]
 		
-		#var function_resorce: dialoguefucntion = i.choise_function_call
+		var function_resorce: dialoguefucntion = i.choise_function_call[item]
+		if function_resorce:
+			dialoguebuttonvar.connect("pressed",
+			Callable(get_node(function_resorce.target_path),function_resorce.function_name).bindv(function_resorce.function_arguments),
+			CONNECT_ONE_SHOT)
+			if function_resorce.hide_dialouge_box:
+				dialoguebuttonvar.connect("pressed", hide, CONNECT_ONE_SHOT)
+	
 		
 		
 	
