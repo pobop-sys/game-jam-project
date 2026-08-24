@@ -24,16 +24,8 @@ func _ready() -> void:
 	
 func _process(delta: float) -> void:
 	if can_play_text == true:
-		print("player_enterd")
 		$AnimationPlayer.play("text_bar_apearing")
-		can_play_text = false
-	else:
-		pass
-	
+
 
 func _on_player_collition_detecton_body_entered(body: Node2D) -> void:
 	can_play_text = true
-
-
-func _on_player_collition_detecton_body_exited(body: Node2D) -> void:
-	can_play_text = false

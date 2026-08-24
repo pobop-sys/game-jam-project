@@ -251,9 +251,9 @@ modulate = Color(1, 1, 1, 0)
 layout_mode = 3
 anchors_preset = 0
 offset_left = -144.0
-offset_top = -125.0
+offset_top = -120.0
 offset_right = -104.0
-offset_bottom = -85.0
+offset_bottom = -80.0
 
 [node name="PanelContainer" type="PanelContainer" parent="Control" unique_id=122297905]
 layout_mode = 0
@@ -274,5 +274,6 @@ visible_ratio = 0.0
 [node name="AnimationPlayer" type="AnimationPlayer" parent="." unique_id=475108967]
 libraries/ = SubResource("AnimationLibrary_4wlns")
 
+[node name="Timer" type="Timer" parent="." unique_id=1866863960]
+
 [connection signal="body_entered" from="player_collition_detecton" to="." method="_on_player_collition_detecton_body_entered"]
-[connection signal="body_exited" from="player_collition_detecton" to="." method="_on_player_collition_detecton_body_exited"]

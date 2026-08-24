@@ -58,4 +58,5 @@ cam_controls = "left_right"
 position = Vector2(-441, -13)
 
 [node name="mysrty guy" parent="." unique_id=458843416 instance=ExtResource("6_f7tsx")]
-position = Vector2(-226, -33)
+position = Vector2(13, -32)
+text = "you can [tornado][rainbow]df"
