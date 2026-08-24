@@ -1,12 +1,12 @@
 [gd_scene format=3 uid="uid://dorierr6el7y4"]
 
-[ext_resource type="Script" uid="uid://cftgr0c238h10" path="res://code/level_code/exposition.gd" id="1_1yyri"]
-[ext_resource type="Texture2D" uid="uid://bqly30lu682ru" path="res://art/place_holder_tileset.png" id="1_20av3"]
-[ext_resource type="PackedScene" uid="uid://lym884ydgfrq" path="res://scenes/mysrty_guy.tscn" id="2_1yyri"]
-[ext_resource type="PackedScene" uid="uid://bpflyu5t63yie" path="res://scenes/player.tscn" id="3_1n1nm"]
+[ext_resource type="Script" uid="uid://cftgr0c238h10" path="res://code/level_code/exposition.gd" id="1_cigvs"]
+[ext_resource type="Texture2D" uid="uid://bqly30lu682ru" path="res://art/place_holder_tileset.png" id="2_6j3do"]
+[ext_resource type="PackedScene" uid="uid://lym884ydgfrq" path="res://scenes/mysrty_guy.tscn" id="3_e4top"]
+[ext_resource type="PackedScene" uid="uid://bpflyu5t63yie" path="res://scenes/player.tscn" id="4_j70h5"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_4kugp"]
-texture = ExtResource("1_20av3")
+texture = ExtResource("2_6j3do")
 0:0/0 = 0
 0:0/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
 1:0/0 = 0
@@ -30,43 +30,9 @@ texture = ExtResource("1_20av3")
 physics_layer_0/collision_layer = 1
 sources/0 = SubResource("TileSetAtlasSource_4kugp")
 
-[sub_resource type="Animation" id="Animation_1n1nm"]
-length = 0.001
-tracks/0/type = "bezier"
-tracks/0/imported = false
-tracks/0/enabled = true
-tracks/0/path = NodePath("mysrty guy:text_visiblity_ratio")
-tracks/0/interp = 1
-tracks/0/loop_wrap = true
-tracks/0/keys = {
-"handle_modes": PackedInt32Array(0),
-"points": PackedFloat32Array(0, -0.25, 0, 0.25, 0),
-"times": PackedFloat32Array(0)
-}
-
-[sub_resource type="Animation" id="Animation_4kugp"]
-resource_name = "playe_mystyus_guys_text"
-length = 0.001
-tracks/0/type = "bezier"
-tracks/0/imported = false
-tracks/0/enabled = true
-tracks/0/path = NodePath("mysrty guy:text_visiblity_ratio")
-tracks/0/interp = 1
-tracks/0/loop_wrap = true
-tracks/0/keys = {
-"handle_modes": PackedInt32Array(0, 2),
-"points": PackedFloat32Array(100, -0.65500003, 0.16375001, 0.011666656, -0.002916664, -1, -0.6666667, 0.16666667, 0, 0),
-"times": PackedFloat32Array(0.63333344, 4)
-}
-
-[sub_resource type="AnimationLibrary" id="AnimationLibrary_ybiwi"]
-_data = {
-&"RESET": SubResource("Animation_1n1nm"),
-&"playe_mystyus_guys_text": SubResource("Animation_4kugp")
-}
-
 [node name="exposition" type="Node2D" unique_id=1552892239]
-script = ExtResource("1_1yyri")
+script = ExtResource("1_cigvs")
+metadata/_edit_vertical_guides_ = [-92.0]
 
 [node name="TileMap" type="TileMap" parent="." unique_id=633410233]
 texture_filter = 1
@@ -78,13 +44,10 @@ layer_0/tile_data = PackedInt32Array(327679, 65536, 0, 327678, 65536, 0, 327677,
 [node name="Camera2D" type="Camera2D" parent="." unique_id=1553977316]
 zoom = Vector2(2, 2)
 
-[node name="mysrty guy" parent="." unique_id=458843416 instance=ExtResource("2_1yyri")]
+[node name="mysrty guy" parent="." unique_id=458843416 instance=ExtResource("3_e4top")]
 position = Vector2(61, 43)
 flip = true
-text = "the employes at this company have been to [color=yellow]untrusting[color=white] of eachother for too long"
+text = "hi there [color=yellow][wave] you can trust me [wave amp=50.0] ? [/ve amp=50.0][color=white][fade start=2 length =3]right"
 
-[node name="player" parent="." unique_id=1794095932 instance=ExtResource("3_1n1nm")]
+[node name="player" parent="." unique_id=1794095932 instance=ExtResource("4_j70h5")]
 position = Vector2(-143, 54)
-
-[node name="AnimationPlayer" type="AnimationPlayer" parent="." unique_id=247350749]
-libraries/ = SubResource("AnimationLibrary_ybiwi")

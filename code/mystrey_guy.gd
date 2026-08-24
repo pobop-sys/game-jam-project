@@ -5,6 +5,7 @@ extends Node2D
 @export var npc_art: int
 @export_multiline var text:String
 @export var text_visiblity_ratio:float
+@export var text_box_play_on_load: bool
 
 func _ready() -> void:
 	if flip:
@@ -15,6 +16,11 @@ func _ready() -> void:
 	$Control.visible = true
 	$Control/PanelContainer/RichTextLabel.append_text(text)
 	$Control/PanelContainer/RichTextLabel.bbcode_enabled
+	
+	if text_box_play_on_load:
+		#play the animation now 
+		pass
 
 func _process(delta: float) -> void:
-	$Control/PanelContainer/RichTextLabel.visible_ratio = text_visiblity_ratio
+	if !text_box_play_on_load:
+		pass
