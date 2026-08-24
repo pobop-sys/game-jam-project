@@ -24,7 +24,7 @@ texture = ExtResource("1_7q2m7")
 [node name="person_blocks" type="Node2D" parent="." unique_id=1735376001]
 
 [node name="person_box" parent="person_blocks" unique_id=1183462229 instance=ExtResource("2_d7y7w")]
-position = Vector2(-1042, -121)
+position = Vector2(-1027, -127)
 
 [node name="person_box2" parent="person_blocks" unique_id=467222343 instance=ExtResource("2_d7y7w")]
 position = Vector2(-1924, -43.999996)
@@ -58,4 +58,4 @@ cam_controls = "left_right"
 position = Vector2(-442, -2)
 
 [node name="mysrty guy" parent="." unique_id=458843416 instance=ExtResource("6_f7tsx")]
-position = Vector2(16, -28)
+position = Vector2(-3, -30)

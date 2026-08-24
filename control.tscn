@@ -45,7 +45,6 @@ tracks/2/keys = {
 [sub_resource type="Animation" id="Animation_qtu10"]
 resource_name = "hover"
 length = 0.1
-loop_mode = 2
 tracks/0/type = "value"
 tracks/0/imported = false
 tracks/0/enabled = true
@@ -103,6 +102,10 @@ layout_mode = 1
 anchors_preset = 15
 anchor_right = 1.0
 anchor_bottom = 1.0
+offset_left = 3.9999998
+offset_top = -8.999999
+offset_right = 4.0
+offset_bottom = -9.0
 grow_horizontal = 2
 grow_vertical = 2
 scale = Vector2(29.247383, 16.876911)
@@ -176,4 +179,5 @@ horizontal_alignment = 1
 
 [connection signal="mouse_entered" from="Panel/VBoxContainer/Play" to="Panel/VBoxContainer/Play/AnimationPlayer" method="play" binds= ["hover"]]
 [connection signal="pressed" from="Panel/VBoxContainer/Play" to="." method="_on_play_pressed"]
+[connection signal="pressed" from="Panel/VBoxContainer/Settings" to="." method="_on_settings_pressed"]
 [connection signal="pressed" from="Panel/VBoxContainer/Quit" to="." method="_on_quit_pressed"]
