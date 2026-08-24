@@ -28,7 +28,12 @@ func _physics_process(delta: float) -> void:
 	else:
 		velocity.x = move_toward(velocity.x, 0, SPEED)
 		$AnimatedSprite2D.play("idle")
-		
+	
+	if direction == 1:
+		$AnimatedSprite2D.flip_h = false
+	elif direction == -1:
+		$AnimatedSprite2D.flip_h = true
+	
 	Globle.player_pos_y = position.y
 	Globle.player_pos_x = position.x
 	
