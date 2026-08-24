@@ -6,7 +6,7 @@
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_6mqeb"]
 size = Vector2(127, 127)
 
-[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_c4ms5"]
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_rl5ky"]
 texture = ExtResource("2_rl5ky")
 0:0/0 = 0
 0:0/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
@@ -29,7 +29,7 @@ texture = ExtResource("2_rl5ky")
 
 [sub_resource type="TileSet" id="TileSet_6mqeb"]
 physics_layer_0/collision_layer = 1
-sources/0 = SubResource("TileSetAtlasSource_c4ms5")
+sources/0 = SubResource("TileSetAtlasSource_rl5ky")
 
 [node name="person_box" type="Node2D" unique_id=1183462229]
 script = ExtResource("1_a6jgs")
