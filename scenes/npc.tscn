@@ -227,7 +227,6 @@ _data = {
 
 [node name="npc" type="Node2D" unique_id=960395961]
 script = ExtResource("1_rv78h")
-npc_art = 1
 text = "[wave][rainbow]test"
 
 [node name="Sprite2D" type="Sprite2D" parent="." unique_id=818693125]
@@ -276,3 +275,4 @@ visible_ratio = 0.0
 libraries/ = SubResource("AnimationLibrary_4wlns")
 
 [connection signal="body_entered" from="player_collition_detecton" to="." method="_on_player_collition_detecton_body_entered"]
+[connection signal="body_exited" from="player_collition_detecton" to="." method="_on_player_collition_detecton_body_exited"]

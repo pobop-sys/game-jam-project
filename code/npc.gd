@@ -11,7 +11,7 @@ var npc_art_file_location = [
 ]
 
 var text_panle_visible: bool = false
- 
+var can_play_text = false
 
 func _ready() -> void:
 	$Control/PanelContainer/RichTextLabel.append_text(text)
@@ -22,8 +22,18 @@ func _ready() -> void:
 	var npc_load_art = load(npc_art_file_location[npc_art])
 	$Sprite2D.texture = npc_load_art
 	
-
+func _process(delta: float) -> void:
+	if can_play_text == true:
+		print("player_enterd")
+		$AnimationPlayer.play("text_bar_apearing")
+		can_play_text = false
+	else:
+		pass
+	
 
 func _on_player_collition_detecton_body_entered(body: Node2D) -> void:
-	print("player_enterd")
-	$AnimationPlayer.play("text_bar_apearing")
+	can_play_text = true
+
+
+func _on_player_collition_detecton_body_exited(body: Node2D) -> void:
+	can_play_text = false
