@@ -47,7 +47,8 @@ zoom = Vector2(2, 2)
 [node name="mysrty guy" parent="." unique_id=458843416 instance=ExtResource("3_e4top")]
 position = Vector2(61, 43)
 flip = true
-text = "hi there [color=yellow][wave] you can trust me [wave amp=50.0] ? [/ve amp=50.0][color=white][fade start=2 length =3]right"
+text = "at this [b]company[/b] are employes havent trusted each over for a long time so were going to be doing some [wave][color=yellow] trust exsersises"
+text_box_play_on_load = true
 
 [node name="player" parent="." unique_id=1794095932 instance=ExtResource("4_j70h5")]
 position = Vector2(-143, 54)

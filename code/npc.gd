@@ -14,7 +14,7 @@ var text_panle_visible: bool = false
 var can_play_text = false
 
 func _ready() -> void:
-	
+
 	$Control/PanelContainer/RichTextLabel.append_text(text)
 	$Control/PanelContainer/RichTextLabel.bbcode_enabled
 	$Control/PanelContainer/RichTextLabel.visible_ratio = 0
