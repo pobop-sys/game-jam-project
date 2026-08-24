@@ -3,6 +3,92 @@
 [ext_resource type="Theme" uid="uid://rn6wx8hblfn0" path="res://Mainmenutheme.tres" id="1_0fbet"]
 [ext_resource type="Script" uid="uid://dlxswtutlyi1e" path="res://control.gd" id="2_62e2m"]
 
+[sub_resource type="Animation" id="Animation_62e2m"]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath(".:offset_transform_rotation")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [0.0]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath(".:offset_transform_scale")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(1, 1)]
+}
+tracks/2/type = "value"
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/path = NodePath(".:z_index")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [0]
+}
+
+[sub_resource type="Animation" id="Animation_qtu10"]
+resource_name = "hover"
+length = 0.1
+loop_mode = 2
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath(".:offset_transform_rotation")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.1),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [0.0, 0.061086524]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath(".:offset_transform_scale")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0, 0.1),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Vector2(1, 1), Vector2(1.2, 1.2)]
+}
+tracks/2/type = "value"
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/path = NodePath(".:z_index")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/keys = {
+"times": PackedFloat32Array(0.0009999999, 0.0079),
+"transitions": PackedFloat32Array(1, 1),
+"update": 1,
+"values": [0, 1]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_ee4bf"]
+_data = {
+&"RESET": SubResource("Animation_62e2m"),
+&"hover": SubResource("Animation_qtu10")
+}
+
 [node name="Control" type="Control" unique_id=455978718]
 layout_mode = 3
 anchors_preset = 0
@@ -49,7 +135,11 @@ custom_minimum_size = Vector2(200, 50)
 layout_mode = 2
 size_flags_horizontal = 4
 size_flags_vertical = 10
+offset_transform_enabled = true
 text = "START"
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="Panel/VBoxContainer/Play" unique_id=1494064962]
+libraries/ = SubResource("AnimationLibrary_ee4bf")
 
 [node name="Settings" type="Button" parent="Panel/VBoxContainer" unique_id=1900859795]
 custom_minimum_size = Vector2(200, 50)
@@ -70,10 +160,10 @@ layout_mode = 1
 anchors_preset = 5
 anchor_left = 0.5
 anchor_right = 0.5
-offset_left = 236.0
-offset_top = 64.00001
-offset_right = 703.0
-offset_bottom = 160.0
+offset_left = 212.0
+offset_top = 63.0
+offset_right = 679.0
+offset_bottom = 159.0
 grow_horizontal = 2
 scale = Vector2(1.5326663, 1.9937713)
 theme_override_colors/font_color = Color(1, 1, 1, 1)
@@ -84,5 +174,6 @@ theme_override_font_sizes/font_size = 70
 text = "Trust Me"
 horizontal_alignment = 1
 
+[connection signal="mouse_entered" from="Panel/VBoxContainer/Play" to="Panel/VBoxContainer/Play/AnimationPlayer" method="play" binds= ["hover"]]
 [connection signal="pressed" from="Panel/VBoxContainer/Play" to="." method="_on_play_pressed"]
 [connection signal="pressed" from="Panel/VBoxContainer/Quit" to="." method="_on_quit_pressed"]
