@@ -4,6 +4,7 @@
 [ext_resource type="PackedScene" uid="uid://cfwvfvh166ql5" path="res://scenes/person_box.tscn" id="2_d7y7w"]
 [ext_resource type="PackedScene" uid="uid://bpflyu5t63yie" path="res://scenes/player.tscn" id="3_cdchx"]
 [ext_resource type="PackedScene" uid="uid://b2uxgo1520nkk" path="res://code/camra.tscn" id="4_cdchx"]
+[ext_resource type="PackedScene" uid="uid://cihdg0gfpnjb5" path="res://scenes/npc.tscn" id="5_0kemc"]
 
 [sub_resource type="WorldBoundaryShape2D" id="WorldBoundaryShape2D_6mqeb"]
 
@@ -46,8 +47,11 @@ position = Vector2(-839, -189)
 is_telling_truth = true
 
 [node name="player" parent="." unique_id=1794095932 instance=ExtResource("3_cdchx")]
-position = Vector2(-783, -41)
+position = Vector2(-791, -47)
 
 [node name="camra" parent="." unique_id=262621399 instance=ExtResource("4_cdchx")]
-position = Vector2(-795, -78)
+position = Vector2(-792, -62)
 cam_controls = "left_right"
+
+[node name="npc" parent="." unique_id=960395961 instance=ExtResource("5_0kemc")]
+position = Vector2(-441, -13)
