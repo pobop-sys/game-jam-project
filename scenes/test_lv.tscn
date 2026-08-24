@@ -6,6 +6,7 @@
 [ext_resource type="PackedScene" uid="uid://b2uxgo1520nkk" path="res://code/camra.tscn" id="4_cdchx"]
 [ext_resource type="PackedScene" uid="uid://cihdg0gfpnjb5" path="res://scenes/npc.tscn" id="5_0kemc"]
 [ext_resource type="PackedScene" uid="uid://lym884ydgfrq" path="res://scenes/mysrty_guy.tscn" id="6_f7tsx"]
+[ext_resource type="PackedScene" uid="uid://bu573qbgf2du4" path="res://scenes/next_lv_triger.tscn" id="7_2dsru"]
 
 [sub_resource type="WorldBoundaryShape2D" id="WorldBoundaryShape2D_6mqeb"]
 
@@ -52,10 +53,14 @@ position = Vector2(-791, -47)
 
 [node name="camra" parent="." unique_id=262621399 instance=ExtResource("4_cdchx")]
 position = Vector2(-792, -62)
-cam_controls = "left_right"
+cam_controls = "both"
 
 [node name="npc" parent="." unique_id=960395961 instance=ExtResource("5_0kemc")]
 position = Vector2(-442, -2)
 
 [node name="mysrty guy" parent="." unique_id=458843416 instance=ExtResource("6_f7tsx")]
 position = Vector2(-3, -30)
+
+[node name="next_lv_triger" parent="." unique_id=1818814094 instance=ExtResource("7_2dsru")]
+position = Vector2(179, -23)
+next_lv_location = "res://scenes/level_scense/exposition.tscn"
