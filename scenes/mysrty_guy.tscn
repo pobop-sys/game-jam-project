@@ -202,7 +202,7 @@ texture_filter = 1
 sprite_frames = SubResource("SpriteFrames_6mqeb")
 animation = &"idle"
 autoplay = "idle"
-frame_progress = 0.6468596
+frame_progress = 0.4219537
 flip_h = true
 
 [node name="Control" type="Control" parent="." unique_id=1098908085]
