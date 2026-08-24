@@ -46,7 +46,7 @@ tracks/0/keys = {
 
 [sub_resource type="Animation" id="Animation_4kugp"]
 resource_name = "playe_mystyus_guys_text"
-length = 4.0
+length = 0.001
 tracks/0/type = "bezier"
 tracks/0/imported = false
 tracks/0/enabled = true
