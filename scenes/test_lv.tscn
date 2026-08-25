@@ -53,7 +53,8 @@ position = Vector2(-791, -47)
 
 [node name="camra" parent="." unique_id=262621399 instance=ExtResource("4_cdchx")]
 position = Vector2(-792, -62)
-cam_controls = "both"
+cam_controls = "lock"
+cam_zoom = 2.0
 
 [node name="npc" parent="." unique_id=960395961 instance=ExtResource("5_0kemc")]
 position = Vector2(-442, -2)

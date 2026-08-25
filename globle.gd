@@ -1,6 +1,10 @@
 extends Node
 
+#defalt setings
+@export var music_vol: float
+@export var var_sound_effects: float
 
+#
 var player_pos_y = 0
 var player_pos_x = 0
 
