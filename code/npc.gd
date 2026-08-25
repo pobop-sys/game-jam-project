@@ -3,7 +3,8 @@ extends Node2D
 
 @export var npc_art: int
 @export var animation_lenth: float
-@export_multiline var text:String
+@export_multiline var text: String
+@export_multiline var notes: String
 @export var text_box_hight: float
 @export var flip_spright: bool
 

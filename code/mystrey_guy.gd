@@ -4,6 +4,7 @@ extends Node2D
 @export var flip: bool
 @export var npc_art: int
 @export_multiline var text:String
+@export_multiline var notes: String
 @export var text_visiblity_ratio:float
 @export var text_box_play_on_load: bool
 
