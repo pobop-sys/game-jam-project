@@ -5,6 +5,7 @@ extends Node2D
 @export var animation_lenth: float
 @export_multiline var text:String
 @export var text_box_hight: float
+@export var flip_spright: bool
 
 var npc_art_file_location = [
 	"tin_foil_hat",
@@ -26,6 +27,8 @@ func _ready() -> void:
 	#var npc_load_art = load(npc_art_file_location[npc_art])
 	#$Sprite2D.texture = npc_load_art
 	$AnimatedSprite2D.play(npc_art_file_location[npc_art])
+	$AnimatedSprite2D.flip_h = flip_spright
+	
 	
 func _process(delta: float) -> void:
 	if can_play_text == true:

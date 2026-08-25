@@ -30,7 +30,6 @@ position = Vector2(-1027, -127)
 [node name="person_box2" parent="person_blocks" unique_id=467222343 instance=ExtResource("2_d7y7w")]
 position = Vector2(-1924, -43.999996)
 scale = Vector2(1, 0.5600011)
-is_telling_truth = true
 
 [node name="person_box3" parent="person_blocks" unique_id=598039193 instance=ExtResource("2_d7y7w")]
 position = Vector2(-1484, -87)
