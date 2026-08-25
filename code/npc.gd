@@ -4,6 +4,8 @@ extends Node2D
 @export var npc_art: int
 @export var animation_lenth: float
 @export_multiline var text:String
+@export var text_box_hight: float
+
 var npc_art_file_location = [
 	"tin_foil_hat",
 	"meet"
@@ -15,7 +17,7 @@ var text_panle_visible: bool = false
 var can_play_text = false
 
 func _ready() -> void:
-
+	$Control.position.y = text_box_hight
 	$Control/PanelContainer/RichTextLabel.append_text(text)
 	$Control/PanelContainer/RichTextLabel.bbcode_enabled
 	$Control/PanelContainer/RichTextLabel.visible_ratio = 0
