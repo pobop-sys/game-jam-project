@@ -175,7 +175,7 @@ tracks/0/keys = {
 
 [sub_resource type="Animation" id="Animation_85dea"]
 resource_name = "play_text"
-length = 4.0
+length = 10.0
 tracks/0/type = "bezier"
 tracks/0/imported = false
 tracks/0/enabled = true
@@ -185,7 +185,7 @@ tracks/0/loop_wrap = true
 tracks/0/keys = {
 "handle_modes": PackedInt32Array(0, 0),
 "points": PackedFloat32Array(0, -0.25, 0, 0.25, 0, 1, -0.16666667, -0.16666667, 0, 0),
-"times": PackedFloat32Array(0, 4)
+"times": PackedFloat32Array(0, 10)
 }
 
 [sub_resource type="AnimationLibrary" id="AnimationLibrary_b0bg1"]

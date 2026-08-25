@@ -1,6 +1,7 @@
 extends CharacterBody2D
 
 
+
 const SPEED = 400.0
 const JUMP_VELOCITY = -400.0
 
@@ -36,5 +37,6 @@ func _physics_process(delta: float) -> void:
 	
 	Globle.player_pos_y = position.y
 	Globle.player_pos_x = position.x
+	
 	
 	move_and_slide()

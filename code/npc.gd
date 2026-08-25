@@ -6,6 +6,7 @@ extends Node2D
 @export_multiline var text:String
 var npc_art_file_location = [
 	"tin_foil_hat",
+	"meet"
 	
 ]
 

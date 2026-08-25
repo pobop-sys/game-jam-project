@@ -1,15 +1,23 @@
 extends Node2D
 
-@export var is_telling_truth = false
 
+@export var is_telling_truth = false
+# push dir off = left push on = right push
 @export var effect_push :bool
 @export var push_direction:bool
-# push dir off = left push on = right push
+
+#art file loactions array
+const block_art_file_loactions: Array = [
+	"res://art/block_art/icon.svg"
+	
+]
+@export var wich_block_art_file:int
 
 
 # Called when the node enters the scene tree for the first time.
 func _ready() -> void:
-	pass # Replace with function body.
+	var block_art = load(block_art_file_loactions[wich_block_art_file])
+	$Sprite2D.texture = block_art
 
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
