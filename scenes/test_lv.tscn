@@ -37,6 +37,7 @@ is_telling_truth = true
 
 [node name="person_box3" parent="person_blocks" unique_id=598039193 instance=ExtResource("2_d7y7w")]
 position = Vector2(-1484, -87)
+wich_block_art_file = 1
 
 [node name="person_box4" parent="person_blocks" unique_id=1817722510 instance=ExtResource("2_d7y7w")]
 position = Vector2(-1266, -165)
