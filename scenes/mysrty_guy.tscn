@@ -196,6 +196,7 @@ _data = {
 
 [node name="mysrty guy" type="Node2D" unique_id=458843416]
 script = ExtResource("1_c6ofv")
+text_box_hight = -90
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="." unique_id=820094623]
 texture_filter = 1
