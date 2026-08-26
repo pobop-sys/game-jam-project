@@ -5,7 +5,7 @@ extends Node2D
 var push_dir = 0
 #art file loactions array
 const block_art_file_loactions: Array = [
-	"res://art/block_art/icon.svg"
+	"res://art/block_art/anger guy (platform).png"
 ]
 @export var wich_block_art_file:int
 
