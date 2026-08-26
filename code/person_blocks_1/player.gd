@@ -2,9 +2,9 @@ extends CharacterBody2D
 
 
 
-const SPEED = 150.0
-const PUSH_SPEED = 200
-const JUMP_VELOCITY = -320.0
+const SPEED = 175.0
+const PUSH_SPEED = 5000
+const JUMP_VELOCITY = -275.0
 
 var can_move: bool = true
 

@@ -10,8 +10,8 @@ extends Node2D
 
 var npc_art_file_location = [
 	"tin_foil_hat",
-	"blue_shirt_guy"
-	
+	"blue_shirt_guy",
+	"angry_guy"
 ]
 
 var keep_text_box_up = false

@@ -33,6 +33,7 @@ position = Vector2(-1027, -127)
 [node name="person_box2" parent="person_blocks" unique_id=467222343 instance=ExtResource("2_d7y7w")]
 position = Vector2(-1924, -43.999996)
 scale = Vector2(1, 0.5600011)
+is_telling_truth = true
 
 [node name="person_box3" parent="person_blocks" unique_id=598039193 instance=ExtResource("2_d7y7w")]
 position = Vector2(-1484, -87)
@@ -41,7 +42,9 @@ position = Vector2(-1484, -87)
 position = Vector2(-1266, -165)
 
 [node name="person_box5" parent="person_blocks" unique_id=2008234345 instance=ExtResource("2_d7y7w")]
-position = Vector2(-1710, -109)
+position = Vector2(-2102, -99)
+is_telling_truth = true
+push_varent = "right"
 
 [node name="person_box6" parent="person_blocks" unique_id=699289749 instance=ExtResource("2_d7y7w")]
 position = Vector2(-839, -189)
