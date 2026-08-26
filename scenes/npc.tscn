@@ -4,7 +4,7 @@
 [ext_resource type="Script" uid="uid://cwhd75s51tok" path="res://code/npc.gd" id="1_rv78h"]
 [ext_resource type="Texture2D" uid="uid://xenwvblbbawy" path="res://art/npc art/Tin Foil cat-Sheet (Idle).png" id="3_4wlns"]
 [ext_resource type="FontFile" uid="uid://saxbfopteqk4" path="res://font/Thin Sans.ttf" id="3_7n8xq"]
-[ext_resource type="Texture2D" uid="uid://co0b8op6q518u" path="res://art/Lil cat boi (idle)-Sheet.png" id="3_tl2vt"]
+[ext_resource type="Texture2D" uid="uid://7b113kugakw0" path="res://art/npc art/Blue Shirt Guy (idle)-Sheet.png" id="3_tl2vt"]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_n0klm"]
 atlas = ExtResource("3_tl2vt")
@@ -37,6 +37,10 @@ region = Rect2(192, 0, 32, 32)
 [sub_resource type="AtlasTexture" id="AtlasTexture_gc4mq"]
 atlas = ExtResource("3_tl2vt")
 region = Rect2(224, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_2gr28"]
+atlas = ExtResource("3_tl2vt")
+region = Rect2(256, 0, 32, 32)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_tl2vt"]
 atlas = ExtResource("3_4wlns")
@@ -112,9 +116,12 @@ animations = [{
 }, {
 "duration": 1.0,
 "texture": SubResource("AtlasTexture_gc4mq")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_2gr28")
 }],
 "loop": 1,
-"name": &"meet",
+"name": &"blue_shirt_gut",
 "speed": 10.0
 }, {
 "frames": [{
@@ -382,7 +389,7 @@ _data = {
 
 [node name="npc" type="Node2D" unique_id=960395961]
 script = ExtResource("1_rv78h")
-text_box_hight_above_npc = -100.0
+text_box_hight_above_npc = -80.0
 
 [node name="Sprite2D" type="Sprite2D" parent="." unique_id=818693125]
 visible = false
@@ -397,8 +404,8 @@ region_rect = Rect2(40.18765, 0, 15.108135, 32)
 texture_filter = 1
 position = Vector2(0, -13)
 sprite_frames = SubResource("SpriteFrames_6mqeb")
-animation = &"meet"
-frame_progress = 0.4840279
+animation = &"blue_shirt_gut"
+frame_progress = 0.84449613
 
 [node name="player_collition_detecton" type="Area2D" parent="." unique_id=1890514659]
 texture_filter = 1
@@ -413,15 +420,15 @@ shape = SubResource("RectangleShape2D_6mqeb")
 modulate = Color(1, 1, 1, 0)
 layout_mode = 3
 anchors_preset = 0
-offset_left = -144.0
+offset_left = -125.0
 offset_top = -100.0
-offset_right = -104.0
+offset_right = -85.0
 offset_bottom = -60.0
 
 [node name="PanelContainer" type="PanelContainer" parent="Control" unique_id=122297905]
 layout_mode = 0
-offset_right = 288.0
-offset_bottom = 55.99999
+offset_right = 200.0
+offset_bottom = 40.0
 theme_override_styles/panel = SubResource("StyleBoxFlat_uj6ph")
 
 [node name="RichTextLabel" type="RichTextLabel" parent="Control/PanelContainer" unique_id=1752336690]

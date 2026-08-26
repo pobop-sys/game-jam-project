@@ -10,7 +10,7 @@ extends Node2D
 
 var npc_art_file_location = [
 	"tin_foil_hat",
-	"meet"
+	"blue_shirt_guy"
 	
 ]
 

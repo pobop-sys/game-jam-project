@@ -34,6 +34,7 @@ sources/0 = SubResource("TileSetAtlasSource_h2bti")
 
 [node name="npc" parent="." unique_id=960395961 instance=ExtResource("2_ryveb")]
 position = Vector2(281, 48)
+npc_art = 1
 text = "im just a normle platform so you can [b]trust me"
 
 [node name="player" parent="." unique_id=1794095932 instance=ExtResource("3_3yej5")]
