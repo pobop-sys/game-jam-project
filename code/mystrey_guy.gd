@@ -2,13 +2,18 @@ extends Node2D
 
 
 @export var flip: bool
+@export var text_box_play_on_load: bool
+@export var text_box_hight: int
 @export var npc_art: int
+@export var text_visiblity_ratio:float
 @export_multiline var text:String
 @export_multiline var notes: String
-@export var text_visiblity_ratio:float
-@export var text_box_play_on_load: bool
+
+
 
 func _ready() -> void:
+	$Control.position.y = text_box_hight
+	
 	if flip:
 		$AnimatedSprite2D.flip_h = true
 	else:

@@ -42,12 +42,11 @@ layer_0/tile_data = PackedInt32Array(196610, 65536, 0, 196611, 65536, 0, 196612,
 
 [node name="npc2" parent="npc collection" unique_id=960395961 instance=ExtResource("2_ryveb")]
 position = Vector2(138, 50)
-npc_art = 1
 text = "im just a normle platform so you can [b]trust me"
 
 [node name="npc" parent="npc collection" unique_id=1948154213 instance=ExtResource("2_ryveb")]
 position = Vector2(317, 50)
-npc_art = 1
+npc_art = 0
 text = "i dont [wave] trust them [/wave] never do i trust you ... im crazy
 .... no your crazy"
 flip_spright = true

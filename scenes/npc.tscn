@@ -522,7 +522,7 @@ texture_filter = 1
 position = Vector2(0, -13)
 sprite_frames = SubResource("SpriteFrames_6mqeb")
 animation = &"angry_guy"
-frame_progress = 0.42288417
+frame_progress = 0.5133678
 
 [node name="player_collition_detecton" type="Area2D" parent="." unique_id=1890514659]
 texture_filter = 1
