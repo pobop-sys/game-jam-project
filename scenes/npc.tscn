@@ -382,7 +382,7 @@ _data = {
 
 [node name="npc" type="Node2D" unique_id=960395961]
 script = ExtResource("1_rv78h")
-text_box_hight = -100.0
+text_box_hight_above_npc = -100.0
 
 [node name="Sprite2D" type="Sprite2D" parent="." unique_id=818693125]
 visible = false

@@ -5,7 +5,7 @@ extends Node2D
 @export var animation_lenth: float
 @export_multiline var text: String
 @export_multiline var notes: String
-@export var text_box_hight: float
+@export var text_box_hight_above_npc: float
 @export var flip_spright: bool
 
 var npc_art_file_location = [
@@ -19,12 +19,14 @@ var text_panle_visible: bool = false
 var can_play_text = false
 
 func _ready() -> void:
-	$Control.position.y = text_box_hight
+	$Control.position.y = text_box_hight_above_npc
 	$Control/PanelContainer/RichTextLabel.append_text(text)
 	$Control/PanelContainer/RichTextLabel.bbcode_enabled
 	$Control/PanelContainer/RichTextLabel.visible_ratio = 0
+	
 	if npc_art > len(npc_art_file_location) or npc_art < 0:
 		npc_art = 0
+		
 	$AnimatedSprite2D.play(npc_art_file_location[npc_art])
 	$AnimatedSprite2D.flip_h = flip_spright
 	
@@ -32,6 +34,7 @@ func _ready() -> void:
 func _process(delta: float) -> void:
 	if can_play_text == true:
 		if !keep_text_box_up:
+			print("thingy thingy")
 			$AnimationPlayer.play("text_bar_apearing")
 			keep_text_box_up = true
 		
