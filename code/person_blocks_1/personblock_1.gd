@@ -1,6 +1,8 @@
 extends Node2D
 
 @export var is_telling_truth: bool
+@export var push_varent: String
+var push_dir = 0
 #art file loactions array
 const block_art_file_loactions: Array = [
 	"res://art/block_art/icon.svg"
@@ -10,13 +12,26 @@ const block_art_file_loactions: Array = [
 func _ready() -> void:
 	if !is_telling_truth:
 		$StaticBody2D/CollisionShape2D.set_deferred("disabled",true)
+	
+	if push_varent == "":
+		pass
+		
+	elif push_varent == "right":
+		push_dir = -1
+		
+	elif push_varent == "left":
+		push_dir = 1
+		
 	var block_art = load(block_art_file_loactions[wich_block_art_file])
 	$Sprite2D.texture = block_art
 	print(is_telling_truth)
 	
 
 func _physics_process(delta: float) -> void:
-	pass
+	if $push_detection.body_entered:
+		Globle.push_active = true
+		Globle.push_dir = push_dir
+
 
 
 func _on_area_2d_body_entered(body: Node2D) -> void:

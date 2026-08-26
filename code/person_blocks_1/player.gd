@@ -2,10 +2,17 @@ extends CharacterBody2D
 
 
 
-const SPEED = 300.0
+const SPEED = 150.0
+const PUSH_SPEED = 200
 const JUMP_VELOCITY = -320.0
 
 var can_move: bool = true
+
+func block_push_func():
+	if Globle.push_active:
+		velocity.x = (PUSH_SPEED * Globle.push_dir)
+	
+	else: pass
 
 func _physics_process(delta: float) -> void:
 	
@@ -38,5 +45,6 @@ func _physics_process(delta: float) -> void:
 	Globle.player_pos_y = position.y
 	Globle.player_pos_x = position.x
 	
+	block_push_func()
 	
 	move_and_slide()

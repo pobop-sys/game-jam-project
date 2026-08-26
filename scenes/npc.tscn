@@ -124,6 +124,11 @@ animations = [{
 "name": &"blue_shirt_gut",
 "speed": 10.0
 }, {
+"frames": [],
+"loop": 1,
+"name": &"new_animation",
+"speed": 5.0
+}, {
 "frames": [{
 "duration": 1.0,
 "texture": SubResource("AtlasTexture_tl2vt")
@@ -404,8 +409,7 @@ region_rect = Rect2(40.18765, 0, 15.108135, 32)
 texture_filter = 1
 position = Vector2(0, -13)
 sprite_frames = SubResource("SpriteFrames_6mqeb")
-animation = &"blue_shirt_gut"
-frame_progress = 0.84449613
+animation = &"new_animation"
 
 [node name="player_collition_detecton" type="Area2D" parent="." unique_id=1890514659]
 texture_filter = 1
@@ -420,9 +424,9 @@ shape = SubResource("RectangleShape2D_6mqeb")
 modulate = Color(1, 1, 1, 0)
 layout_mode = 3
 anchors_preset = 0
-offset_left = -125.0
+offset_left = -100.0
 offset_top = -100.0
-offset_right = -85.0
+offset_right = -60.0
 offset_bottom = -60.0
 
 [node name="PanelContainer" type="PanelContainer" parent="Control" unique_id=122297905]

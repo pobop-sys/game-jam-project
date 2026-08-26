@@ -8,6 +8,8 @@ var var_sound_effects: float = 100.0
 var player_pos_y = 0
 var player_pos_x = 0
 
+var push_active:bool = false
+var push_dir:int = 0
 
 func _ready() -> void:
 	pass # Replace with function body.
