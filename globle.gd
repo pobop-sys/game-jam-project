@@ -19,4 +19,5 @@ func _ready() -> void:
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 func _process(delta: float) -> void:
-	pass
+	if play_mg_textbox:
+		print(play_mg_textbox)

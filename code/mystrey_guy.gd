@@ -11,12 +11,14 @@ extends Node2D
 @export_multiline var notes: String
 
 func load_textbox_and_play_anim():
-	$Control.visible = true
+	$AnimationPlayer.play("textbar_apear")
 	$AnimationPlayer.play("play_text")
 
 func _ready() -> void:
 	if !text_box_play_on_load:
-		$Control.visible = false
+		$AnimationPlayer.play_backwards("textbar_apear")
+		print("it has gone back")
+	else: $AnimationPlayer.play("textbar_apear")
 	
 	$Control.position.y = text_box_hight
 	

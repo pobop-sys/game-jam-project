@@ -48,9 +48,9 @@ zoom = Vector2(2, 2)
 [node name="mysrty guy" parent="." unique_id=458843416 instance=ExtResource("3_e4top")]
 position = Vector2(54, 42)
 flip = true
+text_box_play_on_load = true
 text = "at this [b]company[/b] are employes havent trusted each over for a long time so were going to be doing some [color=yellow][wave] trust exsersises [/wave][color=white]. . . . . .
 go throgh this door to start them"
-text_box_play_on_load = true
 
 [node name="player" parent="." unique_id=1794095932 instance=ExtResource("4_j70h5")]
 position = Vector2(-143, 54)
@@ -58,3 +58,5 @@ position = Vector2(-143, 54)
 [node name="next_lv_triger" parent="." unique_id=1818814094 instance=ExtResource("5_6j3do")]
 position = Vector2(174, 40)
 next_lv_location = "res://scenes/level_scense/level_1_tutorial.tscn"
+
+[editable path="mysrty guy"]
