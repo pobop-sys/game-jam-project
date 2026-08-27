@@ -2,6 +2,7 @@
 
 [ext_resource type="Theme" uid="uid://rn6wx8hblfn0" path="res://Mainmenutheme.tres" id="1_0fbet"]
 [ext_resource type="Script" uid="uid://dlxswtutlyi1e" path="res://control.gd" id="2_62e2m"]
+[ext_resource type="Texture2D" uid="uid://750lxd2j4583" path="res://art/trust me backround.jpg" id="3_qtu10"]
 
 [sub_resource type="Animation" id="Animation_62e2m"]
 length = 0.001
@@ -86,91 +87,6 @@ tracks/2/keys = {
 _data = {
 &"RESET": SubResource("Animation_62e2m"),
 &"hover": SubResource("Animation_qtu10")
-}
-
-[sub_resource type="Animation" id="Animation_ee4bf"]
-length = 0.001
-tracks/0/type = "value"
-tracks/0/imported = false
-tracks/0/enabled = true
-tracks/0/path = NodePath(".:offset_transform_scale")
-tracks/0/interp = 1
-tracks/0/loop_wrap = true
-tracks/0/keys = {
-"times": PackedFloat32Array(0),
-"transitions": PackedFloat32Array(1),
-"update": 0,
-"values": [Vector2(1, 1)]
-}
-tracks/1/type = "value"
-tracks/1/imported = false
-tracks/1/enabled = true
-tracks/1/path = NodePath(".:offset_transform_rotation")
-tracks/1/interp = 1
-tracks/1/loop_wrap = true
-tracks/1/keys = {
-"times": PackedFloat32Array(0),
-"transitions": PackedFloat32Array(1),
-"update": 0,
-"values": [0.0]
-}
-tracks/2/type = "value"
-tracks/2/imported = false
-tracks/2/enabled = true
-tracks/2/path = NodePath(".:z_index")
-tracks/2/interp = 1
-tracks/2/loop_wrap = true
-tracks/2/keys = {
-"times": PackedFloat32Array(0),
-"transitions": PackedFloat32Array(1),
-"update": 1,
-"values": [0]
-}
-
-[sub_resource type="Animation" id="Animation_kbped"]
-resource_name = "hovers"
-length = 0.1
-tracks/0/type = "value"
-tracks/0/imported = false
-tracks/0/enabled = true
-tracks/0/path = NodePath(".:offset_transform_scale")
-tracks/0/interp = 1
-tracks/0/loop_wrap = true
-tracks/0/keys = {
-"times": PackedFloat32Array(0, 0.1),
-"transitions": PackedFloat32Array(1, 1),
-"update": 0,
-"values": [Vector2(1, 1), Vector2(1.2, 1.2)]
-}
-tracks/1/type = "value"
-tracks/1/imported = false
-tracks/1/enabled = true
-tracks/1/path = NodePath(".:offset_transform_rotation")
-tracks/1/interp = 1
-tracks/1/loop_wrap = true
-tracks/1/keys = {
-"times": PackedFloat32Array(0, 0.1),
-"transitions": PackedFloat32Array(1, 1),
-"update": 0,
-"values": [0.0, -0.061086524]
-}
-tracks/2/type = "value"
-tracks/2/imported = false
-tracks/2/enabled = true
-tracks/2/path = NodePath(".:z_index")
-tracks/2/interp = 1
-tracks/2/loop_wrap = true
-tracks/2/keys = {
-"times": PackedFloat32Array(0, 0.0079),
-"transitions": PackedFloat32Array(1, 1),
-"update": 1,
-"values": [0, 1]
-}
-
-[sub_resource type="AnimationLibrary" id="AnimationLibrary_fj5cn"]
-_data = {
-&"RESET": SubResource("Animation_ee4bf"),
-&"hovers": SubResource("Animation_kbped")
 }
 
 [sub_resource type="Animation" id="Animation_iy58a"]
@@ -279,7 +195,12 @@ offset_bottom = -9.0
 grow_horizontal = 2
 grow_vertical = 2
 scale = Vector2(29.247383, 16.876911)
-color = Color(0, 0.64923996, 0.5027111, 1)
+color = Color(0, 0, 0, 1)
+
+[node name="TrustMeBackround" type="Sprite2D" parent="ColorRect" unique_id=565218584]
+position = Vector2(19.07863, 19.908855)
+scale = Vector2(0.029628111, 0.045005303)
+texture = ExtResource("3_qtu10")
 
 [node name="Panel" type="Panel" parent="." unique_id=235422508]
 layout_mode = 1
@@ -288,18 +209,20 @@ anchor_left = 14.212001
 anchor_top = 15.900001
 anchor_right = 14.212001
 anchor_bottom = 15.900001
-offset_left = -160.48004
-offset_top = -341.0
-offset_right = 197.51996
-offset_bottom = -70.0
+offset_left = -149.48004
+offset_top = 27.0
+offset_right = 88.51996
+offset_bottom = 131.0
 
 [node name="VBoxContainer" type="VBoxContainer" parent="Panel" unique_id=935240953]
 layout_mode = 1
 anchors_preset = 15
 anchor_right = 1.0
 anchor_bottom = 1.0
-offset_left = -3.0
-offset_right = -3.0
+offset_left = -9.0
+offset_top = -128.0
+offset_right = -9.0
+offset_bottom = -128.0
 grow_horizontal = 2
 grow_vertical = 2
 
@@ -307,60 +230,26 @@ grow_vertical = 2
 custom_minimum_size = Vector2(200, 50)
 layout_mode = 2
 size_flags_horizontal = 4
-size_flags_vertical = 10
+size_flags_vertical = 4
 offset_transform_enabled = true
 text = "START"
 
 [node name="AnimationPlayer" type="AnimationPlayer" parent="Panel/VBoxContainer/Play" unique_id=1494064962]
 libraries/ = SubResource("AnimationLibrary_ee4bf")
 
-[node name="Settings" type="Button" parent="Panel/VBoxContainer" unique_id=1900859795]
-custom_minimum_size = Vector2(200, 50)
-layout_mode = 2
-size_flags_horizontal = 4
-size_flags_vertical = 6
-offset_transform_enabled = true
-text = "SETTINGS"
-
-[node name="AnimationPlayer" type="AnimationPlayer" parent="Panel/VBoxContainer/Settings" unique_id=1705132995]
-libraries/ = SubResource("AnimationLibrary_fj5cn")
-
 [node name="Quit" type="Button" parent="Panel/VBoxContainer" unique_id=1694954543]
 custom_minimum_size = Vector2(200, 50)
 layout_mode = 2
 size_flags_horizontal = 4
-size_flags_vertical = 2
 offset_transform_enabled = true
 text = "QUIT"
 
 [node name="AnimationPlayer" type="AnimationPlayer" parent="Panel/VBoxContainer/Quit" unique_id=1033200196]
 libraries/ = SubResource("AnimationLibrary_sky72")
 
-[node name="Label" type="Label" parent="." unique_id=169914481]
-layout_mode = 1
-anchors_preset = 5
-anchor_left = 0.5
-anchor_right = 0.5
-offset_left = 212.0
-offset_top = 63.0
-offset_right = 679.0
-offset_bottom = 159.0
-grow_horizontal = 2
-scale = Vector2(1.5326663, 1.9937713)
-theme_override_colors/font_color = Color(1, 1, 1, 1)
-theme_override_colors/font_shadow_color = Color(0, 0, 0, 1)
-theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
-theme_override_constants/outline_size = 12
-theme_override_font_sizes/font_size = 70
-text = "Trust Me"
-horizontal_alignment = 1
-
 [connection signal="mouse_entered" from="Panel/VBoxContainer/Play" to="Panel/VBoxContainer/Play/AnimationPlayer" method="play" binds= ["hover"]]
 [connection signal="mouse_exited" from="Panel/VBoxContainer/Play" to="Panel/VBoxContainer/Play/AnimationPlayer" method="play_backwards" binds= ["hover"]]
 [connection signal="pressed" from="Panel/VBoxContainer/Play" to="." method="_on_play_pressed"]
-[connection signal="mouse_entered" from="Panel/VBoxContainer/Settings" to="Panel/VBoxContainer/Settings/AnimationPlayer" method="play" binds= ["hovers"]]
-[connection signal="mouse_exited" from="Panel/VBoxContainer/Settings" to="Panel/VBoxContainer/Settings/AnimationPlayer" method="play_backwards" binds= ["hovers"]]
-[connection signal="pressed" from="Panel/VBoxContainer/Settings" to="." method="_on_settings_pressed"]
 [connection signal="mouse_entered" from="Panel/VBoxContainer/Quit" to="Panel/VBoxContainer/Quit/AnimationPlayer" method="play" binds= ["hoverq"]]
 [connection signal="mouse_exited" from="Panel/VBoxContainer/Quit" to="Panel/VBoxContainer/Quit/AnimationPlayer" method="play_backwards" binds= ["hoverq"]]
 [connection signal="pressed" from="Panel/VBoxContainer/Quit" to="." method="_on_quit_pressed"]
