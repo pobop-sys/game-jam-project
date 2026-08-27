@@ -15,7 +15,8 @@ var npc_art_file_location = [
 	"tin_foil_hat",
 	"blue_shirt_guy",
 	"angry_guy",
-	"inky"
+	"inky",
+	"bingus"
 ]
 
 var keep_text_box_up = false
@@ -23,7 +24,9 @@ var text_panle_visible: bool = false
 var can_play_text = false
 
 func _ready() -> void:
-
+	if npc_art_file_location[4]:
+		$Sprite2D.position.y += 30
+	
 	$Control/PanelContainer.size.x = textbox_size_x
 	$Control/PanelContainer.size.y = textbox_size_y
 	
