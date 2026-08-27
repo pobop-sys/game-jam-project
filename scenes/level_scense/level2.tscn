@@ -6,6 +6,7 @@
 [ext_resource type="PackedScene" uid="uid://b2uxgo1520nkk" path="res://code/camra.tscn" id="4_1cfl7"]
 [ext_resource type="PackedScene" uid="uid://bu573qbgf2du4" path="res://scenes/next_lv_triger.tscn" id="5_2vbgt"]
 [ext_resource type="PackedScene" uid="uid://cihdg0gfpnjb5" path="res://scenes/npc.tscn" id="6_vendf"]
+[ext_resource type="PackedScene" uid="uid://ci0r0juflxelp" path="res://scenes/kill_box.tscn" id="7_q74wv"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_vendf"]
 texture = ExtResource("1_tqjyg")
@@ -68,6 +69,9 @@ physics_layer_0/collision_layer = 1
 sources/0 = SubResource("TileSetAtlasSource_vendf")
 sources/1 = SubResource("TileSetAtlasSource_q74wv")
 
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_q74wv"]
+size = Vector2(429, 27)
+
 [node name="Node2D" type="Node2D" unique_id=860586580]
 
 [node name="TileMap" type="TileMap" parent="." unique_id=1948509847]
@@ -109,3 +113,80 @@ npc_art = 3
 text = "i know i wasnt trustworthy last time but this time, [b] [wave] TRUST ME [/wave]"
 
 [node name="kill boxes" type="Node2D" parent="." unique_id=1487485652]
+
+[node name="kill_box" parent="kill boxes" unique_id=1509410212 instance=ExtResource("7_q74wv")]
+position = Vector2(422, 348)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="kill boxes/kill_box" unique_id=1259817192]
+position = Vector2(135, 35)
+shape = SubResource("RectangleShape2D_q74wv")
+
+[node name="kill_box2" parent="kill boxes" unique_id=1736207824 instance=ExtResource("7_q74wv")]
+position = Vector2(842, 369)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="kill boxes/kill_box2" unique_id=1936205726]
+position = Vector2(143, 17)
+shape = SubResource("RectangleShape2D_q74wv")
+
+[node name="kill_box3" parent="kill boxes" unique_id=2072747917 instance=ExtResource("7_q74wv")]
+position = Vector2(435, 84)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="kill boxes/kill_box3" unique_id=12960119]
+position = Vector2(145, -20)
+shape = SubResource("RectangleShape2D_q74wv")
+
+[node name="kill_box4" parent="kill boxes" unique_id=1372607211 instance=ExtResource("7_q74wv")]
+position = Vector2(795, 140)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="kill boxes/kill_box4" unique_id=1096434891]
+position = Vector2(188, -28)
+shape = SubResource("RectangleShape2D_q74wv")
+
+[node name="kill_box5" parent="kill boxes" unique_id=1178186118 instance=ExtResource("7_q74wv")]
+position = Vector2(417, -118)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="kill boxes/kill_box5" unique_id=1357533444]
+position = Vector2(152, -28)
+shape = SubResource("RectangleShape2D_q74wv")
+
+[node name="kill_box6" parent="kill boxes" unique_id=92095218 instance=ExtResource("7_q74wv")]
+position = Vector2(843, -114)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="kill boxes/kill_box6" unique_id=2063330701]
+position = Vector2(155, -21)
+shape = SubResource("RectangleShape2D_q74wv")
+
+[node name="kill_box7" parent="kill boxes" unique_id=940430106 instance=ExtResource("7_q74wv")]
+position = Vector2(1897, 407)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="kill boxes/kill_box7" unique_id=198184938]
+position = Vector2(149, -45)
+shape = SubResource("RectangleShape2D_q74wv")
+
+[node name="kill_box8" parent="kill boxes" unique_id=221471733 instance=ExtResource("7_q74wv")]
+position = Vector2(2337, 393)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="kill boxes/kill_box8" unique_id=80505219]
+position = Vector2(140, -31)
+shape = SubResource("RectangleShape2D_q74wv")
+
+[node name="kill_box9" parent="kill boxes" unique_id=1836843498 instance=ExtResource("7_q74wv")]
+position = Vector2(2744, 418)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="kill boxes/kill_box9" unique_id=921281267]
+position = Vector2(140, -31)
+shape = SubResource("RectangleShape2D_q74wv")
+
+[node name="kill_box10" parent="kill boxes" unique_id=1471069123 instance=ExtResource("7_q74wv")]
+position = Vector2(3175, 438)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="kill boxes/kill_box10" unique_id=1803349867]
+position = Vector2(140, -31)
+shape = SubResource("RectangleShape2D_q74wv")
+
+[node name="kill_box11" parent="kill boxes" unique_id=1258989589 instance=ExtResource("7_q74wv")]
+position = Vector2(3599, 440)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="kill boxes/kill_box11" unique_id=1319162765]
+position = Vector2(140, -31)
+shape = SubResource("RectangleShape2D_q74wv")
