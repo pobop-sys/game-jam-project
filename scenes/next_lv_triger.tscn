@@ -1,36 +1,23 @@
 [gd_scene format=3 uid="uid://bu573qbgf2du4"]
 
 [ext_resource type="Script" uid="uid://dx5rwmjtavqbn" path="res://code/level_code/next_lv_triger.gd" id="1_rujj3"]
-[ext_resource type="Texture2D" uid="uid://4q335xxs2p" path="res://art/block_art/icon.svg" id="2_v8w74"]
-[ext_resource type="FontFile" uid="uid://saxbfopteqk4" path="res://font/Thin Sans.ttf" id="3_mj0d5"]
+[ext_resource type="Texture2D" uid="uid://d34nplcds8t3q" path="res://art/Door.png" id="2_bo6ga"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_bo6ga"]
-size = Vector2(20, 47)
+size = Vector2(32, 47)
 
 [node name="next_lv_triger" type="Area2D" unique_id=1818814094]
 collision_layer = 8
 collision_mask = 8
 script = ExtResource("1_rujj3")
 
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=537036320]
+texture_filter = 1
+texture = ExtResource("2_bo6ga")
+region_rect = Rect2(14.418076, 11.0296335, 24.85321, 23.578682)
+
 [node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=548229077]
 position = Vector2(0, 0.5)
 shape = SubResource("RectangleShape2D_bo6ga")
-
-[node name="Sprite2D" type="Sprite2D" parent="." unique_id=537036320]
-position = Vector2(-5.9604645e-08, 0.5000005)
-scale = Vector2(0.8333334, 2.0434783)
-texture = ExtResource("2_v8w74")
-region_enabled = true
-region_rect = Rect2(14.418076, 11.0296335, 24.85321, 23.578682)
-
-[node name="Label" type="Label" parent="." unique_id=338527897]
-offset_left = 3.0
-offset_top = -19.0
-offset_right = 40.0
-offset_bottom = 4.0
-rotation = 1.0606594
-theme_override_fonts/font = ExtResource("3_mj0d5")
-theme_override_font_sizes/font_size = 8
-text = "door"
 
 [connection signal="body_entered" from="." to="." method="_on_body_entered"]

@@ -14,6 +14,9 @@ func _ready() -> void:
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 func _process(delta: float) -> void:
+	if cam_zoom == 0:
+		cam_zoom += 1
+		
 	pos_to_go_to_x = Globle.player_pos_x
 	pos_to_go_to_y = Globle.player_pos_y
 	$Camera2D.zoom.x = cam_zoom

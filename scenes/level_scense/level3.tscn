@@ -1,0 +1,205 @@
+[gd_scene format=3 uid="uid://ri0xbhy3yufd"]
+
+[ext_resource type="Texture2D" uid="uid://bqly30lu682ru" path="res://art/place_holder_tileset.png" id="1_8306p"]
+[ext_resource type="Script" uid="uid://bjgefhpqfu8a7" path="res://code/level_code/level_3.gd" id="1_m4apw"]
+[ext_resource type="Texture2D" uid="uid://elsnmlnmumws" path="res://art/Floor Tile.png" id="2_lagt3"]
+[ext_resource type="PackedScene" uid="uid://cihdg0gfpnjb5" path="res://scenes/npc.tscn" id="3_mywrq"]
+[ext_resource type="PackedScene" uid="uid://bpflyu5t63yie" path="res://scenes/player.tscn" id="4_mywrq"]
+[ext_resource type="PackedScene" uid="uid://b2uxgo1520nkk" path="res://code/camra.tscn" id="5_t0l5a"]
+[ext_resource type="PackedScene" uid="uid://cfwvfvh166ql5" path="res://scenes/person_box.tscn" id="6_t0l5a"]
+[ext_resource type="PackedScene" uid="uid://ci0r0juflxelp" path="res://scenes/kill_box.tscn" id="7_voc53"]
+
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_t0l5a"]
+texture = ExtResource("1_8306p")
+0:0/0 = 0
+0:0/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
+1:0/0 = 0
+1:0/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
+2:0/0 = 0
+2:0/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
+0:1/0 = 0
+0:1/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
+1:1/0 = 0
+1:1/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
+2:1/0 = 0
+2:1/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
+0:2/0 = 0
+0:2/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
+1:2/0 = 0
+1:2/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
+2:2/0 = 0
+2:2/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
+
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_voc53"]
+texture = ExtResource("2_lagt3")
+0:0/0 = 0
+0:0/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
+1:0/0 = 0
+1:0/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
+2:0/0 = 0
+2:0/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
+3:0/0 = 0
+3:0/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
+0:1/0 = 0
+0:1/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
+1:1/0 = 0
+1:1/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
+2:1/0 = 0
+2:1/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
+3:1/0 = 0
+3:1/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
+0:2/0 = 0
+0:2/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
+1:2/0 = 0
+1:2/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
+2:2/0 = 0
+2:2/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
+3:2/0 = 0
+3:2/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
+0:3/0 = 0
+0:3/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
+1:3/0 = 0
+1:3/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
+2:3/0 = 0
+2:3/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
+3:3/0 = 0
+3:3/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
+
+[sub_resource type="TileSet" id="TileSet_m4apw"]
+physics_layer_0/collision_layer = 1
+sources/0 = SubResource("TileSetAtlasSource_t0l5a")
+sources/1 = SubResource("TileSetAtlasSource_voc53")
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_m4apw"]
+size = Vector2(1735, 88)
+
+[sub_resource type="WorldBoundaryShape2D" id="WorldBoundaryShape2D_uj6ph"]
+distance = -104.0
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_6mqeb"]
+size = Vector2(20, 68)
+
+[sub_resource type="Animation" id="Animation_voc53"]
+length = 0.001
+tracks/0/type = "bezier"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("../camra:cam_zoom")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"handle_modes": PackedInt32Array(0),
+"points": PackedFloat32Array(2, -0.25, 0, 0.25, 0),
+"times": PackedFloat32Array(0)
+}
+
+[sub_resource type="Animation" id="Animation_m4apw"]
+resource_name = "zoom_out"
+length = 0.75
+tracks/0/type = "bezier"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("../camra:cam_zoom")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"handle_modes": PackedInt32Array(0, 2),
+"points": PackedFloat32Array(2, -0.25, 0, 0.25, 0, 1.5, -0.125, 0.083333336, 0, 0),
+"times": PackedFloat32Array(0, 0.75)
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_6ah4u"]
+_data = {
+&"RESET": SubResource("Animation_voc53"),
+&"zoom_out": SubResource("Animation_m4apw")
+}
+
+[node name="lv3" type="Node2D" unique_id=975918988]
+script = ExtResource("1_m4apw")
+
+[node name="TileMap" type="TileMap" parent="." unique_id=429582591]
+texture_filter = 1
+tile_set = SubResource("TileSet_m4apw")
+format = 2
+layer_0/tile_data = PackedInt32Array(262140, 65537, 0, 262141, 65537, 0, 262142, 65537, 0, 262143, 131073, 0, 196608, 131073, 0, 196609, 131073, 0, 196610, 65537, 0, 196611, 65537, 0, 196612, 131073, 0, 196613, 65537, 0, -65540, 131073, 3, -65539, 131073, 3, -65538, 131073, 3, -65537, 65537, 3, -131072, 65537, 3, -131071, 131073, 3, -131070, 65537, 3, -131069, 131073, 3, -131068, 131073, 3, -131067, 65537, 3, -131066, 131073, 3, -131065, 65537, 3, -131064, 65537, 3, -131063, 131073, 3, -131062, 65537, 3, -131061, 131073, 3, 196614, 131073, 0, 196615, 65537, 0, 196616, 65537, 0, 196617, 131073, 0, 196618, 65537, 0, 196619, 131073, 0, 196620, 65537, 0, 196621, 131073, 0, -131060, 65537, 805306368, -131059, 65537, 805306368, -131058, 131073, 805306368, -131057, 131073, 805306368, 196622, 65537, 0, 196623, 65537, 0, 196603, 196609, 2, 131067, 196609, 1, 65531, 196609, 1, -5, 196609, 1, -131056, 196609, 3, -196592, 196609, 2, -262128, 196609, 1, -327664, 196609, 1, -393199, 65537, 3, -393198, 65537, 3, -393197, 131073, 3, -393196, 131073, 3, -393195, 131073, 3, -393194, 65537, 3, -393193, 131073, 3, -393192, 65537, 3, 196624, 65537, 0, 196625, 65537, 0, 196626, 65537, 0, 196627, 131073, 0, 196628, 65537, 0, 196629, 65537, 0, 196630, 65537, 0, 196631, 131073, 0, 196632, 65537, 0, 196633, 65537, 0, 65581, 131073, 0, 131117, 131073, 536870912, 65582, 1, 1342177280, 131118, 1, 805306368, 65579, 1, 0, 131115, 1, 1610612736, 65580, 65537, 0, 131116, 65537, 536870912, -327615, 1, 0, -262079, 1, 1610612736, -327614, 65537, 0, -262078, 131073, 3, -327613, 131073, 0, -262077, 131073, 3, -327612, 65537, 0, -262076, 131073, 3, -327611, 131073, 0, -327610, 65537, 0, -327609, 131073, 0, -327608, 131073, 0, -327607, 65537, 0, -327606, 131073, 0, -327605, 65537, 0, -327604, 65537, 0, -327603, 131073, 0, -327602, 65537, 0, -327601, 65537, 0, -327600, 131073, 0, -327599, 65537, 0, -327598, 65537, 0, -327597, 131073, 0, -327596, 65537, 0, -327595, 65537, 0, -327594, 131073, 0, -327593, 131073, 0, -262075, 65537, 3, -262074, 65537, 3, -262073, 65537, 3, -262072, 131073, 3, -262071, 65537, 3, -262070, 131073, 3, -262069, 131073, 3, -262068, 131073, 3, -262067, 131073, 3, -262066, 131073, 3, -262065, 131073, 3, -262064, 131073, 3, -262063, 131073, 3, -262062, 65537, 3, -262061, 65537, 3, -262060, 131073, 3, -262059, 131073, 3, -262058, 65537, 3, -262057, 65537, 3, -327592, 196609, 0, -262056, 196609, 1342177280, 655483, 1, 0, 721019, 1, 1610612736, 655484, 65537, 0, 721020, 65537, 536870912, 655485, 131073, 0, 721021, 131073, 536870912, 655486, 1, 1342177280, 721022, 1, 805306368, 655492, 1, 0, 721028, 1, 1610612736, 655493, 65537, 0, 721029, 65537, 536870912, 655494, 131073, 0, 721030, 131073, 536870912, 655495, 1, 1342177280, 721031, 1, 805306368)
+
+[node name="npc contaner" type="Node2D" parent="." unique_id=163855860]
+
+[node name="npc" parent="npc contaner" unique_id=960395961 instance=ExtResource("3_mywrq")]
+position = Vector2(336, 48)
+flip_spright = true
+npc_art = 1
+text = "i like [b]pushing[/b] people but you can still[wave] trust[/wave] me to not just let you fall..... but if i do let go ill still push you"
+
+[node name="npc2" parent="npc contaner" unique_id=121802088 instance=ExtResource("3_mywrq")]
+position = Vector2(1223, -79)
+flip_spright = true
+npc_art = 2
+text = "  im so strested out from work man i dont wana even do this "
+
+[node name="player" parent="." unique_id=1794095932 instance=ExtResource("4_mywrq")]
+position = Vector2(-16, 29)
+
+[node name="camra" parent="." unique_id=262621399 instance=ExtResource("5_t0l5a")]
+position = Vector2(-44, 34)
+cam_controls = "both"
+cam_zoom = 2.0
+
+[node name="person block contaner" type="Node2D" parent="." unique_id=1503772642]
+
+[node name="person_box" parent="person block contaner" unique_id=1183462229 instance=ExtResource("6_t0l5a")]
+position = Vector2(546, 62)
+is_telling_truth = true
+push_varent = "right"
+wich_block_art_file = 1
+
+[node name="person_box2" parent="person block contaner" unique_id=1004051715 instance=ExtResource("6_t0l5a")]
+position = Vector2(864, 66)
+is_telling_truth = true
+push_varent = "up"
+wich_block_art_file = 1
+
+[node name="person_box3" parent="person block contaner" unique_id=331723089 instance=ExtResource("6_t0l5a")]
+position = Vector2(1537, -29)
+is_telling_truth = true
+push_varent = "right"
+wich_block_art_file = 1
+
+[node name="person_box4" parent="person block contaner" unique_id=850252879 instance=ExtResource("6_t0l5a")]
+position = Vector2(1751, -23)
+
+[node name="person_box5" parent="person block contaner" unique_id=1644789720 instance=ExtResource("6_t0l5a")]
+position = Vector2(1832, 182)
+is_telling_truth = true
+wich_block_art_file = 1
+
+[node name="person_box6" parent="person block contaner" unique_id=82030439 instance=ExtResource("6_t0l5a")]
+position = Vector2(2274, 205)
+is_telling_truth = true
+push_varent = "up"
+wich_block_art_file = 1
+
+[node name="kill_box" parent="." unique_id=1509410212 instance=ExtResource("7_voc53")]
+position = Vector2(243, 284)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="kill_box" unique_id=1548942179]
+position = Vector2(519.5, -59)
+shape = SubResource("RectangleShape2D_m4apw")
+
+[node name="CollisionShape2D2" type="CollisionShape2D" parent="kill_box" unique_id=1420504406]
+position = Vector2(1509, -27)
+shape = SubResource("WorldBoundaryShape2D_uj6ph")
+
+[node name="lv ditecitons" type="Node2D" parent="." unique_id=625722263]
+
+[node name="Area2D" type="Area2D" parent="lv ditecitons" unique_id=1312928209]
+collision_mask = 8
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="lv ditecitons/Area2D" unique_id=820296779]
+position = Vector2(1292, -111)
+shape = SubResource("RectangleShape2D_6mqeb")
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="lv ditecitons" unique_id=1343495223]
+libraries/ = SubResource("AnimationLibrary_6ah4u")
+
+[connection signal="body_entered" from="lv ditecitons/Area2D" to="." method="_on_area_2d_body_entered"]
