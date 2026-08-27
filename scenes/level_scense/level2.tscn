@@ -4,6 +4,7 @@
 [ext_resource type="Texture2D" uid="uid://elsnmlnmumws" path="res://art/Floor Tile.png" id="2_1cfl7"]
 [ext_resource type="PackedScene" uid="uid://bpflyu5t63yie" path="res://scenes/player.tscn" id="3_2vbgt"]
 [ext_resource type="PackedScene" uid="uid://b2uxgo1520nkk" path="res://code/camra.tscn" id="4_1cfl7"]
+[ext_resource type="PackedScene" uid="uid://bu573qbgf2du4" path="res://scenes/next_lv_triger.tscn" id="5_2vbgt"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_vendf"]
 texture = ExtResource("1_tqjyg")
@@ -81,3 +82,7 @@ position = Vector2(-80, -30)
 position = Vector2(-205, -81)
 cam_controls = "both"
 cam_zoom = 2.0
+
+[node name="next_lv_triger" parent="." unique_id=1818814094 instance=ExtResource("5_2vbgt")]
+position = Vector2(1642, -243)
+next_lv_location = "res://scenes/level_scense/level3.tscn"

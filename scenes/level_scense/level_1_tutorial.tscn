@@ -125,14 +125,11 @@ position = Vector2(0, 199)
 wich_block_art_file = 2
 notes = "inky person box"
 
-[node name="person_box2" parent="person_box contaner" unique_id=1561027005 instance=ExtResource("7_htq86")]
-position = Vector2(9, -136)
-scale = Vector2(0.9967079, 0.8145798)
+[node name="person_box2" parent="person_box contaner" unique_id=260205588 instance=ExtResource("7_htq86")]
+position = Vector2(-2, -99)
 is_telling_truth = true
 wich_block_art_file = 4
-
-[node name="Sprite2D" parent="person_box contaner/person_box2" index="2" unique_id=46101133]
-position = Vector2(0, 28.235416)
+notes = "inky person box"
 
 [node name="TileMap" type="TileMap" parent="." unique_id=864894871]
 texture_filter = 1
@@ -198,5 +195,3 @@ position = Vector2(1546, -231)
 next_lv_location = "res://scenes/level_scense/level2.tscn"
 
 [connection signal="body_entered" from="level_detections/Area2D" to="." method="_on_area_2d_body_entered"]
-
-[editable path="person_box contaner/person_box2"]

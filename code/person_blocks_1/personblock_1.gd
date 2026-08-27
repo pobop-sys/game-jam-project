@@ -32,7 +32,7 @@ func _ready() -> void:
 	$Sprite2D.texture = block_art
 	print(is_telling_truth)
 	if block_art_file_loactions[wich_block_art_file] == "res://art/block_art/Tinfoil hat (platform) .png":
-		$Sprite2D.global_position.y -= 17
+		$Sprite2D.global_position.y += 29
 	
 
 func _on_area_2d_body_entered(body: Node2D) -> void:
