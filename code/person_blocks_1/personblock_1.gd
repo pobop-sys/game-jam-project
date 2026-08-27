@@ -6,10 +6,11 @@ var push_dir = 0
 #art file loactions array
 const block_art_file_loactions: Array = [
 	"res://art/block_art/anger guy (platform).png",
-	"res://art/block_art/Blue shirt guy (platform).png"
+	"res://art/block_art/Blue shirt guy (platform).png",
+	"res://art/block_art/Inky (platform).png"
 ]
 @export var wich_block_art_file:int
-
+@export_multiline var notes:String
 func _ready() -> void:
 	if !is_telling_truth:
 		$StaticBody2D/CollisionShape2D.set_deferred("disabled",true)

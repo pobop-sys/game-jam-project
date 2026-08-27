@@ -6,7 +6,7 @@
 [ext_resource type="FontFile" uid="uid://saxbfopteqk4" path="res://font/Thin Sans.ttf" id="3_7n8xq"]
 [ext_resource type="Texture2D" uid="uid://ds303ly4r7dhe" path="res://art/npc art/anger guy (idle)-Sheet.png" id="3_hwkja"]
 [ext_resource type="Texture2D" uid="uid://7b113kugakw0" path="res://art/npc art/Blue Shirt Guy (idle)-Sheet.png" id="3_tl2vt"]
-[ext_resource type="Texture2D" uid="uid://ceqseu3nx16us" path="res://art/Inky-Sheet (idle).png" id="5_hwkja"]
+[ext_resource type="Texture2D" uid="uid://ceqseu3nx16us" path="res://art/npc art/Inky-Sheet (idle).png" id="5_hwkja"]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_tkdcp"]
 atlas = ExtResource("3_hwkja")
