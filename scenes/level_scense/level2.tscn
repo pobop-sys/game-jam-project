@@ -100,8 +100,7 @@ next_lv_location = "res://scenes/level_scense/level3.tscn"
 [node name="npc" parent="npc collection" unique_id=960395961 instance=ExtResource("6_vendf")]
 position = Vector2(214, -208)
 flip_spright = true
-text = "i dont [wave] trust them [/wave] never do i trust you ... im crazy
-.... no your crazy"
+text = "i dont [color=yellow][wave]trust [/wave] [color=white]these boxes the way there coping me i dont like it"
 
 [node name="npc2" parent="npc collection" unique_id=1471015895 instance=ExtResource("6_vendf")]
 position = Vector2(196, -33)
