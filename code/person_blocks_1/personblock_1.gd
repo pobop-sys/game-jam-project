@@ -8,10 +8,12 @@ const block_art_file_loactions: Array = [
 	"res://art/block_art/anger guy (platform).png",
 	"res://art/block_art/Blue shirt guy (platform).png",
 	"res://art/block_art/Inky (platform).png",
-	"res://art/block_art/Bingus (platform).png"
+	"res://art/block_art/Bingus (platform).png",
+	"res://art/block_art/Tinfoil hat (platform) .png"
 ]
 @export var wich_block_art_file:int
 @export_multiline var notes:String
+@export_multiline var array_noets: String
 func _ready() -> void:
 	if !is_telling_truth:
 		$StaticBody2D/CollisionShape2D.set_deferred("disabled",true)
@@ -24,10 +26,13 @@ func _ready() -> void:
 		
 	elif push_varent == "left":
 		push_dir = 1
-		
+	
+	
 	var block_art = load(block_art_file_loactions[wich_block_art_file])
 	$Sprite2D.texture = block_art
 	print(is_telling_truth)
+	if block_art_file_loactions[wich_block_art_file] == "res://art/block_art/Tinfoil hat (platform) .png":
+		$Sprite2D.global_position.y -= 17
 	
 
 func _on_area_2d_body_entered(body: Node2D) -> void:
