@@ -5,6 +5,14 @@
 [ext_resource type="Texture2D" uid="uid://dqfp4g5ak7d4c" path="res://art/Lil cat boi (idle 0.2)-Sheet.png" id="2_qlg0r"]
 [ext_resource type="Texture2D" uid="uid://c0r00xeefnoy7" path="res://art/Lil cat boi (walking 0.2)-Sheet.png" id="4_qlg0r"]
 [ext_resource type="Texture2D" uid="uid://bbt6m2h4ix6fv" path="res://art/Lil cat boi (walking + BELLY BOUNCE)-Sheet.png" id="5_tuyoq"]
+[ext_resource type="AudioStream" uid="uid://c8fbppwrjn4ti" path="res://audio/walking sound effects/FEETHmn-CONCRETE_AUDIOELK-Fs Concrete Shoes Pant Ruffles 01_AUDIOELK_AUDIOELK.wav" id="6_jej6c"]
+[ext_resource type="AudioStream" uid="uid://t862mqq4ely3" path="res://audio/walking sound effects/FEETHmn-CONCRETE_AUDIOELK-Fs Concrete Shoes Pant Ruffles 05_AUDIOELK_AUDIOELK.wav" id="7_f1ej7"]
+[ext_resource type="AudioStream" uid="uid://cqkoseyoca605" path="res://audio/walking sound effects/FEETHmn-CONCRETE_AUDIOELK-Fs Concrete Shoes Pant Ruffles 13_AUDIOELK_AUDIOELK.wav" id="8_oprun"]
+[ext_resource type="AudioStream" uid="uid://b5ugh5d7iv6ih" path="res://audio/walking sound effects/FEETHmn-CONCRETE_AUDIOELK-Fs Concrete Shoes Pant Ruffles 15_AUDIOELK_AUDIOELK.wav" id="9_a8ls1"]
+[ext_resource type="AudioStream" uid="uid://chn5p3kul3e8k" path="res://audio/walking sound effects/FEETHmn-CONCRETE_AUDIOELK-Fs Concrete Shoes Pant Ruffles 02_AUDIOELK_AUDIOELK.wav" id="10_qfm1y"]
+[ext_resource type="AudioStream" uid="uid://babjl5yub5c6c" path="res://audio/walking sound effects/FEETHmn-CONCRETE_AUDIOELK-Fs Concrete Shoes Pant Ruffles 10_AUDIOELK_AUDIOELK.wav" id="11_fulsm"]
+[ext_resource type="AudioStream" uid="uid://drf0yyd6ykxht" path="res://audio/walking sound effects/FEETHmn-CONCRETE_AUDIOELK-Fs Concrete Shoes Pant Ruffles 14_AUDIOELK_AUDIOELK.wav" id="12_4r5pv"]
+[ext_resource type="AudioStream" uid="uid://bymshot66j25a" path="res://audio/walking sound effects/FEETHmn-CONCRETE_AUDIOELK-Fs Concrete Shoes Pant Ruffles 16_AUDIOELK_AUDIOELK.wav" id="13_60mlk"]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_smehm"]
 atlas = ExtResource("2_qlg0r")
@@ -172,6 +180,19 @@ animations = [{
 [sub_resource type="CircleShape2D" id="CircleShape2D_6mqeb"]
 radius = 9.0
 
+[sub_resource type="AudioStreamRandomizer" id="AudioStreamRandomizer_6mqeb"]
+playback_mode = 1
+random_volume_offset_db = 4.48
+streams_count = 8
+stream_0/stream = ExtResource("6_jej6c")
+stream_1/stream = ExtResource("7_f1ej7")
+stream_2/stream = ExtResource("8_oprun")
+stream_3/stream = ExtResource("9_a8ls1")
+stream_4/stream = ExtResource("10_qfm1y")
+stream_5/stream = ExtResource("11_fulsm")
+stream_6/stream = ExtResource("12_4r5pv")
+stream_7/stream = ExtResource("13_60mlk")
+
 [node name="player" type="CharacterBody2D" unique_id=1794095932]
 collision_layer = 41
 collision_mask = 9
@@ -187,3 +208,7 @@ frame_progress = 0.20986916
 [node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=285410417]
 position = Vector2(0, 4)
 shape = SubResource("CircleShape2D_6mqeb")
+
+[node name="AudioStreamPlayer2D" type="AudioStreamPlayer2D" parent="." unique_id=116603138]
+stream = SubResource("AudioStreamRandomizer_6mqeb")
+volume_db = 1.0

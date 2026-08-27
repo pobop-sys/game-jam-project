@@ -2,6 +2,7 @@
 
 [ext_resource type="Script" uid="uid://cbg3uumnv5po2" path="res://code/death_screan.gd" id="1_x5obw"]
 [ext_resource type="FontFile" uid="uid://saxbfopteqk4" path="res://font/Thin Sans.ttf" id="2_llvbl"]
+[ext_resource type="AudioStream" uid="uid://df4pjki3o5aad" path="res://audio/death tune take 3.mp3" id="3_llvbl"]
 
 [sub_resource type="Animation" id="Animation_2omps"]
 length = 0.001
@@ -58,12 +59,12 @@ offset_bottom = 40.0
 
 [node name="RichTextLabel" type="RichTextLabel" parent="Control" unique_id=1905398247]
 layout_mode = 0
-offset_left = -200.0
-offset_right = 200.0
+offset_left = -350.0
+offset_right = 350.0
 offset_bottom = 79.0
 theme_override_fonts/normal_font = ExtResource("2_llvbl")
 bbcode_enabled = true
-text = "not everyone can be [color=yellow] [wave]trusted [/wave][color=white]keep that in mind 
+text = "
 "
 scroll_active = false
 visible_characters = 0
@@ -73,5 +74,9 @@ visible_ratio = 0.0
 
 [node name="AnimationPlayer" type="AnimationPlayer" parent="." unique_id=127194659]
 libraries/ = SubResource("AnimationLibrary_rhveo")
+
+[node name="AudioStreamPlayer2D" type="AudioStreamPlayer2D" parent="." unique_id=56506494]
+stream = ExtResource("3_llvbl")
+autoplay = true
 
 [connection signal="timeout" from="Timer" to="." method="_on_timer_timeout"]
