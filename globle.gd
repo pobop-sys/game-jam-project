@@ -11,6 +11,8 @@ var player_pos_x = 0
 var push_active:bool = false
 var push_dir:int = 0
 
+var play_mg_textbox: bool = false
+
 func _ready() -> void:
 	pass # Replace with function body.
 
