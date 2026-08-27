@@ -1,0 +1,109 @@
+[gd_scene format=3 uid="uid://ri0xbhy3yufd"]
+
+[ext_resource type="Texture2D" uid="uid://bqly30lu682ru" path="res://art/place_holder_tileset.png" id="1_8306p"]
+[ext_resource type="Texture2D" uid="uid://elsnmlnmumws" path="res://art/Floor Tile.png" id="2_lagt3"]
+[ext_resource type="PackedScene" uid="uid://cihdg0gfpnjb5" path="res://scenes/npc.tscn" id="3_mywrq"]
+[ext_resource type="PackedScene" uid="uid://bpflyu5t63yie" path="res://scenes/player.tscn" id="4_mywrq"]
+[ext_resource type="PackedScene" uid="uid://b2uxgo1520nkk" path="res://code/camra.tscn" id="5_t0l5a"]
+[ext_resource type="PackedScene" uid="uid://cfwvfvh166ql5" path="res://scenes/person_box.tscn" id="6_t0l5a"]
+[ext_resource type="PackedScene" uid="uid://ci0r0juflxelp" path="res://scenes/kill_box.tscn" id="7_voc53"]
+
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_t0l5a"]
+texture = ExtResource("1_8306p")
+0:0/0 = 0
+0:0/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
+1:0/0 = 0
+1:0/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
+2:0/0 = 0
+2:0/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
+0:1/0 = 0
+0:1/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
+1:1/0 = 0
+1:1/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
+2:1/0 = 0
+2:1/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
+0:2/0 = 0
+0:2/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
+1:2/0 = 0
+1:2/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
+2:2/0 = 0
+2:2/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
+
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_voc53"]
+texture = ExtResource("2_lagt3")
+0:0/0 = 0
+0:0/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
+1:0/0 = 0
+1:0/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
+2:0/0 = 0
+2:0/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
+3:0/0 = 0
+3:0/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
+0:1/0 = 0
+0:1/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
+1:1/0 = 0
+1:1/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
+2:1/0 = 0
+2:1/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
+3:1/0 = 0
+3:1/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
+0:2/0 = 0
+0:2/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
+1:2/0 = 0
+1:2/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
+2:2/0 = 0
+2:2/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
+3:2/0 = 0
+3:2/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
+0:3/0 = 0
+0:3/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
+1:3/0 = 0
+1:3/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
+2:3/0 = 0
+2:3/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
+3:3/0 = 0
+3:3/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
+
+[sub_resource type="TileSet" id="TileSet_m4apw"]
+physics_layer_0/collision_layer = 1
+sources/0 = SubResource("TileSetAtlasSource_t0l5a")
+sources/1 = SubResource("TileSetAtlasSource_voc53")
+
+[sub_resource type="WorldBoundaryShape2D" id="WorldBoundaryShape2D_6mqeb"]
+distance = 155.0
+
+[node name="Node2D" type="Node2D" unique_id=975918988]
+
+[node name="TileMap" type="TileMap" parent="." unique_id=429582591]
+texture_filter = 1
+tile_set = SubResource("TileSet_m4apw")
+format = 2
+layer_0/tile_data = PackedInt32Array(262140, 65537, 0, 262141, 65537, 0, 262142, 65537, 0, 262143, 131073, 0, 196608, 131073, 0, 196609, 131073, 0, 196610, 65537, 0, 196611, 65537, 0, 196612, 131073, 0, 196613, 65537, 0, -65540, 131073, 3, -65539, 131073, 3, -65538, 131073, 3, -65537, 65537, 3, -131072, 65537, 3, -131071, 131073, 3, -131070, 65537, 3, -131069, 131073, 3, -131068, 131073, 3, -131067, 65537, 3, -131066, 131073, 3, -131065, 65537, 3, -131064, 65537, 3, -131063, 131073, 3, -131062, 65537, 3, -131061, 131073, 3, 196614, 131073, 0, 196615, 65537, 0, 196616, 65537, 0, 196617, 131073, 0, 196618, 65537, 0, 196619, 131073, 0, 196620, 65537, 0, 196621, 131073, 0, -131060, 65537, 805306368, -131059, 65537, 805306368, -131058, 131073, 805306368, -131057, 131073, 805306368, 196622, 65537, 0, 196623, 65537, 0, 196603, 196609, 2, 131067, 196609, 1, 65531, 196609, 1, -5, 196609, 1, -131056, 196609, 3, -196592, 196609, 2, -262128, 196609, 1, -327664, 196609, 1, -393199, 65537, 3, -393198, 65537, 3, -393197, 131073, 3, -393196, 131073, 3, -393195, 131073, 3, -393194, 65537, 3, -393193, 131073, 3, -393192, 65537, 3, 196624, 65537, 0, 196625, 65537, 0, 196626, 65537, 0, 196627, 131073, 0, 196628, 65537, 0, 196629, 65537, 0, 196630, 65537, 0, 196631, 131073, 0, 196632, 65537, 0, 196633, 65537, 0)
+
+[node name="npc contaner" type="Node2D" parent="." unique_id=163855860]
+
+[node name="npc" parent="npc contaner" unique_id=960395961 instance=ExtResource("3_mywrq")]
+position = Vector2(336, 48)
+flip_spright = true
+npc_art = 1
+text = "i like [b]pushing[/b] people but you can still[wave] trust[/wave] me to not just let you fall"
+
+[node name="player" parent="." unique_id=1794095932 instance=ExtResource("4_mywrq")]
+position = Vector2(-37, 37)
+
+[node name="camra" parent="." unique_id=262621399 instance=ExtResource("5_t0l5a")]
+position = Vector2(-44, 34)
+cam_controls = "left_right"
+
+[node name="person block contaner" type="Node2D" parent="." unique_id=1503772642]
+
+[node name="person_box" parent="." unique_id=1183462229 instance=ExtResource("6_t0l5a")]
+position = Vector2(546, 62)
+is_telling_truth = true
+wich_block_art_file = 1
+
+[node name="kill_box" parent="." unique_id=1509410212 instance=ExtResource("7_voc53")]
+position = Vector2(243, 284)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="kill_box" unique_id=1548942179]
+shape = SubResource("WorldBoundaryShape2D_6mqeb")
