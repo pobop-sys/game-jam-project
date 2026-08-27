@@ -18,6 +18,7 @@ func _ready() -> void:
 	if !text_box_play_on_load:
 		$AnimationPlayer.play_backwards("textbar_apear")
 		print("it has gone back")
+		
 	else: $AnimationPlayer.play("textbar_apear")
 	
 	$Control.position.y = text_box_hight

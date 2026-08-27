@@ -6,6 +6,7 @@
 [ext_resource type="FontFile" uid="uid://saxbfopteqk4" path="res://font/Thin Sans.ttf" id="3_7n8xq"]
 [ext_resource type="Texture2D" uid="uid://ds303ly4r7dhe" path="res://art/npc art/anger guy (idle)-Sheet.png" id="3_hwkja"]
 [ext_resource type="Texture2D" uid="uid://7b113kugakw0" path="res://art/npc art/Blue Shirt Guy (idle)-Sheet.png" id="3_tl2vt"]
+[ext_resource type="Texture2D" uid="uid://ceqseu3nx16us" path="res://art/Inky-Sheet (idle).png" id="5_hwkja"]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_tkdcp"]
 atlas = ExtResource("3_hwkja")
@@ -102,6 +103,38 @@ region = Rect2(224, 0, 32, 32)
 [sub_resource type="AtlasTexture" id="AtlasTexture_2gr28"]
 atlas = ExtResource("3_tl2vt")
 region = Rect2(256, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_4401o"]
+atlas = ExtResource("5_hwkja")
+region = Rect2(0, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_tla8w"]
+atlas = ExtResource("5_hwkja")
+region = Rect2(32, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_redd5"]
+atlas = ExtResource("5_hwkja")
+region = Rect2(64, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_qq0do"]
+atlas = ExtResource("5_hwkja")
+region = Rect2(96, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_vwnf8"]
+atlas = ExtResource("5_hwkja")
+region = Rect2(128, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_4qspp"]
+atlas = ExtResource("5_hwkja")
+region = Rect2(160, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_cdw63"]
+atlas = ExtResource("5_hwkja")
+region = Rect2(192, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_e8c0b"]
+atlas = ExtResource("5_hwkja")
+region = Rect2(224, 0, 32, 32)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_tl2vt"]
 atlas = ExtResource("3_4wlns")
@@ -233,6 +266,35 @@ animations = [{
 }],
 "loop": 1,
 "name": &"blue_shirt_gut",
+"speed": 10.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_4401o")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_tla8w")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_redd5")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_qq0do")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_vwnf8")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_4qspp")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_cdw63")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_e8c0b")
+}],
+"loop": 1,
+"name": &"inky",
 "speed": 10.0
 }, {
 "frames": [],
@@ -523,8 +585,7 @@ region_rect = Rect2(40.18765, 0, 15.108135, 32)
 texture_filter = 1
 position = Vector2(0, -13)
 sprite_frames = SubResource("SpriteFrames_6mqeb")
-animation = &"angry_guy"
-frame_progress = 0.5133678
+animation = &"inky"
 
 [node name="player_collition_detecton" type="Area2D" parent="." unique_id=1890514659]
 texture_filter = 1
