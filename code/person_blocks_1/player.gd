@@ -3,14 +3,17 @@ extends CharacterBody2D
 
 
 const SPEED = 175.0
-const PUSH_SPEED = 5000
+const PUSH_SPEED = -200
 const JUMP_VELOCITY = -300.0
 
 var can_move: bool = true
 
 func block_push_func():
 	if Globle.push_active:
-		velocity.x = (PUSH_SPEED * Globle.push_dir)
+		if Globle.push_varent == "up":
+			velocity.y = PUSH_SPEED * 3
+		else:
+			velocity.x = (PUSH_SPEED * Globle.push_dir)
 	
 	else: pass
 

@@ -53,6 +53,7 @@ func _on_push_detection_body_entered(body: Node2D) -> void:
 	elif push_varent == "left" or "right":
 		Globle.push_active = true
 		Globle.push_dir = push_dir
+		Globle.push_varent = push_varent
 	 
 
 
