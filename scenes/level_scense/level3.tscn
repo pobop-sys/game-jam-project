@@ -6,11 +6,12 @@
 [ext_resource type="PackedScene" uid="uid://cihdg0gfpnjb5" path="res://scenes/npc.tscn" id="3_mywrq"]
 [ext_resource type="PackedScene" uid="uid://bpflyu5t63yie" path="res://scenes/player.tscn" id="4_mywrq"]
 [ext_resource type="PackedScene" uid="uid://b2uxgo1520nkk" path="res://code/camra.tscn" id="5_t0l5a"]
+[ext_resource type="PackedScene" uid="uid://dvpwvf0barn0o" path="res://scenes/level_scense/music_player.tscn" id="6_klp1p"]
 [ext_resource type="PackedScene" uid="uid://cfwvfvh166ql5" path="res://scenes/person_box.tscn" id="6_t0l5a"]
 [ext_resource type="PackedScene" uid="uid://ci0r0juflxelp" path="res://scenes/kill_box.tscn" id="7_voc53"]
 [ext_resource type="PackedScene" uid="uid://bu573qbgf2du4" path="res://scenes/next_lv_triger.tscn" id="9_6ah4u"]
 
-[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_t0l5a"]
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_5wpgg"]
 texture = ExtResource("1_8306p")
 0:0/0 = 0
 0:0/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
@@ -31,7 +32,7 @@ texture = ExtResource("1_8306p")
 2:2/0 = 0
 2:2/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
 
-[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_voc53"]
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_3u0r8"]
 texture = ExtResource("2_lagt3")
 0:0/0 = 0
 0:0/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
@@ -68,8 +69,8 @@ texture = ExtResource("2_lagt3")
 
 [sub_resource type="TileSet" id="TileSet_m4apw"]
 physics_layer_0/collision_layer = 1
-sources/0 = SubResource("TileSetAtlasSource_t0l5a")
-sources/1 = SubResource("TileSetAtlasSource_voc53")
+sources/0 = SubResource("TileSetAtlasSource_5wpgg")
+sources/1 = SubResource("TileSetAtlasSource_3u0r8")
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_m4apw"]
 size = Vector2(1735, 88)
@@ -141,6 +142,8 @@ text = "  im so strested out from work man i dont wana even do this "
 [node name="player" parent="." unique_id=1794095932 instance=ExtResource("4_mywrq")]
 position = Vector2(-16, 29)
 
+[node name="music_player" parent="player" unique_id=1600698859 instance=ExtResource("6_klp1p")]
+
 [node name="camra" parent="." unique_id=262621399 instance=ExtResource("5_t0l5a")]
 position = Vector2(-44, 34)
 cam_controls = "both"
@@ -205,6 +208,6 @@ libraries/ = SubResource("AnimationLibrary_6ah4u")
 
 [node name="next_lv_triger" parent="." unique_id=1818814094 instance=ExtResource("9_6ah4u")]
 position = Vector2(2615, 10)
-next_lv_location = "res://control.tscn"
+next_lv_location = "res://scenes/level_scense/level_4.tscn"
 
 [connection signal="body_entered" from="lv ditecitons/Area2D" to="." method="_on_area_2d_body_entered"]

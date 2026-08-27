@@ -9,6 +9,7 @@
 [ext_resource type="PackedScene" uid="uid://b2uxgo1520nkk" path="res://code/camra.tscn" id="4_htq86"]
 [ext_resource type="Texture2D" uid="uid://elsnmlnmumws" path="res://art/Floor Tile.png" id="5_vsegf"]
 [ext_resource type="PackedScene" uid="uid://cfwvfvh166ql5" path="res://scenes/person_box.tscn" id="7_htq86"]
+[ext_resource type="PackedScene" uid="uid://dvpwvf0barn0o" path="res://scenes/level_scense/music_player.tscn" id="8_v5k8o"]
 [ext_resource type="PackedScene" uid="uid://ci0r0juflxelp" path="res://scenes/kill_box.tscn" id="9_f8ec4"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_h2bti"]
@@ -122,6 +123,7 @@ position = Vector2(849, -31)
 
 [node name="person_box" parent="person_box contaner" unique_id=1183462229 instance=ExtResource("7_htq86")]
 position = Vector2(0, 199)
+is_telling_truth = true
 wich_block_art_file = 2
 notes = "inky person box"
 
@@ -155,13 +157,15 @@ position = Vector2(162, -90)
 flip = true
 
 [node name="npc3" parent="npc collection" unique_id=743434708 instance=ExtResource("2_ryveb")]
-position = Vector2(1240, 140)
+position = Vector2(1235, 145)
 flip_spright = true
 npc_art = 3
 text = "you actuly [wave] trusted me [/wave] pathetic"
 
 [node name="player" parent="." unique_id=1794095932 instance=ExtResource("3_3yej5")]
 position = Vector2(-201, -74)
+
+[node name="music_player" parent="player" unique_id=1600698859 instance=ExtResource("8_v5k8o")]
 
 [node name="camra" parent="." unique_id=262621399 instance=ExtResource("4_htq86")]
 position = Vector2(-205, -81)
