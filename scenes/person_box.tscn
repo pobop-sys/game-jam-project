@@ -2,7 +2,7 @@
 
 [ext_resource type="Script" uid="uid://dlx3tk1ji2qda" path="res://code/person_blocks_1/personblock_1.gd" id="1_a6jgs"]
 [ext_resource type="Texture2D" uid="uid://bqly30lu682ru" path="res://art/place_holder_tileset.png" id="2_rl5ky"]
-[ext_resource type="Texture2D" uid="uid://3iw6iwg2m0ru" path="res://art/block_art/anger guy (platform).png" id="3_c4ms5"]
+[ext_resource type="Texture2D" uid="uid://cq8adlksqo5kk" path="res://art/block_art/Tinfoil hat (platform) .png" id="3_c4ms5"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_6mqeb"]
 size = Vector2(126.75, 66)
@@ -142,6 +142,11 @@ _data = {
 [node name="person_box" type="Node2D" unique_id=1183462229]
 script = ExtResource("1_a6jgs")
 push_varent = "none"
+array_noets = "0 is angry guy
+1 is blue shirt guy
+2 is inky
+3 bingus
+4 tinfoil hat"
 
 [node name="StaticBody2D" type="StaticBody2D" parent="." unique_id=2021933800]
 

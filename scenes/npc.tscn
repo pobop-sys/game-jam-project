@@ -6,6 +6,7 @@
 [ext_resource type="FontFile" uid="uid://saxbfopteqk4" path="res://font/Thin Sans.ttf" id="3_7n8xq"]
 [ext_resource type="Texture2D" uid="uid://ds303ly4r7dhe" path="res://art/npc art/anger guy (idle)-Sheet.png" id="3_hwkja"]
 [ext_resource type="Texture2D" uid="uid://7b113kugakw0" path="res://art/npc art/Blue Shirt Guy (idle)-Sheet.png" id="3_tl2vt"]
+[ext_resource type="Texture2D" uid="uid://d2c2w36ywxnsd" path="res://art/Bingus-Sheet (idle)-Sheet.png" id="4_0tygy"]
 [ext_resource type="Texture2D" uid="uid://ceqseu3nx16us" path="res://art/npc art/Inky-Sheet (idle).png" id="5_hwkja"]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_tkdcp"]
@@ -67,6 +68,38 @@ region = Rect2(416, 0, 32, 32)
 [sub_resource type="AtlasTexture" id="AtlasTexture_pea3f"]
 atlas = ExtResource("3_hwkja")
 region = Rect2(448, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_r7tq7"]
+atlas = ExtResource("4_0tygy")
+region = Rect2(0, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_gd5op"]
+atlas = ExtResource("4_0tygy")
+region = Rect2(32, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_8d3jw"]
+atlas = ExtResource("4_0tygy")
+region = Rect2(64, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_hufj7"]
+atlas = ExtResource("4_0tygy")
+region = Rect2(96, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_5ssc2"]
+atlas = ExtResource("4_0tygy")
+region = Rect2(128, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_hka15"]
+atlas = ExtResource("4_0tygy")
+region = Rect2(160, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_l1atu"]
+atlas = ExtResource("4_0tygy")
+region = Rect2(192, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_j4p1k"]
+atlas = ExtResource("4_0tygy")
+region = Rect2(224, 0, 32, 32)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_n0klm"]
 atlas = ExtResource("3_tl2vt")
@@ -234,6 +267,35 @@ animations = [{
 }],
 "loop": 1,
 "name": &"angry_guy",
+"speed": 10.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_r7tq7")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_gd5op")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_8d3jw")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_hufj7")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_5ssc2")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_hka15")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_l1atu")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_j4p1k")
+}],
+"loop": 1,
+"name": &"bingus",
 "speed": 10.0
 }, {
 "frames": [{
@@ -567,7 +629,6 @@ _data = {
 
 [node name="npc" type="Node2D" unique_id=960395961]
 script = ExtResource("1_rv78h")
-npc_art = 1
 textbox_size_x = 200
 textbox_size_y = 40
 text_box_hight_above_npc = -80.0
@@ -586,6 +647,7 @@ texture_filter = 1
 position = Vector2(0, -13)
 sprite_frames = SubResource("SpriteFrames_6mqeb")
 animation = &"inky"
+frame_progress = 0.843635
 
 [node name="player_collition_detecton" type="Area2D" parent="." unique_id=1890514659]
 texture_filter = 1
