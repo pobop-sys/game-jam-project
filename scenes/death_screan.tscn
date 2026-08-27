@@ -63,7 +63,7 @@ offset_right = 200.0
 offset_bottom = 79.0
 theme_override_fonts/normal_font = ExtResource("2_llvbl")
 bbcode_enabled = true
-text = "not everyone can be [color=yellow] [wave]trusted [/wave][color=white]keep that in minde 
+text = "not everyone can be [color=yellow] [wave]trusted [/wave][color=white]keep that in mind 
 "
 scroll_active = false
 visible_characters = 0
