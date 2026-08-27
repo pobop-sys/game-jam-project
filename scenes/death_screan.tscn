@@ -1,0 +1,76 @@
+[gd_scene format=3 uid="uid://cycxk1tvpvl2f"]
+
+[ext_resource type="Script" uid="uid://cbg3uumnv5po2" path="res://code/death_screan.gd" id="1_x5obw"]
+[ext_resource type="FontFile" uid="uid://saxbfopteqk4" path="res://font/Thin Sans.ttf" id="2_llvbl"]
+
+[sub_resource type="Animation" id="Animation_2omps"]
+length = 0.001
+tracks/0/type = "bezier"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Control/RichTextLabel:visible_ratio")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"handle_modes": PackedInt32Array(0),
+"points": PackedFloat32Array(0, -0.25, 0, 0.25, 0),
+"times": PackedFloat32Array(0)
+}
+
+[sub_resource type="Animation" id="Animation_4s2d4"]
+resource_name = "tetx_apear"
+length = 5.0
+tracks/0/type = "bezier"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Control/RichTextLabel:visible_ratio")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"handle_modes": PackedInt32Array(0, 2),
+"points": PackedFloat32Array(0, -0.25, 0, 0.25, 0, 1, -0.8333334, -0.16666667, 0, 0),
+"times": PackedFloat32Array(0, 5)
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_rhveo"]
+_data = {
+&"RESET": SubResource("Animation_2omps"),
+&"tetx_apear": SubResource("Animation_4s2d4")
+}
+
+[node name="death_screan" type="Node2D" unique_id=1945935232]
+script = ExtResource("1_x5obw")
+
+[node name="ColorRect" type="ColorRect" parent="." unique_id=2048184529]
+offset_left = -578.0
+offset_top = -323.0
+offset_right = 575.0
+offset_bottom = 328.0
+color = Color(0, 0, 0, 1)
+
+[node name="Camera2D" type="Camera2D" parent="." unique_id=904966800]
+
+[node name="Control" type="Control" parent="." unique_id=206999507]
+layout_mode = 3
+anchors_preset = 0
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="RichTextLabel" type="RichTextLabel" parent="Control" unique_id=1905398247]
+layout_mode = 0
+offset_left = -200.0
+offset_right = 200.0
+offset_bottom = 79.0
+theme_override_fonts/normal_font = ExtResource("2_llvbl")
+bbcode_enabled = true
+text = "not everyone can be [color=yellow] [wave]trusted [/wave][color=white]keep that in minde 
+"
+visible_characters = 0
+visible_ratio = 0.0
+
+[node name="Timer" type="Timer" parent="." unique_id=1990876258]
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="." unique_id=127194659]
+libraries/ = SubResource("AnimationLibrary_rhveo")
+
+[connection signal="timeout" from="Timer" to="." method="_on_timer_timeout"]

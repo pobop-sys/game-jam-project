@@ -5,6 +5,7 @@
 [ext_resource type="PackedScene" uid="uid://lym884ydgfrq" path="res://scenes/mysrty_guy.tscn" id="3_e4top"]
 [ext_resource type="PackedScene" uid="uid://bpflyu5t63yie" path="res://scenes/player.tscn" id="4_j70h5"]
 [ext_resource type="PackedScene" uid="uid://bu573qbgf2du4" path="res://scenes/next_lv_triger.tscn" id="5_6j3do"]
+[ext_resource type="PackedScene" uid="uid://ci0r0juflxelp" path="res://scenes/kill_box.tscn" id="6_e4top"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_4kugp"]
 texture = ExtResource("2_6j3do")
@@ -58,5 +59,8 @@ position = Vector2(-143, 54)
 [node name="next_lv_triger" parent="." unique_id=1818814094 instance=ExtResource("5_6j3do")]
 position = Vector2(174, 40)
 next_lv_location = "res://scenes/level_scense/level_1_tutorial.tscn"
+
+[node name="kill_box" parent="." unique_id=1509410212 instance=ExtResource("6_e4top")]
+position = Vector2(-153, -9)
 
 [editable path="mysrty guy"]

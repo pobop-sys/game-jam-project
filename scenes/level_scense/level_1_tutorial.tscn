@@ -4,6 +4,7 @@
 [ext_resource type="Texture2D" uid="uid://bqly30lu682ru" path="res://art/place_holder_tileset.png" id="1_r6wtk"]
 [ext_resource type="PackedScene" uid="uid://cihdg0gfpnjb5" path="res://scenes/npc.tscn" id="2_ryveb"]
 [ext_resource type="PackedScene" uid="uid://bpflyu5t63yie" path="res://scenes/player.tscn" id="3_3yej5"]
+[ext_resource type="PackedScene" uid="uid://bu573qbgf2du4" path="res://scenes/next_lv_triger.tscn" id="3_k2noa"]
 [ext_resource type="PackedScene" uid="uid://lym884ydgfrq" path="res://scenes/mysrty_guy.tscn" id="3_ryveb"]
 [ext_resource type="PackedScene" uid="uid://b2uxgo1520nkk" path="res://code/camra.tscn" id="4_htq86"]
 [ext_resource type="PackedScene" uid="uid://cfwvfvh166ql5" path="res://scenes/person_box.tscn" id="7_htq86"]
@@ -82,6 +83,9 @@ position = Vector2(849, -31)
 is_telling_truth = true
 wich_block_art_file = 2
 notes = "inky person box"
+
+[node name="next_lv_triger" parent="person_box contaner" unique_id=1818814094 instance=ExtResource("3_k2noa")]
+position = Vector2(701, -53)
 
 [node name="TileMap" type="TileMap" parent="." unique_id=864894871]
 texture_filter = 1

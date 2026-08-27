@@ -13,6 +13,8 @@ var push_dir:int = 0
 
 var play_mg_textbox: bool = false
 
+var current_scene: String
+
 func _ready() -> void:
 	pass # Replace with function body.
 

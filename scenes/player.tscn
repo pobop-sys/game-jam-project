@@ -3,7 +3,7 @@
 [ext_resource type="Script" uid="uid://51edlqoiofak" path="res://code/person_blocks_1/player.gd" id="1_g2els"]
 [ext_resource type="Texture2D" uid="uid://4q335xxs2p" path="res://art/block_art/icon.svg" id="2_qhqgy"]
 [ext_resource type="Texture2D" uid="uid://dqfp4g5ak7d4c" path="res://art/Lil cat boi (idle 0.2)-Sheet.png" id="2_qlg0r"]
-[ext_resource type="Texture2D" uid="uid://bxrf5xvqlfetr" path="res://art/Lil cat boi (walking)-Sheet.png" id="4_qlg0r"]
+[ext_resource type="Texture2D" uid="uid://c0r00xeefnoy7" path="res://art/Lil cat boi (walking 0.2)-Sheet.png" id="4_qlg0r"]
 [ext_resource type="Texture2D" uid="uid://bbt6m2h4ix6fv" path="res://art/Lil cat boi (walking + BELLY BOUNCE)-Sheet.png" id="5_tuyoq"]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_smehm"]
@@ -149,7 +149,7 @@ animations = [{
 }],
 "loop": 1,
 "name": &"walk",
-"speed": 7.0
+"speed": 10.0
 }, {
 "frames": [{
 "duration": 1.0,
@@ -180,9 +180,9 @@ script = ExtResource("1_g2els")
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="." unique_id=408921295]
 texture_filter = 1
 sprite_frames = SubResource("SpriteFrames_uj6ph")
-animation = &"idle"
+animation = &"walk"
 autoplay = "idle"
-frame_progress = 0.046364
+frame_progress = 0.20986916
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=285410417]
 position = Vector2(0, 4)
