@@ -8,6 +8,7 @@
 [ext_resource type="PackedScene" uid="uid://lym884ydgfrq" path="res://scenes/mysrty_guy.tscn" id="3_ryveb"]
 [ext_resource type="PackedScene" uid="uid://b2uxgo1520nkk" path="res://code/camra.tscn" id="4_htq86"]
 [ext_resource type="PackedScene" uid="uid://cfwvfvh166ql5" path="res://scenes/person_box.tscn" id="7_htq86"]
+[ext_resource type="PackedScene" uid="uid://ci0r0juflxelp" path="res://scenes/kill_box.tscn" id="9_f8ec4"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_h2bti"]
 texture = ExtResource("1_r6wtk")
@@ -73,6 +74,9 @@ _data = {
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_6mqeb"]
 size = Vector2(14, 68)
 
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_uj6ph"]
+size = Vector2(429, 27)
+
 [node name="level_1_tutorial" type="Node2D" unique_id=282765044]
 script = ExtResource("1_3yej5")
 
@@ -132,5 +136,12 @@ libraries/ = SubResource("AnimationLibrary_htq86")
 [node name="CollisionShape2D" type="CollisionShape2D" parent="level_detections/Area2D" unique_id=370982724]
 position = Vector2(-1, -6)
 shape = SubResource("RectangleShape2D_6mqeb")
+
+[node name="kill_box" parent="." unique_id=1509410212 instance=ExtResource("9_f8ec4")]
+position = Vector2(622, 268)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="kill_box" unique_id=599161283]
+position = Vector2(143, -3)
+shape = SubResource("RectangleShape2D_uj6ph")
 
 [connection signal="body_entered" from="level_detections/Area2D" to="." method="_on_area_2d_body_entered"]

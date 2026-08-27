@@ -7,7 +7,8 @@ var scene_togo_back_to: String
 
 func _ready() -> void:
 	scene_togo_back_to = Globle.current_scene
-	$Timer.start(10)
+	$Timer.start(7)
+	$AnimationPlayer.play("tetx_apear")
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 
