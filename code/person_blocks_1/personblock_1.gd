@@ -33,6 +33,8 @@ func _ready() -> void:
 	print(is_telling_truth)
 	if block_art_file_loactions[wich_block_art_file] == "res://art/block_art/Tinfoil hat (platform) .png":
 		$Sprite2D.global_position.y += 29
+	elif block_art_file_loactions[wich_block_art_file] == "res://art/block_art/Bingus (platform).png":
+		$Sprite2D.global_position.y -= 48
 	
 
 func _on_area_2d_body_entered(body: Node2D) -> void:
