@@ -39,5 +39,7 @@ sources/0 = SubResource("TileSetAtlasSource_vyml4")
 sources/1 = SubResource("TileSetAtlasSource_gtdhp")
 
 [node name="bacround" type="TileMap" unique_id=1789888838]
+self_modulate = Color(0.48235294, 0.48235294, 0.48235294, 1)
+texture_filter = 1
 tile_set = SubResource("TileSet_6mqeb")
 format = 2
