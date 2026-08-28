@@ -76,6 +76,7 @@ size = Vector2(703, 44)
 [node name="level4" type="Node2D" unique_id=1136940703]
 
 [node name="TileMap" type="TileMap" parent="." unique_id=1557125149]
+self_modulate = Color(0.48235294, 0.48235294, 0.48235294, 1)
 texture_filter = 1
 tile_set = SubResource("TileSet_gad4a")
 format = 2
