@@ -2,6 +2,7 @@
 
 [ext_resource type="Script" uid="uid://cftgr0c238h10" path="res://code/level_code/exposition.gd" id="1_cigvs"]
 [ext_resource type="Texture2D" uid="uid://bqly30lu682ru" path="res://art/place_holder_tileset.png" id="2_6j3do"]
+[ext_resource type="PackedScene" uid="uid://00375daywoir" path="res://scenes/level_scense/bacround.tscn" id="2_j70h5"]
 [ext_resource type="PackedScene" uid="uid://lym884ydgfrq" path="res://scenes/mysrty_guy.tscn" id="3_e4top"]
 [ext_resource type="Texture2D" uid="uid://elsnmlnmumws" path="res://art/Floor Tile.png" id="3_j70h5"]
 [ext_resource type="PackedScene" uid="uid://bpflyu5t63yie" path="res://scenes/player.tscn" id="4_j70h5"]
@@ -68,19 +69,515 @@ physics_layer_0/collision_layer = 1
 sources/0 = SubResource("TileSetAtlasSource_4kugp")
 sources/1 = SubResource("TileSetAtlasSource_yhyf6")
 
+[sub_resource type="Animation" id="Animation_yhyf6"]
+length = 0.001
+tracks/0/type = "bezier"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("mysrty guy:position:x")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"handle_modes": PackedInt32Array(0),
+"points": PackedFloat32Array(54, -0.25, 0, 0.25, 0),
+"times": PackedFloat32Array(0)
+}
+tracks/1/type = "bezier"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("mysrty guy:position:y")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"handle_modes": PackedInt32Array(0),
+"points": PackedFloat32Array(42, -0.25, 0, 0.25, 0),
+"times": PackedFloat32Array(0)
+}
+tracks/2/type = "bezier"
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/path = NodePath("ColorRect:position:x")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/keys = {
+"handle_modes": PackedInt32Array(0),
+"points": PackedFloat32Array(136, -0.25, 0, 0.25, 0),
+"times": PackedFloat32Array(0)
+}
+tracks/3/type = "bezier"
+tracks/3/imported = false
+tracks/3/enabled = true
+tracks/3/path = NodePath("ColorRect:position:y")
+tracks/3/interp = 1
+tracks/3/loop_wrap = true
+tracks/3/keys = {
+"handle_modes": PackedInt32Array(0),
+"points": PackedFloat32Array(-63, -0.25, 0, 0.25, 0),
+"times": PackedFloat32Array(0)
+}
+tracks/4/type = "bezier"
+tracks/4/imported = false
+tracks/4/enabled = true
+tracks/4/path = NodePath("TileMap:z_index")
+tracks/4/interp = 1
+tracks/4/loop_wrap = true
+tracks/4/keys = {
+"handle_modes": PackedInt32Array(0),
+"points": PackedFloat32Array(0, -0.25, 0, 0.25, 0),
+"times": PackedFloat32Array(0)
+}
+tracks/5/type = "bezier"
+tracks/5/imported = false
+tracks/5/enabled = true
+tracks/5/path = NodePath("mysrty guy/Control/PanelContainer:self_modulate:r")
+tracks/5/interp = 1
+tracks/5/loop_wrap = true
+tracks/5/keys = {
+"handle_modes": PackedInt32Array(0),
+"points": PackedFloat32Array(1, -0.25, 0, 0.25, 0),
+"times": PackedFloat32Array(0)
+}
+tracks/6/type = "bezier"
+tracks/6/imported = false
+tracks/6/enabled = true
+tracks/6/path = NodePath("mysrty guy/Control/PanelContainer:self_modulate:g")
+tracks/6/interp = 1
+tracks/6/loop_wrap = true
+tracks/6/keys = {
+"handle_modes": PackedInt32Array(0),
+"points": PackedFloat32Array(1, -0.25, 0, 0.25, 0),
+"times": PackedFloat32Array(0)
+}
+tracks/7/type = "bezier"
+tracks/7/imported = false
+tracks/7/enabled = true
+tracks/7/path = NodePath("mysrty guy/Control/PanelContainer:self_modulate:b")
+tracks/7/interp = 1
+tracks/7/loop_wrap = true
+tracks/7/keys = {
+"handle_modes": PackedInt32Array(0),
+"points": PackedFloat32Array(1, -0.25, 0, 0.25, 0),
+"times": PackedFloat32Array(0)
+}
+tracks/8/type = "bezier"
+tracks/8/imported = false
+tracks/8/enabled = true
+tracks/8/path = NodePath("mysrty guy/Control/PanelContainer:self_modulate:a")
+tracks/8/interp = 1
+tracks/8/loop_wrap = true
+tracks/8/keys = {
+"handle_modes": PackedInt32Array(0),
+"points": PackedFloat32Array(1, -0.25, 0, 0.25, 0),
+"times": PackedFloat32Array(0)
+}
+tracks/9/type = "bezier"
+tracks/9/imported = false
+tracks/9/enabled = true
+tracks/9/path = NodePath("mysrty guy/Control/PanelContainer/RichTextLabel:self_modulate:r")
+tracks/9/interp = 1
+tracks/9/loop_wrap = true
+tracks/9/keys = {
+"handle_modes": PackedInt32Array(0),
+"points": PackedFloat32Array(1, -0.25, 0, 0.25, 0),
+"times": PackedFloat32Array(0)
+}
+tracks/10/type = "bezier"
+tracks/10/imported = false
+tracks/10/enabled = true
+tracks/10/path = NodePath("mysrty guy/Control/PanelContainer/RichTextLabel:self_modulate:g")
+tracks/10/interp = 1
+tracks/10/loop_wrap = true
+tracks/10/keys = {
+"handle_modes": PackedInt32Array(0),
+"points": PackedFloat32Array(1, -0.25, 0, 0.25, 0),
+"times": PackedFloat32Array(0)
+}
+tracks/11/type = "bezier"
+tracks/11/imported = false
+tracks/11/enabled = true
+tracks/11/path = NodePath("mysrty guy/Control/PanelContainer/RichTextLabel:self_modulate:b")
+tracks/11/interp = 1
+tracks/11/loop_wrap = true
+tracks/11/keys = {
+"handle_modes": PackedInt32Array(0),
+"points": PackedFloat32Array(1, -0.25, 0, 0.25, 0),
+"times": PackedFloat32Array(0)
+}
+tracks/12/type = "bezier"
+tracks/12/imported = false
+tracks/12/enabled = true
+tracks/12/path = NodePath("mysrty guy/Control/PanelContainer/RichTextLabel:self_modulate:a")
+tracks/12/interp = 1
+tracks/12/loop_wrap = true
+tracks/12/keys = {
+"handle_modes": PackedInt32Array(0),
+"points": PackedFloat32Array(1, -0.25, 0, 0.25, 0),
+"times": PackedFloat32Array(0)
+}
+tracks/13/type = "bezier"
+tracks/13/imported = false
+tracks/13/enabled = true
+tracks/13/path = NodePath("mysrty guy:self_modulate:r")
+tracks/13/interp = 1
+tracks/13/loop_wrap = true
+tracks/13/keys = {
+"handle_modes": PackedInt32Array(0),
+"points": PackedFloat32Array(1, -0.25, 0, 0.25, 0),
+"times": PackedFloat32Array(0)
+}
+tracks/14/type = "bezier"
+tracks/14/imported = false
+tracks/14/enabled = true
+tracks/14/path = NodePath("mysrty guy:self_modulate:g")
+tracks/14/interp = 1
+tracks/14/loop_wrap = true
+tracks/14/keys = {
+"handle_modes": PackedInt32Array(0),
+"points": PackedFloat32Array(1, -0.25, 0, 0.25, 0),
+"times": PackedFloat32Array(0)
+}
+tracks/15/type = "bezier"
+tracks/15/imported = false
+tracks/15/enabled = true
+tracks/15/path = NodePath("mysrty guy:self_modulate:b")
+tracks/15/interp = 1
+tracks/15/loop_wrap = true
+tracks/15/keys = {
+"handle_modes": PackedInt32Array(0),
+"points": PackedFloat32Array(1, -0.25, 0, 0.25, 0),
+"times": PackedFloat32Array(0)
+}
+tracks/16/type = "bezier"
+tracks/16/imported = false
+tracks/16/enabled = true
+tracks/16/path = NodePath("mysrty guy:self_modulate:a")
+tracks/16/interp = 1
+tracks/16/loop_wrap = true
+tracks/16/keys = {
+"handle_modes": PackedInt32Array(0),
+"points": PackedFloat32Array(1, -0.25, 0, 0.25, 0),
+"times": PackedFloat32Array(0)
+}
+tracks/17/type = "bezier"
+tracks/17/imported = false
+tracks/17/enabled = true
+tracks/17/path = NodePath("ColorRect:self_modulate:r")
+tracks/17/interp = 1
+tracks/17/loop_wrap = true
+tracks/17/keys = {
+"handle_modes": PackedInt32Array(0),
+"points": PackedFloat32Array(1, -0.25, 0, 0.25, 0),
+"times": PackedFloat32Array(0)
+}
+tracks/18/type = "bezier"
+tracks/18/imported = false
+tracks/18/enabled = true
+tracks/18/path = NodePath("ColorRect:self_modulate:g")
+tracks/18/interp = 1
+tracks/18/loop_wrap = true
+tracks/18/keys = {
+"handle_modes": PackedInt32Array(0),
+"points": PackedFloat32Array(1, -0.25, 0, 0.25, 0),
+"times": PackedFloat32Array(0)
+}
+tracks/19/type = "bezier"
+tracks/19/imported = false
+tracks/19/enabled = true
+tracks/19/path = NodePath("ColorRect:self_modulate:b")
+tracks/19/interp = 1
+tracks/19/loop_wrap = true
+tracks/19/keys = {
+"handle_modes": PackedInt32Array(0),
+"points": PackedFloat32Array(1, -0.25, 0, 0.25, 0),
+"times": PackedFloat32Array(0)
+}
+tracks/20/type = "bezier"
+tracks/20/imported = false
+tracks/20/enabled = true
+tracks/20/path = NodePath("ColorRect:self_modulate:a")
+tracks/20/interp = 1
+tracks/20/loop_wrap = true
+tracks/20/keys = {
+"handle_modes": PackedInt32Array(0),
+"points": PackedFloat32Array(1, -0.25, 0, 0.25, 0),
+"times": PackedFloat32Array(0)
+}
+
+[sub_resource type="Animation" id="Animation_05iag"]
+resource_name = "make mg disapear"
+length = 20.1
+tracks/0/type = "bezier"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("mysrty guy:position:x")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"handle_modes": PackedInt32Array(0, 0, 0),
+"points": PackedFloat32Array(137, -0.25, 0, 0.25, 0, 300, -0.16833338, -27.16667, 0, 0, 300, -0.16333327, 0, 0, 0),
+"times": PackedFloat32Array(12.433333, 15.466666, 19.933332)
+}
+tracks/1/type = "bezier"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("mysrty guy:position:y")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"handle_modes": PackedInt32Array(0, 0, 0),
+"points": PackedFloat32Array(45, -0.25, 0, 0.25, 0, 45, -0.16833338, 0, 0, 0, 187, -0.16333327, -23.666668, 0, 0),
+"times": PackedFloat32Array(12.423333, 15.466666, 19.933332)
+}
+tracks/2/type = "bezier"
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/path = NodePath("ColorRect:position:x")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/keys = {
+"handle_modes": PackedInt32Array(2, 2),
+"points": PackedFloat32Array(135, -0.25, 0, 0.25, 0, 135, -3.314539, 0, 0, 0),
+"times": PackedFloat32Array(0.112765744, 20)
+}
+tracks/3/type = "bezier"
+tracks/3/imported = false
+tracks/3/enabled = true
+tracks/3/path = NodePath("ColorRect:position:y")
+tracks/3/interp = 1
+tracks/3/loop_wrap = true
+tracks/3/keys = {
+"handle_modes": PackedInt32Array(2, 2),
+"points": PackedFloat32Array(-62, -0.25, 0, 0.25, 0, -62, -3.314539, 0, 0, 0),
+"times": PackedFloat32Array(0.112765744, 20)
+}
+tracks/4/type = "bezier"
+tracks/4/imported = false
+tracks/4/enabled = true
+tracks/4/path = NodePath("TileMap:z_index")
+tracks/4/interp = 1
+tracks/4/loop_wrap = true
+tracks/4/keys = {
+"handle_modes": PackedInt32Array(0, 0),
+"points": PackedFloat32Array(0, -0.25, 0, 0.25, 0, 4, -0.023333391, -0.6666667, 0, 0),
+"times": PackedFloat32Array(13, 13.066667)
+}
+tracks/5/type = "bezier"
+tracks/5/imported = false
+tracks/5/enabled = true
+tracks/5/path = NodePath("mysrty guy/Control/PanelContainer:self_modulate:r")
+tracks/5/interp = 1
+tracks/5/loop_wrap = true
+tracks/5/keys = {
+"handle_modes": PackedInt32Array(0, 0),
+"points": PackedFloat32Array(1, -0.25, 0, 0.25, 0, 1, -0.10500002, 0, 0, 0),
+"times": PackedFloat32Array(12.4, 13.03)
+}
+tracks/6/type = "bezier"
+tracks/6/imported = false
+tracks/6/enabled = true
+tracks/6/path = NodePath("mysrty guy/Control/PanelContainer:self_modulate:g")
+tracks/6/interp = 1
+tracks/6/loop_wrap = true
+tracks/6/keys = {
+"handle_modes": PackedInt32Array(0, 0),
+"points": PackedFloat32Array(1, -0.25, 0, 0.25, 0, 1, -0.10500002, 0, 0, 0),
+"times": PackedFloat32Array(12.4, 13.03)
+}
+tracks/7/type = "bezier"
+tracks/7/imported = false
+tracks/7/enabled = true
+tracks/7/path = NodePath("mysrty guy/Control/PanelContainer:self_modulate:b")
+tracks/7/interp = 1
+tracks/7/loop_wrap = true
+tracks/7/keys = {
+"handle_modes": PackedInt32Array(0, 0),
+"points": PackedFloat32Array(1, -0.25, 0, 0.25, 0, 1, -0.10500002, 0, 0, 0),
+"times": PackedFloat32Array(12.4, 13.03)
+}
+tracks/8/type = "bezier"
+tracks/8/imported = false
+tracks/8/enabled = true
+tracks/8/path = NodePath("mysrty guy/Control/PanelContainer:self_modulate:a")
+tracks/8/interp = 1
+tracks/8/loop_wrap = true
+tracks/8/keys = {
+"handle_modes": PackedInt32Array(0, 0),
+"points": PackedFloat32Array(1, -0.25, 0, 0.25, 0, 0, -0.10500002, 0.16666666, 0, 0),
+"times": PackedFloat32Array(12.4, 13.03)
+}
+tracks/9/type = "bezier"
+tracks/9/imported = false
+tracks/9/enabled = true
+tracks/9/path = NodePath("mysrty guy/Control/PanelContainer/RichTextLabel:self_modulate:r")
+tracks/9/interp = 1
+tracks/9/loop_wrap = true
+tracks/9/keys = {
+"handle_modes": PackedInt32Array(0, 0),
+"points": PackedFloat32Array(1, -0.25, 0, 0.25, 0, 1, -0.11333339, 0, 0, 0),
+"times": PackedFloat32Array(12.36, 13.04)
+}
+tracks/10/type = "bezier"
+tracks/10/imported = false
+tracks/10/enabled = true
+tracks/10/path = NodePath("mysrty guy/Control/PanelContainer/RichTextLabel:self_modulate:g")
+tracks/10/interp = 1
+tracks/10/loop_wrap = true
+tracks/10/keys = {
+"handle_modes": PackedInt32Array(0, 0),
+"points": PackedFloat32Array(1, -0.25, 0, 0.25, 0, 1, -0.11333339, 0, 0, 0),
+"times": PackedFloat32Array(12.36, 13.04)
+}
+tracks/11/type = "bezier"
+tracks/11/imported = false
+tracks/11/enabled = true
+tracks/11/path = NodePath("mysrty guy/Control/PanelContainer/RichTextLabel:self_modulate:b")
+tracks/11/interp = 1
+tracks/11/loop_wrap = true
+tracks/11/keys = {
+"handle_modes": PackedInt32Array(0, 0),
+"points": PackedFloat32Array(1, -0.25, 0, 0.25, 0, 1, -0.11333339, 0, 0, 0),
+"times": PackedFloat32Array(12.36, 13.04)
+}
+tracks/12/type = "bezier"
+tracks/12/imported = false
+tracks/12/enabled = true
+tracks/12/path = NodePath("mysrty guy/Control/PanelContainer/RichTextLabel:self_modulate:a")
+tracks/12/interp = 1
+tracks/12/loop_wrap = true
+tracks/12/keys = {
+"handle_modes": PackedInt32Array(0, 0),
+"points": PackedFloat32Array(1, -0.25, 0, 0.25, 0, 0, -0.11333339, 0.16666667, 0, 0),
+"times": PackedFloat32Array(12.36, 13.04)
+}
+tracks/13/type = "bezier"
+tracks/13/imported = false
+tracks/13/enabled = true
+tracks/13/path = NodePath("mysrty guy:self_modulate:r")
+tracks/13/interp = 1
+tracks/13/loop_wrap = true
+tracks/13/keys = {
+"handle_modes": PackedInt32Array(0, 2),
+"points": PackedFloat32Array(1, -0.25, 0, 0.25, 0, 1, -0.2067372, 0, 0, 0),
+"times": PackedFloat32Array(18.080107, 19.32053)
+}
+tracks/14/type = "bezier"
+tracks/14/imported = false
+tracks/14/enabled = true
+tracks/14/path = NodePath("mysrty guy:self_modulate:g")
+tracks/14/interp = 1
+tracks/14/loop_wrap = true
+tracks/14/keys = {
+"handle_modes": PackedInt32Array(0, 2),
+"points": PackedFloat32Array(1, -0.25, 0, 0.25, 0, 1, -0.2067372, 0, 0, 0),
+"times": PackedFloat32Array(18.080107, 19.32053)
+}
+tracks/15/type = "bezier"
+tracks/15/imported = false
+tracks/15/enabled = true
+tracks/15/path = NodePath("mysrty guy:self_modulate:b")
+tracks/15/interp = 1
+tracks/15/loop_wrap = true
+tracks/15/keys = {
+"handle_modes": PackedInt32Array(0, 2),
+"points": PackedFloat32Array(1, -0.25, 0, 0.25, 0, 1, -0.2067372, 0, 0, 0),
+"times": PackedFloat32Array(18.080107, 19.32053)
+}
+tracks/16/type = "bezier"
+tracks/16/imported = false
+tracks/16/enabled = true
+tracks/16/path = NodePath("mysrty guy:self_modulate:a")
+tracks/16/interp = 1
+tracks/16/loop_wrap = true
+tracks/16/keys = {
+"handle_modes": PackedInt32Array(0, 2),
+"points": PackedFloat32Array(1, -0.25, 0, 0.25, 0, 0, -0.2067372, 0.16666667, 0, 0),
+"times": PackedFloat32Array(18.080107, 19.32053)
+}
+tracks/17/type = "bezier"
+tracks/17/imported = false
+tracks/17/enabled = true
+tracks/17/path = NodePath("ColorRect:self_modulate:r")
+tracks/17/interp = 1
+tracks/17/loop_wrap = true
+tracks/17/keys = {
+"handle_modes": PackedInt32Array(0, 2),
+"points": PackedFloat32Array(1, -0.25, 0, 0.25, 0, 1, -0.2067372, 0, 0, 0),
+"times": PackedFloat32Array(18.080107, 19.32053)
+}
+tracks/18/type = "bezier"
+tracks/18/imported = false
+tracks/18/enabled = true
+tracks/18/path = NodePath("ColorRect:self_modulate:g")
+tracks/18/interp = 1
+tracks/18/loop_wrap = true
+tracks/18/keys = {
+"handle_modes": PackedInt32Array(0, 2),
+"points": PackedFloat32Array(1, -0.25, 0, 0.25, 0, 1, -0.2067372, 0, 0, 0),
+"times": PackedFloat32Array(18.080107, 19.32053)
+}
+tracks/19/type = "bezier"
+tracks/19/imported = false
+tracks/19/enabled = true
+tracks/19/path = NodePath("ColorRect:self_modulate:b")
+tracks/19/interp = 1
+tracks/19/loop_wrap = true
+tracks/19/keys = {
+"handle_modes": PackedInt32Array(0, 2),
+"points": PackedFloat32Array(1, -0.25, 0, 0.25, 0, 1, -0.2067372, 0, 0, 0),
+"times": PackedFloat32Array(18.080107, 19.32053)
+}
+tracks/20/type = "bezier"
+tracks/20/imported = false
+tracks/20/enabled = true
+tracks/20/path = NodePath("ColorRect:self_modulate:a")
+tracks/20/interp = 1
+tracks/20/loop_wrap = true
+tracks/20/keys = {
+"handle_modes": PackedInt32Array(0, 2),
+"points": PackedFloat32Array(1, -0.25, 0, 0.25, 0, 0, -0.2067372, 0.16666667, 0, 0),
+"times": PackedFloat32Array(18.080107, 19.32053)
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_itpj2"]
+_data = {
+&"RESET": SubResource("Animation_yhyf6"),
+&"make mg disapear": SubResource("Animation_05iag")
+}
+
 [node name="exposition" type="Node2D" unique_id=1552892239]
 script = ExtResource("1_cigvs")
 metadata/_edit_vertical_guides_ = [-92.0]
+
+[node name="bacround" parent="." unique_id=1789888838 instance=ExtResource("2_j70h5")]
+position = Vector2(-37, 18)
+layer_0/tile_data = PackedInt32Array(-393227, 65537, 0, -327691, 1, 3, -262155, 65537, 2, -196619, 196609, 2, -131083, 65537, 2, -65547, 131073, 0, -11, 65537, 2, 65525, 65537, 1, 131061, 131073, 3, 196597, 1, 0, 262133, 65537, 3, 327669, 131073, 0, -393226, 1, 0, -327690, 1, 3, -262154, 131073, 0, -196618, 1, 1, -131082, 65537, 3, -65546, 196609, 0, -10, 131073, 3, 65526, 196609, 3, 131062, 1, 2, 196598, 65537, 0, 262134, 196609, 1, 327670, 196609, 2, -393225, 65537, 0, -327689, 196609, 1, -262153, 65537, 0, -196617, 196609, 3, -131081, 1, 1, -65545, 65537, 3, -9, 196609, 3, 65527, 65537, 1, 131063, 65537, 2, 196599, 196609, 2, 262135, 1, 0, 327671, 65537, 2, -393224, 131073, 0, -327688, 1, 3, -262152, 196609, 3, -196616, 131073, 0, -131080, 1, 2, -65544, 65537, 0, -8, 196609, 1, 65528, 1, 3, 131064, 131073, 2, 196600, 196609, 2, 262136, 196609, 1, 327672, 131073, 0, -393223, 1, 2, -327687, 131073, 1, -262151, 1, 1, -196615, 65537, 1, -131079, 0, 0, -65543, 0, 1, -7, 0, 2, 65529, 196609, 3, 131065, 1, 0, 196601, 131073, 2, 262137, 65537, 3, 327673, 131073, 0, -393222, 1, 1, -327686, 196609, 3, -262150, 1, 0, -196614, 131073, 2, -131078, 65536, 0, -65542, 65536, 1, -6, 65536, 2, 65530, 1, 0, 131066, 65537, 2, 196602, 65537, 1, 262138, 1, 0, 327674, 131073, 0, -393221, 196609, 1, -327685, 65537, 1, -262149, 65537, 2, -196613, 1, 2, -131077, 131072, 0, -65541, 131072, 1, -5, 131072, 2, 65531, 131073, 1, 131067, 65537, 3, 196603, 196609, 1, 262139, 65537, 3, 327675, 131073, 2, -393220, 65537, 3, -327684, 65537, 2, -262148, 196609, 2, -196612, 65537, 2, -131076, 131073, 3, -65540, 65537, 3, -4, 65537, 3, 65532, 196609, 0, 131068, 131073, 0, 196604, 1, 2, 262140, 65537, 0, 327676, 196609, 3, -393219, 65537, 3, -327683, 131073, 3, -262147, 1, 3, -196611, 1, 0, -131075, 65537, 3, -65539, 196609, 0, -3, 65537, 1, 65533, 196609, 0, 131069, 1, 3, 196605, 131073, 3, 262141, 1, 3, 327677, 1, 1, -393218, 1, 3, -327682, 131073, 1, -262146, 196609, 2, -196610, 65537, 2, -131074, 131073, 3, -65538, 65537, 3, -2, 1, 3, 65534, 196609, 3, 131070, 65537, 3, 196606, 131073, 0, 262142, 65537, 1, 327678, 131073, 2, -393217, 1, 3, -327681, 65537, 3, -262145, 65537, 2, -196609, 131073, 0, -131073, 131073, 0, -65537, 65537, 0, -1, 196609, 0, 65535, 65537, 0, 131071, 131073, 1, 196607, 131073, 2, 262143, 1, 3, 327679, 65537, 2, -458752, 1, 1, -393216, 131073, 3, -327680, 1, 1, -262144, 196609, 3, -196608, 1, 1, -131072, 131073, 1, -65536, 131073, 0, 0, 131073, 3, 65536, 1, 2, 131072, 1, 2, 196608, 131073, 2, 262144, 1, 3, -458751, 65537, 1, -393215, 1, 0, -327679, 65537, 0, -262143, 1, 2, -196607, 131073, 0, -131071, 1, 0, -65535, 196609, 3, 1, 65537, 0, 65537, 65537, 1, 131073, 65537, 2, 196609, 196609, 3, 262145, 196609, 3, -458750, 1, 0, -393214, 65537, 3, -327678, 196609, 0, -262142, 1, 2, -196606, 65537, 1, -131070, 65537, 1, -65534, 196609, 2, 2, 65537, 1, 65538, 1, 3, 131074, 1, 2, 196610, 65537, 3, 262146, 1, 3, -458749, 196609, 0, -393213, 131073, 2, -327677, 1, 1, -262141, 196609, 2, -196605, 196609, 3, -131069, 131073, 3, -65533, 1, 1, 3, 1, 1, 65539, 131073, 0, 131075, 196609, 2, 196611, 1, 0, 262147, 65537, 3, -458748, 196609, 0, -393212, 196609, 1, -327676, 131073, 1, -262140, 65537, 1, -196604, 0, 0, -131068, 0, 1, -65532, 0, 2, 4, 196609, 3, 65540, 196609, 0, 131076, 131073, 3, 196612, 131073, 1, 262148, 131073, 2, -458747, 65537, 0, -393211, 196609, 2, -327675, 1, 3, -262139, 1, 3, -196603, 65536, 0, -131067, 65536, 1, -65531, 65536, 2, 5, 1, 0, 65541, 196609, 3, 131077, 196609, 3, 196613, 65537, 2, 262149, 65537, 3, -458746, 65537, 3, -393210, 196609, 0, -327674, 1, 0, -262138, 196609, 1, -196602, 131072, 0, -131066, 131072, 1, -65530, 131072, 2, 6, 131073, 2, 65542, 1, 3, 131078, 131073, 2, 196614, 65537, 2, 262150, 1, 1, -458745, 1, 1, -393209, 1, 1, -327673, 131073, 1, -262137, 1, 2, -196601, 196609, 0, -131065, 65537, 2, -65529, 1, 0, 7, 65537, 1, 65543, 65537, 0, 131079, 1, 0, 196615, 65537, 2, 262151, 131073, 1, -458744, 131073, 3, -393208, 65537, 1, -327672, 131073, 2, -262136, 1, 0, -196600, 1, 1, -131064, 65537, 3, -65528, 196609, 3, 8, 196609, 3, 65544, 131073, 1, 131080, 131073, 0, 196616, 196609, 1, 262152, 1, 3, -458743, 1, 1, -393207, 196609, 2, -327671, 131073, 1, -262135, 131073, 0, -196599, 1, 3, -131063, 196609, 1, -65527, 1, 1, 9, 131073, 2, 65545, 65537, 2, 131081, 65537, 3, 196617, 1, 2, 262153, 1, 0, -458742, 196609, 2, -393206, 1, 1, -327670, 131073, 1, -262134, 196609, 3, -196598, 196609, 3, -131062, 131073, 3, -65526, 196609, 3, 10, 196609, 2, 65546, 65537, 2, 131082, 196609, 3, 196618, 1, 1, 262154, 1, 0, -458741, 196609, 3, -393205, 196609, 2, -327669, 1, 1, -262133, 196609, 3, -196597, 196609, 2, -131061, 196609, 2, -65525, 65537, 0, 11, 131073, 1, 65547, 131073, 2, 131083, 65537, 2, 196619, 65537, 0, 262155, 196609, 2, -458740, 1, 1, -393204, 131073, 0, -327668, 196609, 2, -262132, 131073, 3, -196596, 65537, 1, -131060, 1, 3, -65524, 65537, 2, 12, 196609, 2, 65548, 65537, 1, 131084, 1, 0, 196620, 131073, 0, 262156, 65537, 0, -458739, 131073, 1, -393203, 196609, 3, -327667, 131073, 3, -262131, 131073, 2, -196595, 1, 3, -131059, 131073, 3, -65523, 1, 0, 13, 131073, 0, 65549, 1, 0, 131085, 196609, 0, 196621, 131073, 0, 262157, 131073, 0, -458738, 65537, 2, -393202, 65537, 1, -327666, 196609, 1, -262130, 1, 1, -196594, 65537, 2, -131058, 196609, 2, -65522, 65537, 3, 14, 65537, 0, 65550, 1, 3, 131086, 131073, 2, 196622, 196609, 0, 262158, 196609, 3, -458737, 131073, 0, -393201, 1, 0, -327665, 196609, 0, -262129, 65537, 0, -196593, 196609, 1, -131057, 65537, 1, -65521, 65537, 0, 15, 196609, 2, 65551, 196609, 3, 131087, 1, 3, 196623, 1, 1, 262159, 196609, 2, -458736, 65537, 3, -393200, 1, 0, -327664, 131073, 2, -262128, 131073, 0, -196592, 1, 1, -131056, 131073, 3, -65520, 1, 0, 16, 1, 1, 65552, 65537, 0, 131088, 196609, 1, 196624, 196609, 0, 262160, 1, 2, 786430, 131072, 1)
 
 [node name="next_lv_triger" parent="." unique_id=1818814094 instance=ExtResource("5_6j3do")]
 position = Vector2(174, 40)
 next_lv_location = "res://scenes/level_scense/level_1_tutorial.tscn"
 
+[node name="mysrty guy" parent="." unique_id=458843416 instance=ExtResource("3_e4top")]
+z_index = 1
+position = Vector2(54, 42)
+flip = true
+text_box_play_on_load = true
+text = "at this [b]company[/b] are employes havent trusted each over for a long time so were going to be doing some [color=yellow][wave] trust exsersises [/wave][color=white]. . . . . .
+go throgh this door to start them"
+
+[node name="AnimatedSprite2D" parent="mysrty guy" index="0" unique_id=820094623]
+position = Vector2(-140, -4)
+
+[node name="PanelContainer" parent="mysrty guy/Control" parent_id_path=PackedInt32Array(458843416, 1098908085) index="0" unique_id=1635918244]
+self_modulate = Color(1, 1, 1, 1)
+offset_left = -144.0
+offset_right = 144.0
+
 [node name="ColorRect" type="ColorRect" parent="." unique_id=454373458]
-offset_left = 135.0
+z_index = 2
+offset_left = 136.0
 offset_top = -63.0
-offset_right = 205.0
-offset_bottom = 72.0
+offset_right = 205.00002
+offset_bottom = 64.88843
 color = Color(0, 0, 0, 1)
 
 [node name="TileMap" type="TileMap" parent="." unique_id=633410233]
@@ -93,14 +590,11 @@ layer_0/tile_data = PackedInt32Array(327679, 131073, 0, 327678, 131073, 0, 32767
 [node name="Camera2D" type="Camera2D" parent="." unique_id=1553977316]
 zoom = Vector2(2, 2)
 
-[node name="mysrty guy" parent="." unique_id=458843416 instance=ExtResource("3_e4top")]
-position = Vector2(54, 42)
-flip = true
-text_box_play_on_load = true
-text = "at this [b]company[/b] are employes havent trusted each over for a long time so were going to be doing some [color=yellow][wave] trust exsersises [/wave][color=white]. . . . . .
-go throgh this door to start them"
-
 [node name="player" parent="." unique_id=1794095932 instance=ExtResource("4_j70h5")]
 position = Vector2(-143, 54)
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="." unique_id=863857138]
+libraries/ = SubResource("AnimationLibrary_itpj2")
+autoplay = &"make mg disapear"
 
 [editable path="mysrty guy"]
