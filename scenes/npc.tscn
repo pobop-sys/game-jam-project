@@ -631,7 +631,6 @@ _data = {
 script = ExtResource("1_rv78h")
 textbox_size_x = 200
 textbox_size_y = 40
-text_box_hight_above_npc = -80.0
 
 [node name="Sprite2D" type="Sprite2D" parent="." unique_id=818693125]
 visible = false
