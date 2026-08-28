@@ -30,7 +30,7 @@ func _ready() -> void:
 	$Control/PanelContainer.size.x = textbox_size_x
 	$Control/PanelContainer.size.y = textbox_size_y
 	
-	$Control.position.y = text_box_hight_above_npc
+	$Control.position.y += text_box_hight_above_npc
 	
 	
 	$Control/PanelContainer/RichTextLabel.append_text(text)

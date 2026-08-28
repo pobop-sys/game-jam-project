@@ -6,7 +6,6 @@
 [ext_resource type="Texture2D" uid="uid://elsnmlnmumws" path="res://art/Floor Tile.png" id="3_j70h5"]
 [ext_resource type="PackedScene" uid="uid://bpflyu5t63yie" path="res://scenes/player.tscn" id="4_j70h5"]
 [ext_resource type="PackedScene" uid="uid://bu573qbgf2du4" path="res://scenes/next_lv_triger.tscn" id="5_6j3do"]
-[ext_resource type="PackedScene" uid="uid://ci0r0juflxelp" path="res://scenes/kill_box.tscn" id="6_e4top"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_4kugp"]
 texture = ExtResource("2_6j3do")
@@ -73,6 +72,17 @@ sources/1 = SubResource("TileSetAtlasSource_yhyf6")
 script = ExtResource("1_cigvs")
 metadata/_edit_vertical_guides_ = [-92.0]
 
+[node name="next_lv_triger" parent="." unique_id=1818814094 instance=ExtResource("5_6j3do")]
+position = Vector2(174, 40)
+next_lv_location = "res://scenes/level_scense/level_1_tutorial.tscn"
+
+[node name="ColorRect" type="ColorRect" parent="." unique_id=454373458]
+offset_left = 135.0
+offset_top = -63.0
+offset_right = 205.0
+offset_bottom = 72.0
+color = Color(0, 0, 0, 1)
+
 [node name="TileMap" type="TileMap" parent="." unique_id=633410233]
 texture_filter = 1
 position = Vector2(45, 2)
@@ -92,12 +102,5 @@ go throgh this door to start them"
 
 [node name="player" parent="." unique_id=1794095932 instance=ExtResource("4_j70h5")]
 position = Vector2(-143, 54)
-
-[node name="next_lv_triger" parent="." unique_id=1818814094 instance=ExtResource("5_6j3do")]
-position = Vector2(174, 40)
-next_lv_location = "res://scenes/level_scense/level_1_tutorial.tscn"
-
-[node name="kill_box" parent="." unique_id=1509410212 instance=ExtResource("6_e4top")]
-position = Vector2(-153, -9)
 
 [editable path="mysrty guy"]
