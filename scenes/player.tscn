@@ -3,6 +3,7 @@
 [ext_resource type="Script" uid="uid://51edlqoiofak" path="res://code/person_blocks_1/player.gd" id="1_g2els"]
 [ext_resource type="Texture2D" uid="uid://4q335xxs2p" path="res://art/block_art/icon.svg" id="2_qhqgy"]
 [ext_resource type="Texture2D" uid="uid://dqfp4g5ak7d4c" path="res://art/Lil cat boi (idle 0.2)-Sheet.png" id="2_qlg0r"]
+[ext_resource type="Texture2D" uid="uid://brw7b3ooyl6" path="res://art/lil cat boi (jump)-Sheet.png" id="3_f1ej7"]
 [ext_resource type="Texture2D" uid="uid://c0r00xeefnoy7" path="res://art/Lil cat boi (walking 0.2)-Sheet.png" id="4_qlg0r"]
 [ext_resource type="Texture2D" uid="uid://bbt6m2h4ix6fv" path="res://art/Lil cat boi (walking + BELLY BOUNCE)-Sheet.png" id="5_tuyoq"]
 [ext_resource type="AudioStream" uid="uid://c8fbppwrjn4ti" path="res://audio/walking sound effects/FEETHmn-CONCRETE_AUDIOELK-Fs Concrete Shoes Pant Ruffles 01_AUDIOELK_AUDIOELK.wav" id="6_jej6c"]
@@ -45,6 +46,34 @@ region = Rect2(192, 0, 32, 32)
 [sub_resource type="AtlasTexture" id="AtlasTexture_oprun"]
 atlas = ExtResource("2_qlg0r")
 region = Rect2(224, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_l71n6"]
+atlas = ExtResource("3_f1ej7")
+region = Rect2(0, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_ke2ow"]
+atlas = ExtResource("3_f1ej7")
+region = Rect2(32, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_ujl30"]
+atlas = ExtResource("3_f1ej7")
+region = Rect2(64, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_31cv2"]
+atlas = ExtResource("3_f1ej7")
+region = Rect2(96, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_pf23h"]
+atlas = ExtResource("3_f1ej7")
+region = Rect2(128, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_dt7fs"]
+atlas = ExtResource("3_f1ej7")
+region = Rect2(160, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_wqfne"]
+atlas = ExtResource("3_f1ej7")
+region = Rect2(192, 0, 32, 32)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_dqkch"]
 atlas = ExtResource("2_qhqgy")
@@ -127,6 +156,32 @@ animations = [{
 }, {
 "frames": [{
 "duration": 1.0,
+"texture": SubResource("AtlasTexture_l71n6")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_ke2ow")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_ujl30")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_31cv2")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_pf23h")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_dt7fs")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_wqfne")
+}],
+"loop": 1,
+"name": &"jump",
+"speed": 12.0
+}, {
+"frames": [{
+"duration": 1.0,
 "texture": SubResource("AtlasTexture_dqkch")
 }, {
 "duration": 1.0,
@@ -178,7 +233,7 @@ animations = [{
 }]
 
 [sub_resource type="CircleShape2D" id="CircleShape2D_6mqeb"]
-radius = 9.0
+radius = 9.055386
 
 [sub_resource type="AudioStreamRandomizer" id="AudioStreamRandomizer_6mqeb"]
 playback_mode = 1
@@ -201,9 +256,9 @@ script = ExtResource("1_g2els")
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="." unique_id=408921295]
 texture_filter = 1
 sprite_frames = SubResource("SpriteFrames_uj6ph")
-animation = &"walk"
+animation = &"jump"
 autoplay = "idle"
-frame_progress = 0.20986916
+frame_progress = 0.07052433
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=285410417]
 position = Vector2(0, 4)
