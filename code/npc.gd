@@ -10,6 +10,12 @@ extends Node2D
 @export_multiline var text: String
 @export_multiline var notes: String
 
+var npc_head_art: Array = [
+	"",
+	"",
+	"",
+	"",
+	""]
 
 var npc_art_file_location = [
 	"tin_foil_hat",

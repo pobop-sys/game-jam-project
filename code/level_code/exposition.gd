@@ -1,12 +1,10 @@
 extends Node2D
 
-
-# Called when the node enters the scene tree for the first time.
-func _ready() -> void:
-	pass
-	#$AnimationPlayer.play("playe_mystyus_guys_text")
+var has_played_anim:bool = false
 
 
-# Called every frame. 'delta' is the elapsed time since the previous frame.
-func _process(delta: float) -> void:
-	pass
+func _on_area_2d_body_entered(body: Node2D) -> void:
+	if !has_played_anim:
+		has_played_anim = true
+		$AnimationPlayer.play("thing_animation")
+		
