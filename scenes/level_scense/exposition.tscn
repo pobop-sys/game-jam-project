@@ -561,7 +561,6 @@ next_lv_location = "res://scenes/level_scense/level_1_tutorial.tscn"
 z_index = 1
 position = Vector2(54, 42)
 flip = true
-text_box_play_on_load = true
 text = "at this [b]company[/b] are employes havent trusted each over for a long time so were going to be doing some [color=yellow][wave] trust exsersises [/wave][color=white]. . . . . .
 go throgh this door to start them"
 
