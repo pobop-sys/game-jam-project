@@ -30,8 +30,17 @@ func block_push_func():
 	
 	else: pass
 
-
-
+func animation_handler():
+	if is_on_floor() and !velocity.x == 0:
+		$AnimatedSprite2D.play("walk")
+	elif is_on_floor() and velocity.x == 0:
+		$AnimatedSprite2D.play("idle")
+	if !is_on_floor() and velocity.y < 0:
+		$AnimatedSprite2D.play("jump")
+	if !is_on_floor() and velocity.y > 0:
+		$AnimatedSprite2D.play("falling")
+		
+		
 func _physics_process(delta: float) -> void:
 	
 	if !can_move:
@@ -40,9 +49,7 @@ func _physics_process(delta: float) -> void:
 	# Add the gravity.
 	if not is_on_floor():
 		velocity += get_gravity() * delta
-		if velocity.y < 0:
-			print("ting")
-			$AnimatedSprite2D.play("jump")
+
 
 	# Handle jump.
 	if Input.is_action_just_pressed("ui_accept") and is_on_floor():
@@ -53,10 +60,10 @@ func _physics_process(delta: float) -> void:
 	var direction := Input.get_axis("ui_left", "ui_right")
 	if direction:
 		velocity.x = direction * SPEED
-		$AnimatedSprite2D.play("walk")
+		
 	else:
 		velocity.x = move_toward(velocity.x, 0, SPEED)
-		$AnimatedSprite2D.play("idle")
+
 	
 	if direction == 1:
 		$AnimatedSprite2D.flip_h = false
@@ -76,5 +83,6 @@ func _physics_process(delta: float) -> void:
 	Globle.player_pos_x = position.x
 	
 	block_push_func()
+	animation_handler()
 	
 	move_and_slide()
