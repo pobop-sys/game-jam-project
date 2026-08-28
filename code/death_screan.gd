@@ -6,7 +6,7 @@ var scene_togo_back_to: String
 
 const death_mesaegs: Array = [
 	"not everyone can be [color=yellow] [wave]trusted [/wave][color=white]keep that in mind ",
-	" thoghe thing might be difficlt you should be able to [color=yellow][wave]trust[/wave][color=white] your self to keep going",
+	"thoghe thing might be difficlt you should be able to [color=yellow][wave]trust[/wave][color=white] your self to keep going",
 	"even thoghe people can be [color=yellow][wave]trusted [/wave][color=white] you can still fail and thats ok"
 ]
 var lv_names: Array =[
