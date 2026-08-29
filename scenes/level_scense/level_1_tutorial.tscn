@@ -184,6 +184,21 @@ flip_spright = true
 npc_art = 3
 text = "you actuly [wave] trusted me [/wave] pathetic"
 
+[node name="random decorations" parent="npc collection" unique_id=1336224085 instance=ExtResource("13_20j6r")]
+position = Vector2(211, 26)
+
+[node name="random decorations2" parent="npc collection" unique_id=58488704 instance=ExtResource("13_20j6r")]
+position = Vector2(238, 26)
+
+[node name="random decorations3" parent="npc collection" unique_id=234658044 instance=ExtResource("13_20j6r")]
+position = Vector2(240, -86)
+
+[node name="random decorations4" parent="npc collection" unique_id=1586302524 instance=ExtResource("13_20j6r")]
+position = Vector2(1223, 122)
+
+[node name="random decorations5" parent="npc collection" unique_id=1049095810 instance=ExtResource("13_20j6r")]
+position = Vector2(1505, -230)
+
 [node name="player" parent="." unique_id=1794095932 instance=ExtResource("3_3yej5")]
 position = Vector2(-427, -77)
 
