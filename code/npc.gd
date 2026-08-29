@@ -45,7 +45,10 @@ func _ready() -> void:
 	
 	if npc_art > len(npc_art_file_location) or npc_art < 0:
 		npc_art = 0
-		
+	
+	var face =load(npc_head_art[npc_art])
+	$Control/PanelContainer2/Sprite2D.texture = face
+	
 	$AnimatedSprite2D.play(npc_art_file_location[npc_art])
 	$AnimatedSprite2D.flip_h = flip_spright
 	
