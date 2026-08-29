@@ -206,6 +206,7 @@ position = Vector2(1505, -230)
 position = Vector2(-427, -77)
 
 [node name="music_player" parent="player" unique_id=1600698859 instance=ExtResource("8_v5k8o")]
+visible = false
 
 [node name="camra" parent="." unique_id=262621399 instance=ExtResource("4_htq86")]
 position = Vector2(-427, -79)
