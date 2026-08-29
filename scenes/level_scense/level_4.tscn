@@ -96,7 +96,7 @@ position = Vector2(-26, -21)
 [node name="camra" parent="." unique_id=262621399 instance=ExtResource("5_m4n7x")]
 position = Vector2(-4, -19)
 cam_controls = "both"
-cam_zoom = 1.5
+cam_zoom = 2.0
 
 [node name="npc contaner" type="Node2D" parent="." unique_id=956166594]
 
