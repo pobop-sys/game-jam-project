@@ -1,3 +1,160 @@
 [gd_scene format=3 uid="uid://dtmx32evdee78"]
 
+[ext_resource type="Texture2D" uid="uid://8d4p8ydau3tn" path="res://art/trust me backround for tile screan.png" id="1_0bpdh"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_uj6ph"]
+bg_color = Color(0, 0, 0, 1)
+border_width_left = 10
+border_width_right = 10
+border_color = Color(1, 1, 1, 1)
+
+[sub_resource type="Animation" id="Animation_2ckv8"]
+length = 0.001
+tracks/0/type = "bezier"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("RichTextLabel:position:x")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"handle_modes": PackedInt32Array(0),
+"points": PackedFloat32Array(-400, -0.25, 0, 0.25, 0),
+"times": PackedFloat32Array(0)
+}
+tracks/1/type = "bezier"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("RichTextLabel:position:y")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"handle_modes": PackedInt32Array(0),
+"points": PackedFloat32Array(700, -0.25, 0, 0.25, 0),
+"times": PackedFloat32Array(0)
+}
+tracks/2/type = "bezier"
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/path = NodePath("Sprite2D:position:x")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/keys = {
+"handle_modes": PackedInt32Array(0),
+"points": PackedFloat32Array(0, -0.25, 0, 0.25, 0),
+"times": PackedFloat32Array(0)
+}
+tracks/3/type = "bezier"
+tracks/3/imported = false
+tracks/3/enabled = true
+tracks/3/path = NodePath("Sprite2D:position:y")
+tracks/3/interp = 1
+tracks/3/loop_wrap = true
+tracks/3/keys = {
+"handle_modes": PackedInt32Array(0),
+"points": PackedFloat32Array(504, -0.25, 0, 0.25, 0),
+"times": PackedFloat32Array(0)
+}
+
+[sub_resource type="Animation" id="Animation_0ctdu"]
+resource_name = "credits"
+length = 20.0
+tracks/0/type = "bezier"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("RichTextLabel:position:x")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"handle_modes": PackedInt32Array(0, 2),
+"points": PackedFloat32Array(-400, -0.25, 0, 0.25, 0, -400, -3.3333335, 0, 0, 0),
+"times": PackedFloat32Array(0, 20)
+}
+tracks/1/type = "bezier"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("RichTextLabel:position:y")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"handle_modes": PackedInt32Array(0, 2),
+"points": PackedFloat32Array(700, -0.25, 0, 0.25, 0, -1207, -3.3333335, 317.83334, 0, 0),
+"times": PackedFloat32Array(0, 20)
+}
+tracks/2/type = "bezier"
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/path = NodePath("Sprite2D:position:x")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/keys = {
+"handle_modes": PackedInt32Array(0, 2),
+"points": PackedFloat32Array(0, -0.25, 0, 0.25, 0, 0, -3.3333335, 0, 0, 0),
+"times": PackedFloat32Array(0, 20)
+}
+tracks/3/type = "bezier"
+tracks/3/imported = false
+tracks/3/enabled = true
+tracks/3/path = NodePath("Sprite2D:position:y")
+tracks/3/interp = 1
+tracks/3/loop_wrap = true
+tracks/3/keys = {
+"handle_modes": PackedInt32Array(0, 2),
+"points": PackedFloat32Array(504, -0.25, 0, 0.25, 0, -1403, -3.3333335, 317.83334, 0, 0),
+"times": PackedFloat32Array(0, 20)
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_2fbfq"]
+_data = {
+&"RESET": SubResource("Animation_2ckv8"),
+&"credits": SubResource("Animation_0ctdu")
+}
+
 [node name="credits" type="Node2D" unique_id=784988912]
+
+[node name="Panel" type="Panel" parent="." unique_id=1980760615]
+offset_left = -577.0
+offset_top = -324.0
+offset_right = 574.0
+offset_bottom = 325.0
+theme_override_styles/panel = SubResource("StyleBoxFlat_uj6ph")
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=1546841409]
+position = Vector2(0, 504)
+texture = ExtResource("1_0bpdh")
+region_enabled = true
+region_rect = Rect2(0, 0, 1094, 370.09857)
+
+[node name="RichTextLabel" type="RichTextLabel" parent="." unique_id=1298764848]
+offset_left = -400.0
+offset_top = 700.0
+offset_right = 400.0
+offset_bottom = 1700.0
+theme_override_font_sizes/normal_font_size = 32
+theme_override_font_sizes/bold_font_size = 48
+bbcode_enabled = true
+text = "                                         coding
+                                         pobop
+                                          bandit
+
+                                      level disine
+                                          pobop
+                                   grey-gary-guy
+                                          bandit
+
+                                             art
+                                   grey-dev-cool
+
+                                      consept art
+                                    lord num nut
+
+                                          music
+					              the candy miner
+
+                    [wave][rainbow][b]thanks for playing
+                               "
+
+[node name="Camera2D" type="Camera2D" parent="." unique_id=128778319]
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="." unique_id=930893006]
+libraries/ = SubResource("AnimationLibrary_2fbfq")
+autoplay = &"credits"

@@ -26,4 +26,4 @@ func _process(delta: float) -> void:
 		$AnimatedSprite2D.play("big revelal")
 	
 	if !$AnimationPlayer.is_playing():
-		get_tree().change_scene_to_file()
+		get_tree().change_scene_to_file("res://scenes/credits.tscn")

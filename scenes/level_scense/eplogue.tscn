@@ -726,6 +726,28 @@ tracks/21/keys = {
 "update": 1,
 "values": [false]
 }
+tracks/22/type = "bezier"
+tracks/22/imported = false
+tracks/22/enabled = true
+tracks/22/path = NodePath("AnimatedSprite2D:position:x")
+tracks/22/interp = 1
+tracks/22/loop_wrap = true
+tracks/22/keys = {
+"handle_modes": PackedInt32Array(0),
+"points": PackedFloat32Array(305, -0.25, 0, 0.25, 0),
+"times": PackedFloat32Array(0)
+}
+tracks/23/type = "bezier"
+tracks/23/imported = false
+tracks/23/enabled = true
+tracks/23/path = NodePath("AnimatedSprite2D:position:y")
+tracks/23/interp = 1
+tracks/23/loop_wrap = true
+tracks/23/keys = {
+"handle_modes": PackedInt32Array(0),
+"points": PackedFloat32Array(-57, -0.25, 0, 0.25, 0),
+"times": PackedFloat32Array(0)
+}
 
 [sub_resource type="Animation" id="Animation_utwvu"]
 resource_name = "eplogue anim"
@@ -966,6 +988,28 @@ tracks/20/keys = {
 "transitions": PackedFloat32Array(1, 1),
 "update": 1,
 "values": [false, true]
+}
+tracks/21/type = "bezier"
+tracks/21/imported = false
+tracks/21/enabled = true
+tracks/21/path = NodePath("AnimatedSprite2D:position:x")
+tracks/21/interp = 1
+tracks/21/loop_wrap = true
+tracks/21/keys = {
+"handle_modes": PackedInt32Array(0, 2),
+"points": PackedFloat32Array(305, -0.25, 0, 0.25, 0, 305, -0.0033073425, 0, 0, 0),
+"times": PackedFloat32Array(55.77007, 55.789913)
+}
+tracks/22/type = "bezier"
+tracks/22/imported = false
+tracks/22/enabled = true
+tracks/22/path = NodePath("AnimatedSprite2D:position:y")
+tracks/22/interp = 1
+tracks/22/loop_wrap = true
+tracks/22/keys = {
+"handle_modes": PackedInt32Array(0, 2),
+"points": PackedFloat32Array(-57, -0.25, 0, 0.25, 0, -52, -0.0033073425, -0.8333333, 0, 0),
+"times": PackedFloat32Array(55.77007, 55.789913)
 }
 
 [sub_resource type="Animation" id="Animation_nkmd1"]
@@ -1677,7 +1721,7 @@ animations = [{
 "duration": 1.0,
 "texture": SubResource("AtlasTexture_82tjw")
 }],
-"loop": 1,
+"loop": 0,
 "name": &"big revelal",
 "speed": 10.0
 }, {
@@ -1821,6 +1865,8 @@ position = Vector2(305, -57)
 sprite_frames = SubResource("SpriteFrames_uj6ph")
 animation = &"big revelal"
 autoplay = "mg"
+frame = 91
+frame_progress = 1.0
 flip_h = true
 
 [node name="Camera2D" type="Camera2D" parent="." unique_id=1562221349]
