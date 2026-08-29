@@ -2,9 +2,10 @@ extends Node2D
 
 @export var inky_falling: bool
 
+
+
 # Called when the node enters the scene tree for the first time.
 func _ready() -> void:
-	$npc_conraner/inky.play("inky")
 	$npc_conraner/cray.play("cray")
 	$npc_conraner/bingus.play("bingus")
 	$"npc_conraner/angry guy".play("angry guy")

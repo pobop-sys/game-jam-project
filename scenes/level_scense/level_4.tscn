@@ -10,6 +10,7 @@
 [ext_resource type="PackedScene" uid="uid://cihdg0gfpnjb5" path="res://scenes/npc.tscn" id="6_h7kkj"]
 [ext_resource type="PackedScene" uid="uid://cfwvfvh166ql5" path="res://scenes/person_box.tscn" id="7_h5dsg"]
 [ext_resource type="PackedScene" uid="uid://ci0r0juflxelp" path="res://scenes/kill_box.tscn" id="8_thy67"]
+[ext_resource type="PackedScene" uid="uid://bu573qbgf2du4" path="res://scenes/next_lv_triger.tscn" id="11_dedju"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_m4n7x"]
 texture = ExtResource("1_fxffm")
@@ -227,3 +228,7 @@ shape = SubResource("RectangleShape2D_6mqeb")
 position = Vector2(2097, 270.99994)
 rotation = 0.5692642
 shape = SubResource("RectangleShape2D_6mqeb")
+
+[node name="next_lv_triger" parent="." unique_id=1818814094 instance=ExtResource("11_dedju")]
+position = Vector2(4557, 489)
+next_lv_location = "res://scenes/level_scense/eplogue.tscn"

@@ -1,6 +1,7 @@
 extends Node2D
 
 @export var flip: bool
+@export var is_idleing: bool
 @export var text_box_play_on_load: bool
 
 @export var text_box_hight: int 
@@ -29,6 +30,11 @@ func _ready() -> void:
 		$AnimationPlayer.play_backwards("textbar_apear")
 		
 func _process(delta: float) -> void:
+	if is_idleing:
+		$AnimatedSprite2D.play("idle")
+	elif !is_idleing:
+		$AnimatedSprite2D.play("skooting")
+		
 	if Globle.play_mg_textbox:
 		load_textbox_and_play_anim()
 		Globle.play_mg_textbox = false
