@@ -958,3 +958,5 @@ shape = SubResource("RectangleShape2D_6mqeb")
 [connection signal="body_entered" from="Node2D/Area2D" to="." method="_on_area_2d_body_entered"]
 
 [editable path="mysrty guy"]
+[editable path="camra"]
+[editable path="camra/music_player"]

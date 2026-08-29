@@ -8,3 +8,5 @@ func _on_area_2d_body_entered(body: Node2D) -> void:
 		has_played_anim = true
 		$AnimationPlayer.play("thing_animation")
 		
+func _ready() -> void:
+	$camra/music_player.queue_free()
