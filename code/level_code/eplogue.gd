@@ -1,7 +1,7 @@
 extends Node2D
 
 @export var inky_falling: bool
-
+@export var play_boss_man_reveal: bool
 
 
 # Called when the node enters the scene tree for the first time.
@@ -20,3 +20,6 @@ func _process(delta: float) -> void:
 	elif inky_falling:
 		pass
 		#inky falling anim play hither
+	
+	if play_boss_man_reveal:
+		$AnimatedSprite2D.play("big revelal")

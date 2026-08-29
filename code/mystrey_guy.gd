@@ -4,6 +4,7 @@ extends Node2D
 @export var is_idleing: bool
 @export var text_box_play_on_load: bool
 @export var is_beeping: bool
+@export var play_finle_anima: bool
 
 @export var text_box_hight: int 
 @export var npc_art: int
@@ -35,6 +36,12 @@ func _process(delta: float) -> void:
 		$AnimatedSprite2D.play("idle")
 	elif !is_idleing:
 		$AnimatedSprite2D.play("skooting")
+	
+	if !play_finle_anima:
+		pass
+	
+	elif play_finle_anima:
+		$AnimatedSprite2D.play("big boy relveal")
 	
 	if is_beeping:
 		if !$AudioStreamPlayer2D.playing:
