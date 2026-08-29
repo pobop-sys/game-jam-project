@@ -751,7 +751,7 @@ tracks/23/keys = {
 
 [sub_resource type="Animation" id="Animation_utwvu"]
 resource_name = "eplogue anim"
-length = 60.0
+length = 65.0
 tracks/0/type = "value"
 tracks/0/imported = false
 tracks/0/enabled = true
