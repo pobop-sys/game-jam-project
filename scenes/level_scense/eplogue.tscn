@@ -11,6 +11,7 @@
 [ext_resource type="Texture2D" uid="uid://7b113kugakw0" path="res://art/npc art/Blue Shirt Guy (idle)-Sheet.png" id="6_utwvu"]
 [ext_resource type="Texture2D" uid="uid://xenwvblbbawy" path="res://art/npc art/Tin Foil cat-Sheet (Idle).png" id="7_ospvd"]
 [ext_resource type="PackedScene" uid="uid://c14vh8nm3vlsn" path="res://scenes/aniamtated_player.tscn" id="10_qdqh7"]
+[ext_resource type="PackedScene" uid="uid://dvpwvf0barn0o" path="res://scenes/level_scense/music_player.tscn" id="12_ospvd"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_qdqh7"]
 texture = ExtResource("2_144bd")
@@ -701,6 +702,17 @@ tracks/19/keys = {
 "points": PackedFloat32Array(0, -0.25, 0, 0.25, 0),
 "times": PackedFloat32Array(0)
 }
+tracks/20/type = "bezier"
+tracks/20/imported = false
+tracks/20/enabled = true
+tracks/20/path = NodePath("music_player/AudioStreamPlayer2D:pitch_scale")
+tracks/20/interp = 1
+tracks/20/loop_wrap = true
+tracks/20/keys = {
+"handle_modes": PackedInt32Array(0),
+"points": PackedFloat32Array(0.9, -0.25, 0, 0.25, 0),
+"times": PackedFloat32Array(0)
+}
 
 [sub_resource type="Animation" id="Animation_utwvu"]
 resource_name = "eplogue anim"
@@ -919,6 +931,17 @@ tracks/18/keys = {
 "points": PackedFloat32Array(0, -0.25, 0, 0.25, 0, 1, -0.54112244, -0.16666666, 0, 0),
 "times": PackedFloat32Array(47.077667, 55.5)
 }
+tracks/19/type = "bezier"
+tracks/19/imported = false
+tracks/19/enabled = true
+tracks/19/path = NodePath("music_player/AudioStreamPlayer2D:pitch_scale")
+tracks/19/interp = 1
+tracks/19/loop_wrap = true
+tracks/19/keys = {
+"handle_modes": PackedInt32Array(0, 2, 2, 2, 2),
+"points": PackedFloat32Array(0.9, -0.25, 0, 0.25, 0, 0.9, -2.1069112, 0.06182931, 0.16483895, -0.0048373556, 0.5, -2.27175, 0.06666666, 0, 0, 0.53, -5.074477, -0.06285798, 0.30747288, 0.0038086923, 0.9, -5.38195, -0.06666666, 0, 0),
+"times": PackedFloat32Array(0, 12.641466, 13.6305, 44.077362, 45.9222)
+}
 
 [sub_resource type="Animation" id="Animation_nkmd1"]
 resource_name = "test"
@@ -1135,3 +1158,11 @@ position = Vector2(-169, 5)
 is_inky = false
 anima_walking = true
 anima_idle = false
+
+[node name="music_player" parent="." unique_id=1600698859 instance=ExtResource("12_ospvd")]
+position = Vector2(0, -2)
+
+[node name="AudioStreamPlayer2D" parent="music_player" index="0" unique_id=1640492678]
+pitch_scale = 0.9
+
+[editable path="music_player"]

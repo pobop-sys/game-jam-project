@@ -1,12 +1,11 @@
 extends CharacterBody2D
 
 
-
 const SPEED = 175.0
 const PUSH_SPEED = -200
 const JUMP_VELOCITY = -300.0
 
-var can_move: bool = true
+@export var can_move: bool = true
 
 const sound_bank: Array = [
 	"res://audio/walking sound effects/FEETHmn-CONCRETE_AUDIOELK-Fs Concrete Shoes Pant Ruffles 01_AUDIOELK_AUDIOELK.wav",
@@ -44,7 +43,7 @@ func animation_handler():
 func _physics_process(delta: float) -> void:
 	
 	if !can_move:
-		#idle andimation
+		$AnimatedSprite2D.play("idle")
 		return
 	# Add the gravity.
 	if not is_on_floor():
