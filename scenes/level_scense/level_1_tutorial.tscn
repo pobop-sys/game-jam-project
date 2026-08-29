@@ -179,6 +179,10 @@ Wait what is true [wave] CRAZY???? [/wave]"
 [node name="mysrty guy" parent="npc collection" unique_id=458843416 instance=ExtResource("3_ryveb")]
 position = Vector2(-184, -91)
 flip = true
+text = "(Mystery Boss)
+Now we can get things started...
+Behind me are two other employees, its up to your jugement to [wave] trust [/wave] one based on what they say
+[b] Choose wisely"
 
 [node name="npc3" parent="npc collection" unique_id=743434708 instance=ExtResource("2_ryveb")]
 position = Vector2(1532, 144)
