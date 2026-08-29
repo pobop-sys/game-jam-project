@@ -15,7 +15,7 @@ var npc_head_art: Array = [
 	"res://Faces/Blue Shirt guy (face).png",
 	"res://Faces/anger guy (face).png",
 	"res://Faces/Inky (face).png",
-	""]
+	"res://Faces/Bingus (face).png"]
 
 var npc_art_file_location = [
 	"tin_foil_hat",

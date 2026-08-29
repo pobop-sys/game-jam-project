@@ -92,6 +92,7 @@ layer_0/tile_data = PackedInt32Array(-6, 131073, 0, -5, 65537, 0, -4, 65537, 0, 
 position = Vector2(-522, -93)
 
 [node name="music_player" parent="player" unique_id=1600698859 instance=ExtResource("4_cwj2y")]
+visible = false
 position = Vector2(5, -19)
 
 [node name="camra" parent="." unique_id=262621399 instance=ExtResource("4_1cfl7")]

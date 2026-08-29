@@ -147,6 +147,7 @@ text = "  im so strested out from work man i dont wana even do this "
 position = Vector2(-16, 29)
 
 [node name="music_player" parent="player" unique_id=1600698859 instance=ExtResource("6_klp1p")]
+visible = false
 
 [node name="camra" parent="." unique_id=262621399 instance=ExtResource("5_t0l5a")]
 position = Vector2(-44, 34)
