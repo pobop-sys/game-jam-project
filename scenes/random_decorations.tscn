@@ -1,0 +1,19 @@
+[gd_scene format=3 uid="uid://dy44fguyc0yr7"]
+
+[ext_resource type="Script" uid="uid://co3iatuo5de4d" path="res://code/random_decorations.gd" id="1_x14dc"]
+[ext_resource type="Texture2D" uid="uid://b4bdm74mrai4" path="res://art/Bin .png" id="2_x14dc"]
+
+[node name="random decorations" type="Node2D" unique_id=1461163239]
+script = ExtResource("1_x14dc")
+
+[node name="ColorRect" type="ColorRect" parent="." unique_id=525822817]
+visible = false
+offset_left = -20.0
+offset_top = 22.0
+offset_right = 20.0
+offset_bottom = 62.0
+color = Color(0, 0, 0, 1)
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=123775881]
+texture_filter = 1
+texture = ExtResource("2_x14dc")

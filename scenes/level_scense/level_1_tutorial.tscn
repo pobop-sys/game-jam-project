@@ -12,6 +12,7 @@
 [ext_resource type="PackedScene" uid="uid://cfwvfvh166ql5" path="res://scenes/person_box.tscn" id="7_htq86"]
 [ext_resource type="PackedScene" uid="uid://dvpwvf0barn0o" path="res://scenes/level_scense/music_player.tscn" id="8_v5k8o"]
 [ext_resource type="PackedScene" uid="uid://ci0r0juflxelp" path="res://scenes/kill_box.tscn" id="9_f8ec4"]
+[ext_resource type="PackedScene" uid="uid://dy44fguyc0yr7" path="res://scenes/random_decorations.tscn" id="13_20j6r"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_h2bti"]
 texture = ExtResource("1_r6wtk")
@@ -204,5 +205,19 @@ shape = SubResource("RectangleShape2D_uj6ph")
 [node name="next_lv_triger" parent="." unique_id=1818814094 instance=ExtResource("3_k2noa")]
 position = Vector2(1546, -232)
 next_lv_location = "res://scenes/level_scense/level2.tscn"
+
+[node name="random_decoration_contatner" type="Node2D" parent="." unique_id=572688160]
+
+[node name="random decorations" parent="random_decoration_contatner" unique_id=1461163239 instance=ExtResource("13_20j6r")]
+position = Vector2(36, 26)
+
+[node name="random decorations2" parent="random_decoration_contatner" unique_id=71290774 instance=ExtResource("13_20j6r")]
+position = Vector2(1177, 122)
+
+[node name="random decorations3" parent="random_decoration_contatner" unique_id=1293629761 instance=ExtResource("13_20j6r")]
+position = Vector2(1087, -230)
+
+[node name="random decorations4" parent="random_decoration_contatner" unique_id=809755689 instance=ExtResource("13_20j6r")]
+position = Vector2(68, -86)
 
 [connection signal="body_entered" from="level_detections/Area2D" to="." method="_on_area_2d_body_entered"]
