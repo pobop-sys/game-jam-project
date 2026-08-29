@@ -622,6 +622,50 @@ tracks/12/keys = {
 "points": PackedFloat32Array(0, -0.25, 0, 0.25, 0),
 "times": PackedFloat32Array(0)
 }
+tracks/13/type = "bezier"
+tracks/13/imported = false
+tracks/13/enabled = true
+tracks/13/path = NodePath("TileMap2:position:x")
+tracks/13/interp = 1
+tracks/13/loop_wrap = true
+tracks/13/keys = {
+"handle_modes": PackedInt32Array(0),
+"points": PackedFloat32Array(0, -0.25, 0, 0.25, 0),
+"times": PackedFloat32Array(0)
+}
+tracks/14/type = "bezier"
+tracks/14/imported = false
+tracks/14/enabled = true
+tracks/14/path = NodePath("TileMap2:position:y")
+tracks/14/interp = 1
+tracks/14/loop_wrap = true
+tracks/14/keys = {
+"handle_modes": PackedInt32Array(0),
+"points": PackedFloat32Array(0, -0.25, 0, 0.25, 0),
+"times": PackedFloat32Array(0)
+}
+tracks/15/type = "bezier"
+tracks/15/imported = false
+tracks/15/enabled = true
+tracks/15/path = NodePath("npc_conraner/inky:position:x")
+tracks/15/interp = 1
+tracks/15/loop_wrap = true
+tracks/15/keys = {
+"handle_modes": PackedInt32Array(0),
+"points": PackedFloat32Array(16, -0.25, 0, 0.25, 0),
+"times": PackedFloat32Array(0)
+}
+tracks/16/type = "bezier"
+tracks/16/imported = false
+tracks/16/enabled = true
+tracks/16/path = NodePath("npc_conraner/inky:position:y")
+tracks/16/interp = 1
+tracks/16/loop_wrap = true
+tracks/16/keys = {
+"handle_modes": PackedInt32Array(0),
+"points": PackedFloat32Array(5, -0.25, 0, 0.25, 0),
+"times": PackedFloat32Array(0)
+}
 
 [sub_resource type="Animation" id="Animation_utwvu"]
 resource_name = "eplogue anim"
@@ -757,9 +801,53 @@ tracks/11/path = NodePath("Control/Panel/RichTextLabel:visible_ratio")
 tracks/11/interp = 1
 tracks/11/loop_wrap = true
 tracks/11/keys = {
-"handle_modes": PackedInt32Array(0, 2, 2),
-"points": PackedFloat32Array(0, -0.25, 0, 0.25, 0, 0.825, -2.0813675, -0.1375, 0, 0, 1, -1.1068419, -0.029166669, 0, 0),
-"times": PackedFloat32Array(2.86, 15.348205, 21.989256)
+"handle_modes": PackedInt32Array(0, 2, 2, 2),
+"points": PackedFloat32Array(0, -0.25, 0, 0.25, 0, 0.645, -2.0813675, -0.1075, 0, 0, 0.786, -1.4265959, -0.023500009, 0, 0, 1, -1.0822456, -0.035666667, 0, 0),
+"times": PackedFloat32Array(2.86, 15.348205, 23.90778, 30.401253)
+}
+tracks/12/type = "bezier"
+tracks/12/imported = false
+tracks/12/enabled = true
+tracks/12/path = NodePath("TileMap2:position:x")
+tracks/12/interp = 1
+tracks/12/loop_wrap = true
+tracks/12/keys = {
+"handle_modes": PackedInt32Array(0, 2),
+"points": PackedFloat32Array(0, -0.25, 0, 0.25, 0, -34, -0.36894736, 5.666667, 0, 0),
+"times": PackedFloat32Array(34.976196, 37.18988)
+}
+tracks/13/type = "bezier"
+tracks/13/imported = false
+tracks/13/enabled = true
+tracks/13/path = NodePath("TileMap2:position:y")
+tracks/13/interp = 1
+tracks/13/loop_wrap = true
+tracks/13/keys = {
+"handle_modes": PackedInt32Array(0, 2),
+"points": PackedFloat32Array(0, -0.25, 0, 0.25, 0, 0, -0.36894736, 0, 0, 0),
+"times": PackedFloat32Array(34.976196, 37.18988)
+}
+tracks/14/type = "bezier"
+tracks/14/imported = false
+tracks/14/enabled = true
+tracks/14/path = NodePath("npc_conraner/inky:position:x")
+tracks/14/interp = 1
+tracks/14/loop_wrap = true
+tracks/14/keys = {
+"handle_modes": PackedInt32Array(0, 2),
+"points": PackedFloat32Array(16, -0.25, 0, 0.25, 0, 16, -0.3935439, 0, 0, 0),
+"times": PackedFloat32Array(37.18988, 39.551144)
+}
+tracks/15/type = "bezier"
+tracks/15/imported = false
+tracks/15/enabled = true
+tracks/15/path = NodePath("npc_conraner/inky:position:y")
+tracks/15/interp = 1
+tracks/15/loop_wrap = true
+tracks/15/keys = {
+"handle_modes": PackedInt32Array(0, 2),
+"points": PackedFloat32Array(5, -0.25, 0, 0.25, 0, 154, -0.3935439, -24.833334, 0, 0),
+"times": PackedFloat32Array(37.18988, 39.551144)
 }
 
 [sub_resource type="Animation" id="Animation_nkmd1"]
@@ -938,7 +1026,8 @@ offset_bottom = 46.0
 theme_override_font_sizes/normal_font_size = 8
 theme_override_font_sizes/bold_font_size = 10
 bbcode_enabled = true
-text = "thanks for participating in the trust exserzies and most of you have improved trmendicly exsept one of you..... [tornado radius=4 freq=3][color=red][b]  inky  "
+text = "thanks for participating in the trust exercises and most of you have improved tremendously except one of you..... [tornado radius=4 freq=3][color=red][b]  inky  [/b][/color][/tornado]........ who will be fired from this company
+"
 visible_characters = 0
 visible_ratio = 0.0
 
