@@ -906,8 +906,8 @@ z_index = 1
 position = Vector2(54, 42)
 flip = true
 is_idleing = true
-text = "at this [b]company[/b] are employes havent trusted each over for a long time so were going to be doing some [color=yellow][wave] trust exsersises [/wave][color=white]. . . . . .
-go throgh this door to start them"
+text = "At this [b]company[/b] are employes have [wave] [b] LOTS [/b] [/wave] of trust issues with one another, so we will be doing some [color=yellow][wave] trust exsersises [/wave][color=white]. . . . . .
+Go throgh this door to start them..."
 
 [node name="AnimatedSprite2D" parent="mysrty guy" index="0" unique_id=820094623]
 self_modulate = Color(1, 1, 1, 0)
@@ -939,6 +939,7 @@ position = Vector2(-889, 48)
 [node name="AnimationPlayer" type="AnimationPlayer" parent="." unique_id=863857138]
 libraries/ = SubResource("AnimationLibrary_itpj2")
 autoplay = &"make mg disapear"
+speed_scale = 0.5
 
 [node name="camra" parent="." unique_id=262621399 instance=ExtResource("8_yhyf6")]
 position = Vector2(-892, 50)
