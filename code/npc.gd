@@ -11,9 +11,9 @@ extends Node2D
 @export_multiline var notes: String
 
 var npc_head_art: Array = [
-	"res://Faces/anger guy (face).png",
-	"res://Faces/Blue Shirt guy (face).png",
 	"",
+	"res://Faces/Blue Shirt guy (face).png",
+	"res://Faces/anger guy (face).png",
 	"",
 	""]
 
