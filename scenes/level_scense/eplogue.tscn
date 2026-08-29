@@ -7,6 +7,7 @@
 [ext_resource type="Texture2D" uid="uid://cubumqt0caoq1" path="res://art/Mystery guy (idle)-Sheet.png" id="4_cdk2u"]
 [ext_resource type="Texture2D" uid="uid://ceqseu3nx16us" path="res://art/npc art/Inky-Sheet (idle).png" id="5_b08dc"]
 [ext_resource type="Texture2D" uid="uid://d2c2w36ywxnsd" path="res://art/Bingus-Sheet (idle)-Sheet.png" id="5_qdqh7"]
+[ext_resource type="Texture2D" uid="uid://ds303ly4r7dhe" path="res://art/npc art/anger guy (idle)-Sheet.png" id="5_utwvu"]
 [ext_resource type="Texture2D" uid="uid://7b113kugakw0" path="res://art/npc art/Blue Shirt Guy (idle)-Sheet.png" id="6_utwvu"]
 [ext_resource type="Texture2D" uid="uid://xenwvblbbawy" path="res://art/npc art/Tin Foil cat-Sheet (Idle).png" id="7_ospvd"]
 [ext_resource type="PackedScene" uid="uid://c14vh8nm3vlsn" path="res://scenes/aniamtated_player.tscn" id="10_qdqh7"]
@@ -71,6 +72,66 @@ texture = ExtResource("3_dbea1")
 physics_layer_0/collision_layer = 1
 sources/0 = SubResource("TileSetAtlasSource_qdqh7")
 sources/1 = SubResource("TileSetAtlasSource_utwvu")
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_ospvd"]
+atlas = ExtResource("5_utwvu")
+region = Rect2(0, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_jcyat"]
+atlas = ExtResource("5_utwvu")
+region = Rect2(32, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_tnccf"]
+atlas = ExtResource("5_utwvu")
+region = Rect2(64, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_uee0q"]
+atlas = ExtResource("5_utwvu")
+region = Rect2(96, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_queh8"]
+atlas = ExtResource("5_utwvu")
+region = Rect2(128, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_kigbj"]
+atlas = ExtResource("5_utwvu")
+region = Rect2(160, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_qlbc5"]
+atlas = ExtResource("5_utwvu")
+region = Rect2(192, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_24b4s"]
+atlas = ExtResource("5_utwvu")
+region = Rect2(224, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_vxa27"]
+atlas = ExtResource("5_utwvu")
+region = Rect2(256, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_yps1u"]
+atlas = ExtResource("5_utwvu")
+region = Rect2(288, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_kkufc"]
+atlas = ExtResource("5_utwvu")
+region = Rect2(320, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_ov3qn"]
+atlas = ExtResource("5_utwvu")
+region = Rect2(352, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_aeuel"]
+atlas = ExtResource("5_utwvu")
+region = Rect2(384, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_nious"]
+atlas = ExtResource("5_utwvu")
+region = Rect2(416, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_4tpyx"]
+atlas = ExtResource("5_utwvu")
+region = Rect2(448, 0, 32, 32)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_8i4rq"]
 atlas = ExtResource("5_qdqh7")
@@ -222,6 +283,56 @@ region = Rect2(224, 0, 32, 32)
 
 [sub_resource type="SpriteFrames" id="SpriteFrames_6mqeb"]
 animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_ospvd")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_jcyat")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_tnccf")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_uee0q")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_queh8")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_kigbj")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_qlbc5")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_24b4s")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_vxa27")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_yps1u")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_kkufc")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_ov3qn")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_aeuel")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_nious")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_4tpyx")
+}],
+"loop": 1,
+"name": &"angry guy",
+"speed": 5.0
+}, {
 "frames": [{
 "duration": 1.0,
 "texture": SubResource("AtlasTexture_8i4rq")
@@ -376,10 +487,280 @@ tracks/0/keys = {
 "update": 0,
 "values": [Vector2(0, 0)]
 }
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("aniamtated player:anima_walking")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [true]
+}
+tracks/2/type = "value"
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/path = NodePath("aniamtated player:anima_idle")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [false]
+}
+tracks/3/type = "value"
+tracks/3/imported = false
+tracks/3/enabled = true
+tracks/3/path = NodePath("aniamtated player:position")
+tracks/3/interp = 1
+tracks/3/loop_wrap = true
+tracks/3/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(-169, 5)]
+}
+tracks/4/type = "bezier"
+tracks/4/imported = false
+tracks/4/enabled = true
+tracks/4/path = NodePath("Control/Panel:self_modulate:r")
+tracks/4/interp = 1
+tracks/4/loop_wrap = true
+tracks/4/keys = {
+"handle_modes": PackedInt32Array(0),
+"points": PackedFloat32Array(1, -0.25, 0, 0.25, 0),
+"times": PackedFloat32Array(0)
+}
+tracks/5/type = "bezier"
+tracks/5/imported = false
+tracks/5/enabled = true
+tracks/5/path = NodePath("Control/Panel:self_modulate:g")
+tracks/5/interp = 1
+tracks/5/loop_wrap = true
+tracks/5/keys = {
+"handle_modes": PackedInt32Array(0),
+"points": PackedFloat32Array(1, -0.25, 0, 0.25, 0),
+"times": PackedFloat32Array(0)
+}
+tracks/6/type = "bezier"
+tracks/6/imported = false
+tracks/6/enabled = true
+tracks/6/path = NodePath("Control/Panel:self_modulate:b")
+tracks/6/interp = 1
+tracks/6/loop_wrap = true
+tracks/6/keys = {
+"handle_modes": PackedInt32Array(0),
+"points": PackedFloat32Array(1, -0.25, 0, 0.25, 0),
+"times": PackedFloat32Array(0)
+}
+tracks/7/type = "bezier"
+tracks/7/imported = false
+tracks/7/enabled = true
+tracks/7/path = NodePath("Control/Panel:self_modulate:a")
+tracks/7/interp = 1
+tracks/7/loop_wrap = true
+tracks/7/keys = {
+"handle_modes": PackedInt32Array(0),
+"points": PackedFloat32Array(0, -0.25, 0, 0.25, 0),
+"times": PackedFloat32Array(0)
+}
+tracks/8/type = "bezier"
+tracks/8/imported = false
+tracks/8/enabled = true
+tracks/8/path = NodePath("Control/Panel/RichTextLabel:self_modulate:r")
+tracks/8/interp = 1
+tracks/8/loop_wrap = true
+tracks/8/keys = {
+"handle_modes": PackedInt32Array(0),
+"points": PackedFloat32Array(1, -0.25, 0, 0.25, 0),
+"times": PackedFloat32Array(0)
+}
+tracks/9/type = "bezier"
+tracks/9/imported = false
+tracks/9/enabled = true
+tracks/9/path = NodePath("Control/Panel/RichTextLabel:self_modulate:g")
+tracks/9/interp = 1
+tracks/9/loop_wrap = true
+tracks/9/keys = {
+"handle_modes": PackedInt32Array(0),
+"points": PackedFloat32Array(1, -0.25, 0, 0.25, 0),
+"times": PackedFloat32Array(0)
+}
+tracks/10/type = "bezier"
+tracks/10/imported = false
+tracks/10/enabled = true
+tracks/10/path = NodePath("Control/Panel/RichTextLabel:self_modulate:b")
+tracks/10/interp = 1
+tracks/10/loop_wrap = true
+tracks/10/keys = {
+"handle_modes": PackedInt32Array(0),
+"points": PackedFloat32Array(1, -0.25, 0, 0.25, 0),
+"times": PackedFloat32Array(0)
+}
+tracks/11/type = "bezier"
+tracks/11/imported = false
+tracks/11/enabled = true
+tracks/11/path = NodePath("Control/Panel/RichTextLabel:self_modulate:a")
+tracks/11/interp = 1
+tracks/11/loop_wrap = true
+tracks/11/keys = {
+"handle_modes": PackedInt32Array(0),
+"points": PackedFloat32Array(0, -0.25, 0, 0.25, 0),
+"times": PackedFloat32Array(0)
+}
+tracks/12/type = "bezier"
+tracks/12/imported = false
+tracks/12/enabled = true
+tracks/12/path = NodePath("Control/Panel/RichTextLabel:visible_ratio")
+tracks/12/interp = 1
+tracks/12/loop_wrap = true
+tracks/12/keys = {
+"handle_modes": PackedInt32Array(0),
+"points": PackedFloat32Array(0, -0.25, 0, 0.25, 0),
+"times": PackedFloat32Array(0)
+}
 
 [sub_resource type="Animation" id="Animation_utwvu"]
 resource_name = "eplogue anim"
 length = 60.0
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("aniamtated player:anima_walking")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 1.95, 2.02),
+"transitions": PackedFloat32Array(1, 1, 1),
+"update": 1,
+"values": [true, true, false]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("aniamtated player:anima_idle")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(2.05, 2.06),
+"transitions": PackedFloat32Array(1, 1),
+"update": 1,
+"values": [false, true]
+}
+tracks/2/type = "value"
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/path = NodePath("aniamtated player:position")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/keys = {
+"times": PackedFloat32Array(0, 2.04),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Vector2(-169, 5), Vector2(88, 5)]
+}
+tracks/3/type = "bezier"
+tracks/3/imported = false
+tracks/3/enabled = true
+tracks/3/path = NodePath("Control/Panel:self_modulate:r")
+tracks/3/interp = 1
+tracks/3/loop_wrap = true
+tracks/3/keys = {
+"handle_modes": PackedInt32Array(0, 2, 2),
+"points": PackedFloat32Array(1, -0.25, 0, 0.25, 0, 1, -0.43, 0, 0, 0, 1, -0.021666687, 0, 0, 0),
+"times": PackedFloat32Array(0, 2.58, 2.71)
+}
+tracks/4/type = "bezier"
+tracks/4/imported = false
+tracks/4/enabled = true
+tracks/4/path = NodePath("Control/Panel:self_modulate:g")
+tracks/4/interp = 1
+tracks/4/loop_wrap = true
+tracks/4/keys = {
+"handle_modes": PackedInt32Array(0, 2, 2),
+"points": PackedFloat32Array(1, -0.25, 0, 0.25, 0, 1, -0.43, 0, 0, 0, 1, -0.021666687, 0, 0, 0),
+"times": PackedFloat32Array(0, 2.58, 2.71)
+}
+tracks/5/type = "bezier"
+tracks/5/imported = false
+tracks/5/enabled = true
+tracks/5/path = NodePath("Control/Panel:self_modulate:b")
+tracks/5/interp = 1
+tracks/5/loop_wrap = true
+tracks/5/keys = {
+"handle_modes": PackedInt32Array(0, 2, 2),
+"points": PackedFloat32Array(1, -0.25, 0, 0.25, 0, 1, -0.43, 0, 0, 0, 1, -0.021666687, 0, 0, 0),
+"times": PackedFloat32Array(0, 2.58, 2.71)
+}
+tracks/6/type = "bezier"
+tracks/6/imported = false
+tracks/6/enabled = true
+tracks/6/path = NodePath("Control/Panel:self_modulate:a")
+tracks/6/interp = 1
+tracks/6/loop_wrap = true
+tracks/6/keys = {
+"handle_modes": PackedInt32Array(0, 2, 2),
+"points": PackedFloat32Array(0, -0.25, 0, 0.25, 0, 0, -0.43, 0, 0, 0, 1, -0.021666687, -0.16666667, 0, 0),
+"times": PackedFloat32Array(0, 2.58, 2.71)
+}
+tracks/7/type = "bezier"
+tracks/7/imported = false
+tracks/7/enabled = true
+tracks/7/path = NodePath("Control/Panel/RichTextLabel:self_modulate:r")
+tracks/7/interp = 1
+tracks/7/loop_wrap = true
+tracks/7/keys = {
+"handle_modes": PackedInt32Array(0, 2, 2),
+"points": PackedFloat32Array(1, -0.25, 0, 0.25, 0, 1, -0.43, 0, 0, 0, 1, -0.021666687, 0, 0, 0),
+"times": PackedFloat32Array(0, 2.58, 2.71)
+}
+tracks/8/type = "bezier"
+tracks/8/imported = false
+tracks/8/enabled = true
+tracks/8/path = NodePath("Control/Panel/RichTextLabel:self_modulate:g")
+tracks/8/interp = 1
+tracks/8/loop_wrap = true
+tracks/8/keys = {
+"handle_modes": PackedInt32Array(0, 2, 2),
+"points": PackedFloat32Array(1, -0.25, 0, 0.25, 0, 1, -0.43, 0, 0, 0, 1, -0.021666687, 0, 0, 0),
+"times": PackedFloat32Array(0, 2.58, 2.71)
+}
+tracks/9/type = "bezier"
+tracks/9/imported = false
+tracks/9/enabled = true
+tracks/9/path = NodePath("Control/Panel/RichTextLabel:self_modulate:b")
+tracks/9/interp = 1
+tracks/9/loop_wrap = true
+tracks/9/keys = {
+"handle_modes": PackedInt32Array(0, 2, 2),
+"points": PackedFloat32Array(1, -0.25, 0, 0.25, 0, 1, -0.43, 0, 0, 0, 1, -0.021666687, 0, 0, 0),
+"times": PackedFloat32Array(0, 2.58, 2.71)
+}
+tracks/10/type = "bezier"
+tracks/10/imported = false
+tracks/10/enabled = true
+tracks/10/path = NodePath("Control/Panel/RichTextLabel:self_modulate:a")
+tracks/10/interp = 1
+tracks/10/loop_wrap = true
+tracks/10/keys = {
+"handle_modes": PackedInt32Array(0, 2, 2),
+"points": PackedFloat32Array(0, -0.25, 0, 0.25, 0, 0, -0.43, 0, 0, 0, 1, -0.021666687, -0.16666667, 0, 0),
+"times": PackedFloat32Array(0, 2.58, 2.71)
+}
+tracks/11/type = "bezier"
+tracks/11/imported = false
+tracks/11/enabled = true
+tracks/11/path = NodePath("Control/Panel/RichTextLabel:visible_ratio")
+tracks/11/interp = 1
+tracks/11/loop_wrap = true
+tracks/11/keys = {
+"handle_modes": PackedInt32Array(0, 2, 2),
+"points": PackedFloat32Array(0, -0.25, 0, 0.25, 0, 0.825, -2.0813675, -0.1375, 0, 0, 1, -1.1068419, -0.029166669, 0, 0),
+"times": PackedFloat32Array(2.86, 15.348205, 21.989256)
+}
 
 [sub_resource type="Animation" id="Animation_nkmd1"]
 resource_name = "test"
@@ -526,6 +907,12 @@ position = Vector2(-20, 4)
 sprite_frames = SubResource("SpriteFrames_6mqeb")
 animation = &"blue_shirt_guy"
 
+[node name="angry guy" type="AnimatedSprite2D" parent="npc_conraner" unique_id=1261718263]
+texture_filter = 1
+position = Vector2(-51, 5)
+sprite_frames = SubResource("SpriteFrames_6mqeb")
+animation = &"angry guy"
+
 [node name="Control" type="Control" parent="." unique_id=1992352131]
 layout_mode = 3
 anchors_preset = 0
@@ -533,21 +920,31 @@ offset_right = 40.0
 offset_bottom = 40.0
 
 [node name="Panel" type="Panel" parent="Control" unique_id=423009608]
+self_modulate = Color(1, 1, 1, 0)
 layout_mode = 0
 offset_left = 46.0
 offset_top = -134.0
 offset_right = 306.0
-offset_bottom = -94.0
+offset_bottom = -85.0
 theme_override_styles/panel = SubResource("StyleBoxFlat_ccmkj")
 
 [node name="RichTextLabel" type="RichTextLabel" parent="Control/Panel" unique_id=141235534]
+self_modulate = Color(1, 1, 1, 0)
 layout_mode = 0
-offset_right = 40.0
-offset_bottom = 40.0
-theme_override_font_sizes/normal_font_size = 4
+offset_left = 3.0
+offset_top = 2.0
+offset_right = 258.0
+offset_bottom = 46.0
+theme_override_font_sizes/normal_font_size = 8
+theme_override_font_sizes/bold_font_size = 10
+bbcode_enabled = true
+text = "thanks for participating in the trust exserzies and most of you have improved trmendicly exsept one of you..... [tornado radius=4 freq=3][color=red][b]  inky  "
+visible_characters = 0
+visible_ratio = 0.0
 
 [node name="AnimationPlayer" type="AnimationPlayer" parent="." unique_id=166172900]
 libraries/ = SubResource("AnimationLibrary_oa1kt")
+autoplay = &"eplogue anim"
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="." unique_id=1562963859]
 texture_filter = 1
@@ -562,5 +959,5 @@ position = Vector2(129, -51)
 zoom = Vector2(2, 2)
 
 [node name="aniamtated player" parent="." unique_id=1718206783 instance=ExtResource("10_qdqh7")]
-position = Vector2(-140, 3)
+position = Vector2(-169, 5)
 anima_walking = true

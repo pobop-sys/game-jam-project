@@ -7,6 +7,7 @@ func _ready() -> void:
 	$npc_conraner/inky.play("inky")
 	$npc_conraner/cray.play("cray")
 	$npc_conraner/bingus.play("bingus")
+	$"npc_conraner/angry guy".play("angry guy")
 	$npc_conraner/blue_shirt_guy.play("blue_shirt_guy")
 
 
