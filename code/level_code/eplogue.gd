@@ -22,4 +22,8 @@ func _process(delta: float) -> void:
 		#inky falling anim play hither
 	
 	if play_boss_man_reveal:
+		
 		$AnimatedSprite2D.play("big revelal")
+	
+	if !$AnimationPlayer.is_playing():
+		get_tree().change_scene_to_file()
