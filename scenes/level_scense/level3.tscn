@@ -177,7 +177,7 @@ wich_block_art_file = 1
 position = Vector2(1751, -23)
 
 [node name="person_box5" parent="person block contaner" unique_id=1644789720 instance=ExtResource("6_t0l5a")]
-position = Vector2(1832, 182)
+position = Vector2(1817, 182)
 is_telling_truth = true
 wich_block_art_file = 1
 
