@@ -15,6 +15,7 @@
 [ext_resource type="AudioStream" uid="uid://babjl5yub5c6c" path="res://audio/walking sound effects/FEETHmn-CONCRETE_AUDIOELK-Fs Concrete Shoes Pant Ruffles 10_AUDIOELK_AUDIOELK.wav" id="11_fulsm"]
 [ext_resource type="AudioStream" uid="uid://drf0yyd6ykxht" path="res://audio/walking sound effects/FEETHmn-CONCRETE_AUDIOELK-Fs Concrete Shoes Pant Ruffles 14_AUDIOELK_AUDIOELK.wav" id="12_4r5pv"]
 [ext_resource type="AudioStream" uid="uid://bymshot66j25a" path="res://audio/walking sound effects/FEETHmn-CONCRETE_AUDIOELK-Fs Concrete Shoes Pant Ruffles 16_AUDIOELK_AUDIOELK.wav" id="13_60mlk"]
+[ext_resource type="AudioStream" uid="uid://t8nqoqivoecn" path="res://audio/Jump sound affect.mp3" id="16_a8ls1"]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_l71n6"]
 atlas = ExtResource("2_oprun")
@@ -296,3 +297,4 @@ stream = SubResource("AudioStreamRandomizer_6mqeb")
 volume_db = 1.0
 
 [node name="jump sound effect" type="AudioStreamPlayer2D" parent="." unique_id=626630562]
+stream = ExtResource("16_a8ls1")
