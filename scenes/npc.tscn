@@ -3,7 +3,6 @@
 [ext_resource type="Texture2D" uid="uid://bxrf5xvqlfetr" path="res://art/Lil cat boi (walking)-Sheet.png" id="1_nh2m4"]
 [ext_resource type="Script" uid="uid://cwhd75s51tok" path="res://code/npc.gd" id="1_rv78h"]
 [ext_resource type="Texture2D" uid="uid://xenwvblbbawy" path="res://art/npc art/Tin Foil cat-Sheet (Idle).png" id="3_4wlns"]
-[ext_resource type="FontFile" uid="uid://saxbfopteqk4" path="res://font/Thin Sans.ttf" id="3_7n8xq"]
 [ext_resource type="Texture2D" uid="uid://ds303ly4r7dhe" path="res://art/npc art/anger guy (idle)-Sheet.png" id="3_hwkja"]
 [ext_resource type="Texture2D" uid="uid://7b113kugakw0" path="res://art/npc art/Blue Shirt Guy (idle)-Sheet.png" id="3_tl2vt"]
 [ext_resource type="Texture2D" uid="uid://d2c2w36ywxnsd" path="res://art/Bingus-Sheet (idle)-Sheet.png" id="4_0tygy"]
@@ -675,7 +674,6 @@ theme_override_styles/panel = SubResource("StyleBoxFlat_uj6ph")
 [node name="RichTextLabel" type="RichTextLabel" parent="Control/PanelContainer" unique_id=1752336690]
 texture_filter = 1
 layout_mode = 2
-theme_override_fonts/normal_font = ExtResource("3_7n8xq")
 theme_override_font_sizes/normal_font_size = 4
 theme_override_font_sizes/bold_font_size = 8
 bbcode_enabled = true
