@@ -150,35 +150,35 @@ next_lv_location = "res://scenes/level_scense/level3.tscn"
 position = Vector2(312, -208)
 flip_spright = true
 text = "(Cray)
-I dont [color=yellow][wave]trust [/wave] [color=white]these boxes the way there coping me i dont like it"
+I dont [color=yellow][wave]trust [/wave] [color=white]these boxes the way there coping me I dont like it"
 
 [node name="npc2" parent="npc collection" unique_id=1471015895 instance=ExtResource("6_vendf")]
 position = Vector2(315, -33)
 flip_spright = true
 npc_art = 4
 text = "(Bingus)
-Hey, up here, [wave] I can be trused [/wave] you gotta belive me"
+Hey, up here, [wave] I can be trused [/wave] you gotta believe me"
 
 [node name="npc3" parent="npc collection" unique_id=1091821787 instance=ExtResource("6_vendf")]
 position = Vector2(318, 192)
 flip_spright = true
 npc_art = 3
 text = "(Inky)
-I know I wasnt trustworthy last time but this time, [b] [wave] TRUST ME [/wave]"
+I know I wasnt trustworthy last time, but this time, [b] [wave] TRUST ME [/wave]"
 
 [node name="npc4" parent="npc collection" unique_id=824550823 instance=ExtResource("6_vendf")]
 position = Vector2(1717, 32)
 flip_spright = true
 npc_art = 4
 text = "(Bingus)
-I can always be [wave] trusted [/wave] inky on the other hand is a [wave] lier dont trust him [/wave]"
+I can always be [wave] trusted [/wave] Inky on the other hand is a [wave] liar dont trust him [/wave]"
 
 [node name="npc5" parent="npc collection" unique_id=1884576171 instance=ExtResource("6_vendf")]
 position = Vector2(1721, 336)
 flip_spright = true
 npc_art = 3
 text = "(Inky)
-See, told you I could be [wave] trusted [/wave] now [b] [wave] don't belive [/wave] what bingus says"
+See, told you I could be [wave] trusted [/wave] now [b] [wave] don't belive [/wave] what Bingus says"
 
 [node name="kill boxes" type="Node2D" parent="." unique_id=1487485652]
 

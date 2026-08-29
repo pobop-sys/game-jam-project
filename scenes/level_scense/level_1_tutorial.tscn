@@ -166,13 +166,13 @@ position = Vector2(68, -86)
 position = Vector2(487, 48)
 flip_spright = true
 npc_art = 3
-text = "[INKY]
+text = "(Inky)
 Im just a normal lil cat so you can [b]trust me"
 
 [node name="npc" parent="npc collection" unique_id=1948154213 instance=ExtResource("2_ryveb")]
 position = Vector2(488, -240)
 flip_spright = true
-text = "[CRAY]
+text = "(Cray)
 I don't [wave] trust them [/wave] never do I trust you ... im crazy
 Wait what is true [wave] CRAZY???? [/wave]"
 
@@ -184,7 +184,7 @@ flip = true
 position = Vector2(1532, 144)
 flip_spright = true
 npc_art = 3
-text = "[INKY]
+text = "(Inky)
 You actuly [wave] trusted me? [/wave] stupid ah"
 
 [node name="random decorations" parent="npc collection" unique_id=1336224085 instance=ExtResource("13_20j6r")]
