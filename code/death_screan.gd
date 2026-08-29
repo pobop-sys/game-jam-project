@@ -8,7 +8,8 @@ const death_mesaegs: Array = [
 	"not everyone can be [color=yellow] [wave]trusted [/wave][color=white]keep that in mind ",
 	"thoghe thing might be difficlt you should be able to [color=yellow][wave]trust[/wave][color=white] your self to keep going",
 	"even thoghe people can be [color=yellow][wave]trusted [/wave][color=white] you can still fail and thats ok",
-	"keep going you are so close to the end"
+	"keep going your doing so well[b]",
+
 ]
 var lv_names: Array =[
 	"res://scenes/level_scense/level_1_tutorial.tscn",
@@ -31,8 +32,11 @@ func find_the_right_death_mesage():
 		text = death_mesaegs[2]
 		$Control/RichTextLabel.size.x = 1000
 		$Control/RichTextLabel.position.x = -500
-		
-
+	
+	elif Globle.current_scene == "res://scenes/level_scense/level_4.tscn":
+		text = death_mesaegs[3]
+		$Control/RichTextLabel.size.x = 1000
+		$Control/RichTextLabel.position.x = -500
 
 func _ready() -> void:
 	find_the_right_death_mesage()
